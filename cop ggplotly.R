@@ -1,12 +1,3 @@
----
-title: "ALHS Common Operational Picture"
-output: 
-  flexdashboard::flex_dashboard:
-    orientation: rows
-    vertical_layout: fill
----
-
-```{r setup, include=FALSE}
 library(tidyverse)
 library(odbc)
 library(plotly)
@@ -441,24 +432,12 @@ ed_race <- select(ed_race, ContactMonth, Race, Measure, MovingAverage) |>
     name = ifelse(name == "Measure", name, "13-month\nmoving average"),
     name = factor(name, levels = c("13-month\nmoving average", "Measure"))
   )
-```
 
-Admissions
-==================================
+## Charts =====================================================================
 
-Row
-----------------------------------
-
-### Hamilton County
-
-```{r}
 movavgchart(admit_total, "Hamilton County") |>
   layout(legend = list(x = 0.05, y = 0.95))
-```
 
-### By race
-
-```{r}
 admit_race_chart <- ggplot(
   admit_race, 
   aes(x = ContactMonth, y = value, color = Race, linetype = name)
@@ -478,40 +457,16 @@ admit_race_chart <- ggplot(
   theme(plot.title = element_text(hjust = .5)) +
   guides(linetype = "none")
 ggplotly(admit_race_chart) |> layout(legend = list(x = .85, y = .95))
-```
 
-Row
-----------------------------------
-
-### Structurally deprived neighborhoods
-
-```{r}
 movavgchart(admit_deprived, "Structually deprived neighborhoods") |>
   layout(showlegend = FALSE)
-```
 
-### Avondale
-
-```{r}
 movavgchart(admit_avondale, "Avondale") |>
   layout(showlegend = FALSE)
-```
 
-Emergency Department visits
-===============================================
+movavgchart(ed_total, "Hamilton County") |>
+  layout(showlegend = FALSE)
 
-Row
-----------------------------------
-
-### Hamilton County
-
-```{r}
-movavgchart(ed_total, "Hamilton County")
-```
-
-### By race
-
-```{r}
 ed_race_chart <- ggplot(
   ed_race, 
   aes(x = ContactMonth, y = value, color = Race, linetype = name)
@@ -530,22 +485,17 @@ ed_race_chart <- ggplot(
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5)) +
   guides(linetype = "none")
-ggplotly(ed_race_chart) |> layout(legend = list(x = .85, y = .95))
-```
+ggplotly(ed_race_chart)
 
-Row
-----------------------------------
-
-### Structurally deprived neighborhoods
-
-```{r}
 movavgchart(ed_deprived, "Structually deprived neighborhoods") |>
   layout(showlegend = FALSE)
-```
 
-### Avondale
-
-```{r}
 movavgchart(ed_avondale, "Avondale") |>
   layout(showlegend = FALSE)
-```
+
+
+
+
+
+
+
