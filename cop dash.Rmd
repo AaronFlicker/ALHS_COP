@@ -27,7 +27,7 @@ cchmc_dark_grey <- "#55575A"
 
 ## Load data ==================================================================
 
-con <- dbConnect(odbc(), "ClarityProd", uid = "FLI6SH", pwd = "GoWildcats1!")
+con <- dbConnect(odbc(), "ClarityProd")
 
 patients <- dbGetQuery(con, "
   SELECT DISTINCT dx.pat_id
