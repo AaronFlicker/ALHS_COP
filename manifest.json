@@ -3720,10 +3720,10 @@
   },
   "files": {
     "cop-dash.html": {
-      "checksum": "cd8655b90ffe1e6dfb7a3b6affc3f4f1"
+      "checksum": "c0525ea3d163c51049d38fb558a96d4b"
     },
     "cop dash.Rmd": {
-      "checksum": "36cc276d048084015cfe4c0b7c519c93"
+      "checksum": "66da186736bd26abefd06cc4cd86e110"
     },
     "cop ggplotly.R": {
       "checksum": "539e0ebe0bd61d13be968af7a570fe21"
@@ -3732,10 +3732,13 @@
       "checksum": "ea1d888e6de7f5635e354aa4f288287c"
     },
     "data download.R": {
-      "checksum": "7ce42cf7a4d8f55fafd0ead9a0682dac"
+      "checksum": "144a36a9c00e64a1dbef930c4e03238a"
     },
     "hamco encounters.csv": {
       "checksum": "bd3e6558c1ccd5cb08416a8f9190f261"
+    },
+    "Neighborhood dataset.csv": {
+      "checksum": "eaf57bfed9ceccced40764063dbd4abb"
     }
   },
   "users": null
