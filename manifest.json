@@ -3720,10 +3720,10 @@
   },
   "files": {
     "cop-dash.html": {
-      "checksum": "f8a5cb1dccf79eb6be8d0a20ced27afa"
+      "checksum": "cd8655b90ffe1e6dfb7a3b6affc3f4f1"
     },
     "cop dash.Rmd": {
-      "checksum": "778d69d9e12adc8317a000ae100ae1b4"
+      "checksum": "36cc276d048084015cfe4c0b7c519c93"
     },
     "cop ggplotly.R": {
       "checksum": "539e0ebe0bd61d13be968af7a570fe21"

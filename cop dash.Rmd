@@ -25,6 +25,12 @@ cchmc_dark_purple <- "#83286B"
 cchmc_pink <- "#E64479"
 cchmc_dark_grey <- "#55575A"
 
+## Census data ================================================================
+
+hamco_black <- 62959
+hamco_total <- 215200
+hamco_nonblack <- 152241
+
 ## Load data ==================================================================
 
 # con <- dbConnect(odbc(), "ClarityProd")
@@ -233,21 +239,21 @@ hood_kids <- read_csv(
   group_by(Neighborhood) |>
   reframe(Children = sum(value))
 
-hamco_race <- get_acs(
-  "county",
-  variables = c(
-    paste0("B01001B_00", 3:7),
-    paste0("B01001B_0", 18:22)
-  ),
-  state = "OH",
-  county = "Hamilton",
-  year = 2022
-) |>
-  summarise(Black = sum(estimate)) |>
-  mutate(
-    Total = sum(hood_kids$Children),
-    NonBlack = Total-Black
-  )
+# hamco_race <- get_acs(
+#   "county",
+#   variables = c(
+#     paste0("B01001B_00", 3:7),
+#     paste0("B01001B_0", 18:22)
+#   ),
+#   state = "OH",
+#   county = "Hamilton",
+#   year = 2022
+# ) |>
+#   summarise(Black = sum(estimate)) |>
+#   mutate(
+#     Total = sum(hood_kids$Children),
+#     NonBlack = Total-Black
+#   )
 
 hamco_encounters <- read_csv("hamco encounters.csv")
 
@@ -370,7 +376,7 @@ dh <- c(
   "Winton Hills"
 )
 
-admit_total <- admit_count(hamco_encounters, hamco_race$Total)
+admit_total <- admit_count(hamco_encounters, hamco_total)
 
 admit_deprived <- admit_count(
   filter(hamco_encounters, Neighborhood %in% dh),
@@ -389,7 +395,7 @@ admit_race <- hamco_encounters |>
   arrange(Race, ContactMonth) |>
   group_by(Race) |>
   mutate(
-    denom = ifelse(Race == "Black", hamco_race$Black, hamco_race$NonBlack),
+    denom = ifelse(Race == "Black", hamco_black, hamco_nonblack),
     Measure = Admissions*100000/denom,
     MovingAverage = NA
   ) 
@@ -407,7 +413,7 @@ admit_race <- select(admit_race, ContactMonth, Race, Measure, MovingAverage) |>
     name = factor(name, levels = c("13-month\nmoving average", "Measure"))
   )
 
-ed_total <- ed_count(hamco_encounters, hamco_race$Total)
+ed_total <- ed_count(hamco_encounters, hamco_total)
 
 ed_deprived <- ed_count(
   filter(hamco_encounters, Neighborhood %in% dh),
@@ -426,7 +432,7 @@ ed_race <- hamco_encounters |>
   arrange(Race, ContactMonth) |>
   group_by(Race) |>
   mutate(
-    denom = ifelse(Race == "Black", hamco_race$Black, hamco_race$NonBlack),
+    denom = ifelse(Race == "Black", hamco_black, hamco_nonblack),
     Measure = ED*100000/denom,
     MovingAverage = NA
   ) 
