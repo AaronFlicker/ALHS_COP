@@ -220,7 +220,7 @@ hamco_nonblack <- 152241
 #                    ")
 # 
 hood_kids <- read_csv(
-  "C:/Users/FLI6SH/OneDrive - cchmc/ACT_Neighborhood/Repository/neighborhood-repository/neighborhood maps/Neighborhood dataset.csv",
+  "Neighborhood dataset.csv",
   col_types = "c-c---------------------------n-n-n-n--------------------------------------------------------------------------"
 ) |>
   filter(
