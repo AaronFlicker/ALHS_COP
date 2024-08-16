@@ -3719,8 +3719,20 @@
     }
   },
   "files": {
+    "cop-dash.html": {
+      "checksum": "c0525ea3d163c51049d38fb558a96d4b"
+    },
     "cop dash.Rmd": {
       "checksum": "66da186736bd26abefd06cc4cd86e110"
+    },
+    "cop ggplotly.R": {
+      "checksum": "75d2e16378b1e4b3ea4ebe904c2d058c"
+    },
+    "cop.R": {
+      "checksum": "10154b8d09e4b4f28567dbe757a0b18a"
+    },
+    "data download.R": {
+      "checksum": "144a36a9c00e64a1dbef930c4e03238a"
     },
     "hamco encounters.csv": {
       "checksum": "bd3e6558c1ccd5cb08416a8f9190f261"
