@@ -1,0 +1,3079 @@
+Neighborhood,Race,ContactMonth,Admission,ED,Encounters
+Amberley,Other race,2019-05-01,1,0,1
+Amberley,Other race,2020-04-01,0,1,1
+Amberley,Other race,2021-10-01,1,0,1
+Amberley,Other race,2022-07-01,0,1,1
+Amberley,Other race,2022-08-01,1,0,1
+Amberley,Other race,2023-04-01,0,1,1
+Amberley,Other race,2023-11-01,1,0,1
+Amberley,Other race,2024-05-01,0,1,1
+Anderson Township,Black,2019-04-01,0,1,1
+Anderson Township,Black,2019-09-01,0,1,1
+Anderson Township,Black,2022-07-01,0,1,1
+Anderson Township,Black,2022-10-01,1,0,1
+Anderson Township,Other race,2019-01-01,1,2,3
+Anderson Township,Other race,2019-02-01,0,1,1
+Anderson Township,Other race,2019-03-01,0,2,2
+Anderson Township,Other race,2019-04-01,0,1,1
+Anderson Township,Other race,2019-05-01,0,1,1
+Anderson Township,Other race,2019-07-01,1,4,5
+Anderson Township,Other race,2019-09-01,0,1,1
+Anderson Township,Other race,2019-11-01,3,1,4
+Anderson Township,Other race,2020-01-01,1,0,1
+Anderson Township,Other race,2020-03-01,0,1,1
+Anderson Township,Other race,2020-07-01,1,0,1
+Anderson Township,Other race,2020-10-01,0,1,1
+Anderson Township,Other race,2020-12-01,0,1,1
+Anderson Township,Other race,2021-03-01,0,1,1
+Anderson Township,Other race,2021-04-01,1,0,1
+Anderson Township,Other race,2021-07-01,0,2,2
+Anderson Township,Other race,2021-10-01,0,1,1
+Anderson Township,Other race,2021-11-01,1,2,3
+Anderson Township,Other race,2022-01-01,0,1,1
+Anderson Township,Other race,2022-03-01,0,1,1
+Anderson Township,Other race,2022-04-01,1,0,1
+Anderson Township,Other race,2022-05-01,0,2,2
+Anderson Township,Other race,2022-07-01,1,1,2
+Anderson Township,Other race,2022-08-01,3,1,4
+Anderson Township,Other race,2022-09-01,3,0,3
+Anderson Township,Other race,2022-10-01,0,1,1
+Anderson Township,Other race,2022-11-01,1,3,4
+Anderson Township,Other race,2023-01-01,0,2,2
+Anderson Township,Other race,2023-05-01,0,1,1
+Anderson Township,Other race,2023-06-01,1,1,2
+Anderson Township,Other race,2023-07-01,1,0,1
+Anderson Township,Other race,2023-08-01,0,2,2
+Anderson Township,Other race,2023-09-01,2,3,5
+Anderson Township,Other race,2023-10-01,2,1,3
+Anderson Township,Other race,2023-11-01,1,2,3
+Anderson Township,Other race,2023-12-01,1,1,2
+Anderson Township,Other race,2024-01-01,1,0,1
+Anderson Township,Other race,2024-02-01,1,1,2
+Anderson Township,Other race,2024-03-01,0,1,1
+Anderson Township,Other race,2024-04-01,1,0,1
+Anderson Township,Other race,2024-05-01,1,1,2
+Anderson Township,Other race,2024-06-01,0,1,1
+Anderson Township,Other race,2024-07-01,0,1,1
+Arlington Heights,Black,2019-08-01,1,1,2
+Arlington Heights,Black,2022-01-01,1,0,1
+Arlington Heights,Black,2022-05-01,0,1,1
+Arlington Heights,Black,2022-08-01,1,0,1
+Arlington Heights,Other race,2019-11-01,0,1,1
+Arlington Heights,Other race,2019-12-01,1,3,4
+Arlington Heights,Other race,2022-05-01,1,0,1
+Arlington Heights,Other race,2022-07-01,1,0,1
+Arlington Heights,Other race,2022-10-01,1,0,1
+Avondale,Black,2019-01-01,1,4,5
+Avondale,Black,2019-02-01,1,3,4
+Avondale,Black,2019-03-01,0,3,3
+Avondale,Black,2019-04-01,5,2,7
+Avondale,Black,2019-05-01,2,5,7
+Avondale,Black,2019-06-01,0,2,2
+Avondale,Black,2019-07-01,0,6,6
+Avondale,Black,2019-08-01,3,4,7
+Avondale,Black,2019-09-01,2,3,5
+Avondale,Black,2019-10-01,1,4,5
+Avondale,Black,2019-11-01,4,8,12
+Avondale,Black,2019-12-01,0,1,1
+Avondale,Black,2020-01-01,1,1,2
+Avondale,Black,2020-02-01,1,4,5
+Avondale,Black,2020-03-01,2,4,6
+Avondale,Black,2020-05-01,1,0,1
+Avondale,Black,2020-06-01,1,1,2
+Avondale,Black,2020-07-01,1,4,5
+Avondale,Black,2020-09-01,0,3,3
+Avondale,Black,2020-10-01,0,3,3
+Avondale,Black,2020-11-01,2,4,6
+Avondale,Black,2020-12-01,1,0,1
+Avondale,Black,2021-01-01,0,2,2
+Avondale,Black,2021-02-01,0,1,1
+Avondale,Black,2021-03-01,4,2,6
+Avondale,Black,2021-04-01,4,4,8
+Avondale,Black,2021-05-01,2,3,5
+Avondale,Black,2021-06-01,1,0,1
+Avondale,Black,2021-07-01,1,5,6
+Avondale,Black,2021-08-01,0,8,8
+Avondale,Black,2021-09-01,1,4,5
+Avondale,Black,2021-10-01,2,7,9
+Avondale,Black,2021-11-01,5,2,7
+Avondale,Black,2021-12-01,1,4,5
+Avondale,Black,2022-01-01,0,2,2
+Avondale,Black,2022-02-01,3,0,3
+Avondale,Black,2022-03-01,3,2,5
+Avondale,Black,2022-04-01,3,5,8
+Avondale,Black,2022-05-01,3,3,6
+Avondale,Black,2022-06-01,0,1,1
+Avondale,Black,2022-07-01,0,1,1
+Avondale,Black,2022-08-01,6,2,8
+Avondale,Black,2022-09-01,2,2,4
+Avondale,Black,2022-10-01,4,6,10
+Avondale,Black,2022-11-01,0,4,4
+Avondale,Black,2022-12-01,1,2,3
+Avondale,Black,2023-01-01,3,0,3
+Avondale,Black,2023-02-01,0,3,3
+Avondale,Black,2023-03-01,0,1,1
+Avondale,Black,2023-04-01,3,4,7
+Avondale,Black,2023-05-01,0,2,2
+Avondale,Black,2023-07-01,0,4,4
+Avondale,Black,2023-08-01,6,1,7
+Avondale,Black,2023-09-01,4,8,12
+Avondale,Black,2023-10-01,4,9,13
+Avondale,Black,2023-11-01,3,3,6
+Avondale,Black,2023-12-01,3,3,6
+Avondale,Black,2024-01-01,1,2,3
+Avondale,Black,2024-02-01,2,2,4
+Avondale,Black,2024-04-01,3,3,6
+Avondale,Black,2024-05-01,2,4,6
+Avondale,Black,2024-06-01,3,0,3
+Avondale,Other race,2019-03-01,1,0,1
+Avondale,Other race,2019-06-01,1,0,1
+Avondale,Other race,2021-09-01,0,1,1
+Avondale,Other race,2021-10-01,1,0,1
+Avondale,Other race,2022-02-01,1,0,1
+Avondale,Other race,2022-09-01,1,1,2
+Avondale,Other race,2022-10-01,0,1,1
+Avondale,Other race,2022-11-01,1,1,2
+Avondale,Other race,2023-04-01,0,1,1
+Avondale,Other race,2023-08-01,1,1,2
+Avondale,Other race,2023-09-01,1,0,1
+Avondale,Other race,2023-10-01,1,0,1
+Avondale,Other race,2024-04-01,1,0,1
+Blue Ash,Black,2019-11-01,0,1,1
+Blue Ash,Black,2019-12-01,1,0,1
+Blue Ash,Black,2020-10-01,0,1,1
+Blue Ash,Black,2021-02-01,2,0,2
+Blue Ash,Black,2022-07-01,1,0,1
+Blue Ash,Black,2022-08-01,1,0,1
+Blue Ash,Black,2022-10-01,1,0,1
+Blue Ash,Black,2022-12-01,0,2,2
+Blue Ash,Black,2023-08-01,0,2,2
+Blue Ash,Black,2023-09-01,0,1,1
+Blue Ash,Other race,2019-04-01,0,1,1
+Blue Ash,Other race,2019-05-01,1,0,1
+Blue Ash,Other race,2019-10-01,0,1,1
+Blue Ash,Other race,2019-11-01,1,0,1
+Blue Ash,Other race,2019-12-01,0,1,1
+Blue Ash,Other race,2020-01-01,1,0,1
+Blue Ash,Other race,2020-02-01,2,0,2
+Blue Ash,Other race,2020-04-01,0,1,1
+Blue Ash,Other race,2020-09-01,1,0,1
+Blue Ash,Other race,2020-11-01,2,0,2
+Blue Ash,Other race,2021-06-01,1,0,1
+Blue Ash,Other race,2021-09-01,1,0,1
+Blue Ash,Other race,2021-11-01,1,0,1
+Blue Ash,Other race,2021-12-01,0,1,1
+Blue Ash,Other race,2022-07-01,1,1,2
+Blue Ash,Other race,2022-09-01,0,2,2
+Blue Ash,Other race,2023-01-01,1,0,1
+Blue Ash,Other race,2023-07-01,2,0,2
+Blue Ash,Other race,2024-01-01,0,1,1
+Blue Ash,Other race,2024-03-01,0,1,1
+Blue Ash,NA,2021-11-01,0,1,1
+Blue Ash,NA,2022-01-01,1,0,1
+Bond Hill,Black,2019-01-01,0,2,2
+Bond Hill,Black,2019-02-01,1,2,3
+Bond Hill,Black,2019-03-01,1,0,1
+Bond Hill,Black,2019-04-01,1,1,2
+Bond Hill,Black,2019-05-01,0,4,4
+Bond Hill,Black,2019-06-01,0,1,1
+Bond Hill,Black,2019-07-01,0,1,1
+Bond Hill,Black,2019-09-01,0,4,4
+Bond Hill,Black,2019-10-01,1,4,5
+Bond Hill,Black,2019-11-01,0,2,2
+Bond Hill,Black,2019-12-01,2,1,3
+Bond Hill,Black,2020-01-01,0,4,4
+Bond Hill,Black,2020-02-01,1,0,1
+Bond Hill,Black,2020-03-01,0,2,2
+Bond Hill,Black,2020-05-01,0,2,2
+Bond Hill,Black,2020-06-01,1,0,1
+Bond Hill,Black,2020-07-01,1,1,2
+Bond Hill,Black,2020-10-01,1,2,3
+Bond Hill,Black,2020-11-01,3,3,6
+Bond Hill,Black,2021-01-01,0,1,1
+Bond Hill,Black,2021-04-01,1,0,1
+Bond Hill,Black,2021-05-01,2,0,2
+Bond Hill,Black,2021-06-01,2,0,2
+Bond Hill,Black,2021-07-01,3,1,4
+Bond Hill,Black,2021-08-01,2,3,5
+Bond Hill,Black,2021-09-01,2,2,4
+Bond Hill,Black,2021-10-01,2,3,5
+Bond Hill,Black,2021-11-01,3,3,6
+Bond Hill,Black,2021-12-01,0,1,1
+Bond Hill,Black,2022-01-01,0,1,1
+Bond Hill,Black,2022-02-01,2,0,2
+Bond Hill,Black,2022-03-01,0,1,1
+Bond Hill,Black,2022-04-01,2,1,3
+Bond Hill,Black,2022-05-01,1,5,6
+Bond Hill,Black,2022-06-01,1,4,5
+Bond Hill,Black,2022-07-01,0,1,1
+Bond Hill,Black,2022-08-01,4,1,5
+Bond Hill,Black,2022-09-01,1,2,3
+Bond Hill,Black,2022-10-01,3,2,5
+Bond Hill,Black,2022-11-01,1,0,1
+Bond Hill,Black,2022-12-01,1,2,3
+Bond Hill,Black,2023-02-01,1,0,1
+Bond Hill,Black,2023-03-01,1,3,4
+Bond Hill,Black,2023-04-01,2,2,4
+Bond Hill,Black,2023-05-01,0,1,1
+Bond Hill,Black,2023-06-01,1,2,3
+Bond Hill,Black,2023-07-01,1,0,1
+Bond Hill,Black,2023-08-01,3,1,4
+Bond Hill,Black,2023-09-01,4,6,10
+Bond Hill,Black,2023-10-01,1,2,3
+Bond Hill,Black,2023-12-01,0,2,2
+Bond Hill,Black,2024-01-01,0,1,1
+Bond Hill,Black,2024-02-01,1,0,1
+Bond Hill,Black,2024-03-01,0,1,1
+Bond Hill,Black,2024-04-01,2,0,2
+Bond Hill,Black,2024-05-01,1,0,1
+Bond Hill,Black,2024-07-01,0,1,1
+Bond Hill,Other race,2019-10-01,0,1,1
+Bond Hill,Other race,2019-12-01,1,0,1
+Bond Hill,Other race,2020-01-01,0,2,2
+Bond Hill,Other race,2022-04-01,0,1,1
+Bond Hill,Other race,2022-05-01,0,1,1
+CUF,Black,2019-03-01,1,0,1
+CUF,Black,2019-08-01,1,0,1
+CUF,Black,2019-11-01,1,1,2
+CUF,Black,2019-12-01,1,0,1
+CUF,Black,2020-03-01,0,1,1
+CUF,Black,2021-03-01,1,0,1
+CUF,Black,2021-10-01,1,0,1
+CUF,Black,2021-11-01,1,0,1
+CUF,Black,2022-04-01,1,0,1
+CUF,Black,2022-05-01,0,1,1
+CUF,Black,2022-09-01,1,0,1
+CUF,Black,2022-10-01,1,1,2
+CUF,Black,2022-11-01,0,1,1
+CUF,Black,2022-12-01,0,1,1
+CUF,Black,2023-03-01,0,1,1
+CUF,Black,2023-12-01,0,1,1
+CUF,Other race,2019-01-01,0,1,1
+CUF,Other race,2019-04-01,0,1,1
+CUF,Other race,2019-05-01,0,1,1
+CUF,Other race,2020-09-01,0,1,1
+CUF,Other race,2022-10-01,0,1,1
+CUF,Other race,2024-05-01,0,1,1
+Camp Washington,Black,2022-10-01,0,1,1
+Camp Washington,Black,2023-09-01,0,1,1
+Camp Washington,Black,2023-10-01,0,1,1
+Camp Washington,Other race,2019-11-01,0,1,1
+Camp Washington,Other race,2019-12-01,0,1,1
+Carthage,Black,2019-02-01,0,1,1
+Carthage,Black,2019-05-01,0,1,1
+Carthage,Black,2019-09-01,0,1,1
+Carthage,Black,2019-10-01,1,2,3
+Carthage,Black,2019-11-01,0,1,1
+Carthage,Black,2021-04-01,1,0,1
+Carthage,Black,2021-10-01,0,2,2
+Carthage,Black,2021-11-01,1,0,1
+Carthage,Black,2022-02-01,1,1,2
+Carthage,Black,2022-03-01,0,1,1
+Carthage,Black,2022-04-01,0,1,1
+Carthage,Black,2022-07-01,1,0,1
+Carthage,Black,2023-07-01,0,1,1
+Carthage,Black,2023-09-01,1,0,1
+Carthage,Black,2024-01-01,0,1,1
+Carthage,Other race,2019-01-01,0,1,1
+Carthage,Other race,2019-09-01,0,2,2
+Carthage,Other race,2020-08-01,1,0,1
+Carthage,Other race,2021-07-01,0,1,1
+Carthage,Other race,2021-09-01,1,1,2
+Carthage,Other race,2021-10-01,0,3,3
+Carthage,Other race,2022-03-01,1,0,1
+Carthage,Other race,2022-05-01,0,2,2
+Carthage,Other race,2022-06-01,1,0,1
+Carthage,Other race,2022-08-01,0,1,1
+Carthage,Other race,2022-12-01,0,1,1
+Carthage,Other race,2023-03-01,0,1,1
+Carthage,Other race,2023-05-01,0,2,2
+Carthage,Other race,2023-08-01,0,1,1
+Carthage,NA,2019-10-01,1,0,1
+Carthage,NA,2020-03-01,0,1,1
+Carthage,NA,2020-07-01,0,1,1
+Carthage,NA,2020-10-01,1,0,1
+Cheviot,Black,2019-03-01,0,1,1
+Cheviot,Black,2019-05-01,1,0,1
+Cheviot,Black,2019-06-01,1,0,1
+Cheviot,Black,2019-07-01,0,1,1
+Cheviot,Black,2019-09-01,1,1,2
+Cheviot,Black,2019-10-01,0,1,1
+Cheviot,Black,2019-11-01,0,2,2
+Cheviot,Black,2019-12-01,1,0,1
+Cheviot,Black,2020-01-01,0,1,1
+Cheviot,Black,2020-02-01,1,0,1
+Cheviot,Black,2020-09-01,0,1,1
+Cheviot,Black,2021-04-01,0,1,1
+Cheviot,Black,2021-07-01,0,2,2
+Cheviot,Black,2021-09-01,0,1,1
+Cheviot,Black,2022-01-01,0,1,1
+Cheviot,Black,2022-05-01,0,1,1
+Cheviot,Black,2022-08-01,1,0,1
+Cheviot,Black,2022-10-01,1,0,1
+Cheviot,Black,2022-11-01,0,2,2
+Cheviot,Black,2022-12-01,1,0,1
+Cheviot,Black,2023-02-01,0,2,2
+Cheviot,Black,2023-04-01,0,1,1
+Cheviot,Black,2023-05-01,0,1,1
+Cheviot,Black,2023-07-01,0,1,1
+Cheviot,Black,2023-08-01,1,0,1
+Cheviot,Black,2023-09-01,0,2,2
+Cheviot,Black,2023-11-01,0,1,1
+Cheviot,Black,2023-12-01,3,0,3
+Cheviot,Black,2024-01-01,1,0,1
+Cheviot,Black,2024-03-01,1,0,1
+Cheviot,Black,2024-05-01,0,1,1
+Cheviot,Other race,2019-02-01,1,0,1
+Cheviot,Other race,2020-09-01,1,0,1
+Cheviot,Other race,2020-12-01,1,0,1
+Cheviot,Other race,2021-02-01,0,1,1
+Cheviot,Other race,2021-03-01,1,0,1
+Cheviot,Other race,2023-10-01,0,1,1
+Cheviot,Other race,2024-01-01,0,1,1
+Cheviot,Other race,2024-02-01,0,1,1
+Cheviot,NA,2020-10-01,1,0,1
+Clifton,Black,2021-05-01,1,0,1
+Clifton,Black,2021-08-01,2,0,2
+Clifton,Black,2021-10-01,0,1,1
+Clifton,Black,2021-11-01,0,1,1
+Clifton,Black,2021-12-01,0,1,1
+Clifton,Black,2022-10-01,0,2,2
+Clifton,Black,2022-12-01,0,1,1
+Clifton,Black,2023-04-01,0,1,1
+Clifton,Black,2023-05-01,0,1,1
+Clifton,Black,2023-06-01,1,1,2
+Clifton,Black,2023-07-01,0,1,1
+Clifton,Black,2023-09-01,0,1,1
+Clifton,Black,2023-11-01,0,1,1
+Clifton,Black,2024-04-01,0,1,1
+Clifton,Black,2024-05-01,0,1,1
+Clifton,Black,2024-06-01,0,1,1
+Clifton,Other race,2020-11-01,0,1,1
+Clifton,Other race,2021-05-01,0,1,1
+Clifton,Other race,2022-03-01,0,1,1
+Clifton,Other race,2022-09-01,0,1,1
+Clifton,Other race,2022-10-01,0,1,1
+Clifton,Other race,2023-01-01,0,1,1
+Clifton,Other race,2024-01-01,0,1,1
+Colerain Township,Black,2019-01-01,0,1,1
+Colerain Township,Black,2019-02-01,0,3,3
+Colerain Township,Black,2019-03-01,2,2,4
+Colerain Township,Black,2019-04-01,2,5,7
+Colerain Township,Black,2019-05-01,2,4,6
+Colerain Township,Black,2019-06-01,0,3,3
+Colerain Township,Black,2019-07-01,2,1,3
+Colerain Township,Black,2019-08-01,1,1,2
+Colerain Township,Black,2019-09-01,1,4,5
+Colerain Township,Black,2019-10-01,3,6,9
+Colerain Township,Black,2019-11-01,3,3,6
+Colerain Township,Black,2019-12-01,1,1,2
+Colerain Township,Black,2020-01-01,0,2,2
+Colerain Township,Black,2020-02-01,1,2,3
+Colerain Township,Black,2020-03-01,1,1,2
+Colerain Township,Black,2020-05-01,0,2,2
+Colerain Township,Black,2020-06-01,0,1,1
+Colerain Township,Black,2020-07-01,0,1,1
+Colerain Township,Black,2020-08-01,1,1,2
+Colerain Township,Black,2020-09-01,0,2,2
+Colerain Township,Black,2020-10-01,2,1,3
+Colerain Township,Black,2020-11-01,1,0,1
+Colerain Township,Black,2020-12-01,0,1,1
+Colerain Township,Black,2021-02-01,1,0,1
+Colerain Township,Black,2021-03-01,0,4,4
+Colerain Township,Black,2021-04-01,3,5,8
+Colerain Township,Black,2021-05-01,1,4,5
+Colerain Township,Black,2021-06-01,1,3,4
+Colerain Township,Black,2021-07-01,1,3,4
+Colerain Township,Black,2021-08-01,3,3,6
+Colerain Township,Black,2021-09-01,2,3,5
+Colerain Township,Black,2021-10-01,1,3,4
+Colerain Township,Black,2021-11-01,1,2,3
+Colerain Township,Black,2021-12-01,3,6,9
+Colerain Township,Black,2022-01-01,0,1,1
+Colerain Township,Black,2022-02-01,2,1,3
+Colerain Township,Black,2022-03-01,2,2,4
+Colerain Township,Black,2022-04-01,4,5,9
+Colerain Township,Black,2022-05-01,4,2,6
+Colerain Township,Black,2022-06-01,1,0,1
+Colerain Township,Black,2022-07-01,0,3,3
+Colerain Township,Black,2022-08-01,3,2,5
+Colerain Township,Black,2022-09-01,2,1,3
+Colerain Township,Black,2022-10-01,1,2,3
+Colerain Township,Black,2022-11-01,1,3,4
+Colerain Township,Black,2022-12-01,1,3,4
+Colerain Township,Black,2023-01-01,1,0,1
+Colerain Township,Black,2023-02-01,0,5,5
+Colerain Township,Black,2023-03-01,2,1,3
+Colerain Township,Black,2023-04-01,4,5,9
+Colerain Township,Black,2023-05-01,5,2,7
+Colerain Township,Black,2023-06-01,0,3,3
+Colerain Township,Black,2023-07-01,2,0,2
+Colerain Township,Black,2023-08-01,0,2,2
+Colerain Township,Black,2023-09-01,2,4,6
+Colerain Township,Black,2023-10-01,2,4,6
+Colerain Township,Black,2023-11-01,1,1,2
+Colerain Township,Black,2023-12-01,0,3,3
+Colerain Township,Black,2024-01-01,3,2,5
+Colerain Township,Black,2024-02-01,3,3,6
+Colerain Township,Black,2024-03-01,3,2,5
+Colerain Township,Black,2024-04-01,1,4,5
+Colerain Township,Black,2024-05-01,2,2,4
+Colerain Township,Black,2024-06-01,1,2,3
+Colerain Township,Black,2024-07-01,0,3,3
+Colerain Township,Other race,2019-02-01,3,2,5
+Colerain Township,Other race,2019-03-01,0,4,4
+Colerain Township,Other race,2019-05-01,1,4,5
+Colerain Township,Other race,2019-06-01,2,3,5
+Colerain Township,Other race,2019-07-01,0,2,2
+Colerain Township,Other race,2019-08-01,2,0,2
+Colerain Township,Other race,2019-09-01,1,1,2
+Colerain Township,Other race,2019-10-01,0,2,2
+Colerain Township,Other race,2019-11-01,1,2,3
+Colerain Township,Other race,2019-12-01,0,6,6
+Colerain Township,Other race,2020-01-01,2,5,7
+Colerain Township,Other race,2020-02-01,1,1,2
+Colerain Township,Other race,2020-03-01,1,3,4
+Colerain Township,Other race,2020-06-01,0,1,1
+Colerain Township,Other race,2020-07-01,0,1,1
+Colerain Township,Other race,2020-08-01,1,1,2
+Colerain Township,Other race,2020-10-01,1,0,1
+Colerain Township,Other race,2021-02-01,3,0,3
+Colerain Township,Other race,2021-03-01,1,1,2
+Colerain Township,Other race,2021-04-01,1,0,1
+Colerain Township,Other race,2021-05-01,0,2,2
+Colerain Township,Other race,2021-06-01,0,1,1
+Colerain Township,Other race,2021-07-01,0,2,2
+Colerain Township,Other race,2021-08-01,2,1,3
+Colerain Township,Other race,2021-09-01,4,2,6
+Colerain Township,Other race,2021-10-01,1,2,3
+Colerain Township,Other race,2021-11-01,1,1,2
+Colerain Township,Other race,2022-02-01,0,2,2
+Colerain Township,Other race,2022-03-01,4,1,5
+Colerain Township,Other race,2022-04-01,1,0,1
+Colerain Township,Other race,2022-05-01,1,0,1
+Colerain Township,Other race,2022-08-01,3,2,5
+Colerain Township,Other race,2022-09-01,3,0,3
+Colerain Township,Other race,2022-10-01,1,4,5
+Colerain Township,Other race,2022-11-01,0,3,3
+Colerain Township,Other race,2022-12-01,2,1,3
+Colerain Township,Other race,2023-01-01,1,1,2
+Colerain Township,Other race,2023-02-01,0,1,1
+Colerain Township,Other race,2023-03-01,1,2,3
+Colerain Township,Other race,2023-04-01,2,0,2
+Colerain Township,Other race,2023-05-01,1,2,3
+Colerain Township,Other race,2023-07-01,1,0,1
+Colerain Township,Other race,2023-08-01,0,1,1
+Colerain Township,Other race,2023-09-01,3,2,5
+Colerain Township,Other race,2023-10-01,0,1,1
+Colerain Township,Other race,2023-11-01,1,2,3
+Colerain Township,Other race,2023-12-01,0,1,1
+Colerain Township,Other race,2024-01-01,0,3,3
+Colerain Township,Other race,2024-02-01,3,0,3
+Colerain Township,Other race,2024-03-01,0,1,1
+Colerain Township,Other race,2024-04-01,2,2,4
+Colerain Township,Other race,2024-05-01,1,4,5
+Colerain Township,Other race,2024-06-01,1,2,3
+Colerain Township,Other race,2024-07-01,0,1,1
+College Hill,Black,2019-01-01,0,3,3
+College Hill,Black,2019-02-01,1,1,2
+College Hill,Black,2019-03-01,1,2,3
+College Hill,Black,2019-04-01,0,2,2
+College Hill,Black,2019-05-01,3,1,4
+College Hill,Black,2019-06-01,2,3,5
+College Hill,Black,2019-08-01,1,0,1
+College Hill,Black,2019-09-01,2,4,6
+College Hill,Black,2019-10-01,1,3,4
+College Hill,Black,2019-12-01,0,1,1
+College Hill,Black,2020-01-01,0,1,1
+College Hill,Black,2020-02-01,1,1,2
+College Hill,Black,2020-03-01,2,0,2
+College Hill,Black,2020-04-01,0,2,2
+College Hill,Black,2020-05-01,1,2,3
+College Hill,Black,2020-06-01,0,1,1
+College Hill,Black,2020-07-01,0,3,3
+College Hill,Black,2020-09-01,0,1,1
+College Hill,Black,2021-01-01,1,1,2
+College Hill,Black,2021-03-01,2,0,2
+College Hill,Black,2021-05-01,1,3,4
+College Hill,Black,2021-06-01,0,1,1
+College Hill,Black,2021-07-01,0,3,3
+College Hill,Black,2021-08-01,0,2,2
+College Hill,Black,2021-09-01,0,1,1
+College Hill,Black,2021-10-01,1,2,3
+College Hill,Black,2021-11-01,3,1,4
+College Hill,Black,2021-12-01,0,1,1
+College Hill,Black,2022-01-01,0,1,1
+College Hill,Black,2022-02-01,1,2,3
+College Hill,Black,2022-03-01,1,1,2
+College Hill,Black,2022-04-01,1,3,4
+College Hill,Black,2022-05-01,3,0,3
+College Hill,Black,2022-07-01,0,1,1
+College Hill,Black,2022-08-01,2,2,4
+College Hill,Black,2022-09-01,1,5,6
+College Hill,Black,2022-10-01,3,2,5
+College Hill,Black,2022-11-01,4,4,8
+College Hill,Black,2022-12-01,2,1,3
+College Hill,Black,2023-01-01,1,0,1
+College Hill,Black,2023-03-01,1,1,2
+College Hill,Black,2023-04-01,4,2,6
+College Hill,Black,2023-06-01,1,0,1
+College Hill,Black,2023-07-01,2,2,4
+College Hill,Black,2023-08-01,0,2,2
+College Hill,Black,2023-09-01,3,3,6
+College Hill,Black,2023-10-01,2,3,5
+College Hill,Black,2023-11-01,3,4,7
+College Hill,Black,2023-12-01,0,3,3
+College Hill,Black,2024-01-01,1,1,2
+College Hill,Black,2024-02-01,1,5,6
+College Hill,Black,2024-04-01,0,1,1
+College Hill,Black,2024-05-01,0,1,1
+College Hill,Black,2024-07-01,0,1,1
+College Hill,Other race,2019-03-01,0,1,1
+College Hill,Other race,2019-08-01,1,0,1
+College Hill,Other race,2019-09-01,0,1,1
+College Hill,Other race,2019-11-01,0,1,1
+College Hill,Other race,2019-12-01,1,0,1
+College Hill,Other race,2020-01-01,0,1,1
+College Hill,Other race,2021-04-01,0,1,1
+College Hill,Other race,2021-06-01,1,0,1
+College Hill,Other race,2021-10-01,1,0,1
+College Hill,Other race,2021-12-01,0,1,1
+College Hill,Other race,2022-05-01,0,2,2
+College Hill,Other race,2022-10-01,0,1,1
+College Hill,Other race,2022-11-01,1,1,2
+College Hill,Other race,2023-03-01,1,0,1
+College Hill,Other race,2023-04-01,1,0,1
+College Hill,Other race,2023-10-01,1,0,1
+College Hill,Other race,2024-01-01,1,0,1
+College Hill,Other race,2024-04-01,1,1,2
+College Hill,Other race,2024-05-01,0,1,1
+Columbia Township,Black,2021-03-01,0,1,1
+Columbia Township,Black,2021-07-01,1,0,1
+Columbia Township,Black,2022-07-01,0,1,1
+Columbia Township,Black,2023-03-01,1,0,1
+Columbia Township,Black,2023-05-01,0,1,1
+Columbia Township,Other race,2019-03-01,0,2,2
+Columbia Township,Other race,2021-09-01,0,1,1
+Columbia Township,Other race,2022-12-01,0,1,1
+Columbia Township,Other race,2023-07-01,1,0,1
+Columbia Tusculum,Other race,2019-04-01,0,1,1
+Columbia Tusculum,Other race,2022-05-01,1,0,1
+Columbia Tusculum,Other race,2022-08-01,0,1,1
+Corryville,Black,2021-05-01,0,1,1
+Corryville,Black,2022-03-01,0,1,1
+Corryville,Other race,2022-10-01,1,0,1
+Crosby Township,Black,2019-01-01,1,0,1
+Crosby Township,Other race,2019-05-01,0,1,1
+Crosby Township,Other race,2021-05-01,2,2,4
+Crosby Township,Other race,2021-11-01,0,2,2
+Crosby Township,Other race,2021-12-01,1,0,1
+Crosby Township,Other race,2022-07-01,1,0,1
+Crosby Township,Other race,2022-08-01,1,1,2
+Crosby Township,Other race,2022-11-01,2,0,2
+Crosby Township,Other race,2022-12-01,0,1,1
+Crosby Township,Other race,2023-10-01,1,0,1
+Crosby Township,Other race,2023-11-01,2,0,2
+Crosby Township,Other race,2024-01-01,0,1,1
+Crosby Township,Other race,2024-04-01,1,1,2
+Deer Park,Black,2023-10-01,0,1,1
+Deer Park,Other race,2019-01-01,0,1,1
+Deer Park,Other race,2019-11-01,0,2,2
+Deer Park,Other race,2020-10-01,0,1,1
+Deer Park,Other race,2021-05-01,0,1,1
+Deer Park,Other race,2021-10-01,0,1,1
+Deer Park,Other race,2021-12-01,0,1,1
+Deer Park,Other race,2022-03-01,1,0,1
+Deer Park,Other race,2023-10-01,0,1,1
+Deer Park,Other race,2024-03-01,0,1,1
+Delhi Township,Black,2019-11-01,0,1,1
+Delhi Township,Black,2020-08-01,0,1,1
+Delhi Township,Black,2020-09-01,0,1,1
+Delhi Township,Black,2020-10-01,0,1,1
+Delhi Township,Black,2020-12-01,0,1,1
+Delhi Township,Black,2021-03-01,2,1,3
+Delhi Township,Black,2021-05-01,0,1,1
+Delhi Township,Black,2021-07-01,0,2,2
+Delhi Township,Black,2021-11-01,0,2,2
+Delhi Township,Black,2022-05-01,0,1,1
+Delhi Township,Black,2022-08-01,1,1,2
+Delhi Township,Black,2022-09-01,0,1,1
+Delhi Township,Black,2022-11-01,0,1,1
+Delhi Township,Black,2023-01-01,1,0,1
+Delhi Township,Black,2023-04-01,0,1,1
+Delhi Township,Black,2023-05-01,1,4,5
+Delhi Township,Black,2024-04-01,0,1,1
+Delhi Township,Black,2024-05-01,0,1,1
+Delhi Township,Black,2024-06-01,0,1,1
+Delhi Township,Black,2024-07-01,0,2,2
+Delhi Township,Other race,2019-01-01,1,1,2
+Delhi Township,Other race,2019-03-01,1,2,3
+Delhi Township,Other race,2019-04-01,0,2,2
+Delhi Township,Other race,2019-07-01,0,1,1
+Delhi Township,Other race,2019-08-01,0,1,1
+Delhi Township,Other race,2019-09-01,2,0,2
+Delhi Township,Other race,2019-10-01,0,2,2
+Delhi Township,Other race,2019-11-01,1,0,1
+Delhi Township,Other race,2020-02-01,0,1,1
+Delhi Township,Other race,2020-03-01,1,2,3
+Delhi Township,Other race,2020-04-01,0,1,1
+Delhi Township,Other race,2020-06-01,0,1,1
+Delhi Township,Other race,2020-10-01,1,1,2
+Delhi Township,Other race,2020-11-01,0,1,1
+Delhi Township,Other race,2021-02-01,0,2,2
+Delhi Township,Other race,2021-03-01,1,1,2
+Delhi Township,Other race,2021-05-01,0,1,1
+Delhi Township,Other race,2021-07-01,0,2,2
+Delhi Township,Other race,2021-08-01,1,0,1
+Delhi Township,Other race,2021-09-01,1,1,2
+Delhi Township,Other race,2021-10-01,1,1,2
+Delhi Township,Other race,2021-11-01,1,1,2
+Delhi Township,Other race,2021-12-01,0,2,2
+Delhi Township,Other race,2022-01-01,1,3,4
+Delhi Township,Other race,2022-03-01,1,0,1
+Delhi Township,Other race,2022-05-01,0,1,1
+Delhi Township,Other race,2022-07-01,0,1,1
+Delhi Township,Other race,2022-08-01,1,0,1
+Delhi Township,Other race,2022-09-01,0,1,1
+Delhi Township,Other race,2022-10-01,0,1,1
+Delhi Township,Other race,2022-11-01,0,3,3
+Delhi Township,Other race,2023-02-01,1,0,1
+Delhi Township,Other race,2023-03-01,0,1,1
+Delhi Township,Other race,2023-04-01,1,1,2
+Delhi Township,Other race,2023-05-01,2,1,3
+Delhi Township,Other race,2023-07-01,1,1,2
+Delhi Township,Other race,2023-08-01,0,1,1
+Delhi Township,Other race,2023-09-01,1,1,2
+Delhi Township,Other race,2023-10-01,0,1,1
+Delhi Township,Other race,2023-12-01,1,0,1
+Delhi Township,Other race,2024-01-01,1,1,2
+Delhi Township,Other race,2024-03-01,0,1,1
+Delhi Township,Other race,2024-04-01,0,1,1
+Delhi Township,Other race,2024-05-01,2,0,2
+Delhi Township,Other race,2024-06-01,0,1,1
+Delhi Township,Other race,2024-07-01,0,2,2
+Downtown,Black,2021-06-01,0,1,1
+Downtown,Black,2021-09-01,1,0,1
+Downtown,Black,2022-05-01,1,0,1
+Downtown,Black,2022-09-01,0,1,1
+East End,Black,2020-01-01,0,1,1
+East End,Other race,2021-12-01,0,1,1
+East Price Hill,Black,2019-01-01,0,2,2
+East Price Hill,Black,2019-02-01,1,1,2
+East Price Hill,Black,2019-03-01,0,1,1
+East Price Hill,Black,2019-04-01,2,1,3
+East Price Hill,Black,2019-05-01,1,2,3
+East Price Hill,Black,2019-06-01,0,2,2
+East Price Hill,Black,2019-07-01,0,1,1
+East Price Hill,Black,2019-08-01,0,1,1
+East Price Hill,Black,2019-09-01,1,4,5
+East Price Hill,Black,2019-10-01,2,3,5
+East Price Hill,Black,2019-11-01,0,3,3
+East Price Hill,Black,2019-12-01,0,3,3
+East Price Hill,Black,2020-01-01,1,1,2
+East Price Hill,Black,2020-02-01,1,1,2
+East Price Hill,Black,2020-03-01,0,2,2
+East Price Hill,Black,2020-04-01,0,1,1
+East Price Hill,Black,2020-05-01,0,2,2
+East Price Hill,Black,2020-06-01,0,1,1
+East Price Hill,Black,2020-08-01,0,1,1
+East Price Hill,Black,2020-10-01,2,2,4
+East Price Hill,Black,2020-11-01,1,2,3
+East Price Hill,Black,2020-12-01,0,2,2
+East Price Hill,Black,2021-01-01,0,2,2
+East Price Hill,Black,2021-04-01,2,1,3
+East Price Hill,Black,2021-05-01,0,2,2
+East Price Hill,Black,2021-06-01,0,1,1
+East Price Hill,Black,2021-07-01,0,1,1
+East Price Hill,Black,2021-08-01,1,2,3
+East Price Hill,Black,2021-10-01,2,3,5
+East Price Hill,Black,2021-11-01,0,1,1
+East Price Hill,Black,2021-12-01,0,1,1
+East Price Hill,Black,2022-03-01,1,1,2
+East Price Hill,Black,2022-04-01,1,2,3
+East Price Hill,Black,2022-05-01,2,2,4
+East Price Hill,Black,2022-06-01,1,0,1
+East Price Hill,Black,2022-07-01,1,1,2
+East Price Hill,Black,2022-08-01,2,1,3
+East Price Hill,Black,2022-09-01,0,2,2
+East Price Hill,Black,2022-10-01,1,2,3
+East Price Hill,Black,2022-12-01,0,1,1
+East Price Hill,Black,2023-01-01,1,0,1
+East Price Hill,Black,2023-02-01,2,0,2
+East Price Hill,Black,2023-03-01,2,1,3
+East Price Hill,Black,2023-04-01,2,1,3
+East Price Hill,Black,2023-05-01,0,1,1
+East Price Hill,Black,2023-06-01,1,0,1
+East Price Hill,Black,2023-07-01,2,0,2
+East Price Hill,Black,2023-08-01,1,0,1
+East Price Hill,Black,2023-09-01,1,3,4
+East Price Hill,Black,2023-11-01,0,2,2
+East Price Hill,Black,2023-12-01,2,1,3
+East Price Hill,Black,2024-01-01,1,1,2
+East Price Hill,Black,2024-02-01,0,1,1
+East Price Hill,Black,2024-04-01,2,0,2
+East Price Hill,Black,2024-05-01,0,2,2
+East Price Hill,Black,2024-06-01,0,2,2
+East Price Hill,Other race,2019-01-01,0,1,1
+East Price Hill,Other race,2019-02-01,3,0,3
+East Price Hill,Other race,2019-03-01,1,0,1
+East Price Hill,Other race,2019-06-01,0,1,1
+East Price Hill,Other race,2019-10-01,0,1,1
+East Price Hill,Other race,2019-12-01,2,1,3
+East Price Hill,Other race,2020-01-01,0,1,1
+East Price Hill,Other race,2020-02-01,0,1,1
+East Price Hill,Other race,2020-10-01,1,1,2
+East Price Hill,Other race,2020-11-01,1,0,1
+East Price Hill,Other race,2021-01-01,0,1,1
+East Price Hill,Other race,2021-02-01,0,1,1
+East Price Hill,Other race,2021-05-01,0,2,2
+East Price Hill,Other race,2021-07-01,1,0,1
+East Price Hill,Other race,2021-08-01,0,1,1
+East Price Hill,Other race,2021-09-01,1,2,3
+East Price Hill,Other race,2021-10-01,1,1,2
+East Price Hill,Other race,2022-03-01,1,0,1
+East Price Hill,Other race,2022-04-01,2,0,2
+East Price Hill,Other race,2022-06-01,1,1,2
+East Price Hill,Other race,2022-08-01,1,1,2
+East Price Hill,Other race,2022-09-01,1,1,2
+East Price Hill,Other race,2022-10-01,0,1,1
+East Price Hill,Other race,2022-11-01,0,2,2
+East Price Hill,Other race,2022-12-01,0,1,1
+East Price Hill,Other race,2023-01-01,2,0,2
+East Price Hill,Other race,2023-03-01,1,0,1
+East Price Hill,Other race,2023-05-01,1,2,3
+East Price Hill,Other race,2023-09-01,0,2,2
+East Price Hill,Other race,2023-10-01,1,1,2
+East Price Hill,Other race,2023-11-01,1,1,2
+East Price Hill,Other race,2023-12-01,2,1,3
+East Price Hill,Other race,2024-02-01,1,1,2
+East Price Hill,Other race,2024-03-01,1,0,1
+East Price Hill,Other race,2024-04-01,1,0,1
+East Price Hill,Other race,2024-05-01,1,0,1
+East Price Hill,NA,2019-11-01,0,1,1
+East Price Hill,NA,2022-03-01,1,0,1
+East Walnut Hills,Black,2020-01-01,1,0,1
+East Walnut Hills,Black,2020-10-01,0,1,1
+East Walnut Hills,Black,2021-09-01,1,0,1
+East Walnut Hills,Black,2021-10-01,0,1,1
+East Walnut Hills,Black,2022-03-01,1,1,2
+East Walnut Hills,Black,2022-08-01,0,1,1
+East Walnut Hills,Black,2024-04-01,1,0,1
+East Walnut Hills,Black,2024-05-01,1,0,1
+East Walnut Hills,Other race,2022-09-01,1,0,1
+East Walnut Hills,Other race,2023-02-01,0,1,1
+East Walnut Hills,Other race,2024-01-01,1,0,1
+East Walnut Hills,Other race,2024-05-01,1,0,1
+East Westwood,Black,2019-02-01,1,0,1
+East Westwood,Black,2019-04-01,1,0,1
+East Westwood,Black,2019-05-01,1,0,1
+East Westwood,Black,2019-07-01,1,0,1
+East Westwood,Black,2019-08-01,1,1,2
+East Westwood,Black,2019-09-01,0,1,1
+East Westwood,Black,2020-03-01,0,1,1
+East Westwood,Black,2020-08-01,0,1,1
+East Westwood,Black,2020-10-01,1,0,1
+East Westwood,Black,2021-09-01,0,1,1
+East Westwood,Black,2021-12-01,1,0,1
+East Westwood,Black,2022-01-01,0,1,1
+East Westwood,Black,2022-02-01,1,0,1
+East Westwood,Black,2022-03-01,1,0,1
+East Westwood,Black,2022-05-01,1,0,1
+East Westwood,Black,2022-08-01,0,1,1
+East Westwood,Black,2022-10-01,0,1,1
+East Westwood,Black,2023-01-01,1,0,1
+East Westwood,Black,2023-09-01,0,1,1
+East Westwood,Black,2023-12-01,1,0,1
+East Westwood,Black,2024-02-01,0,1,1
+East Westwood,Black,2024-05-01,0,1,1
+East Westwood,Black,2024-06-01,0,1,1
+East Westwood,Other race,2019-11-01,0,1,1
+East Westwood,Other race,2023-09-01,1,0,1
+East Westwood,Other race,2024-02-01,1,0,1
+Elmwood Place,Black,2019-01-01,1,1,2
+Elmwood Place,Black,2019-02-01,1,2,3
+Elmwood Place,Black,2019-04-01,1,1,2
+Elmwood Place,Black,2019-05-01,0,1,1
+Elmwood Place,Black,2019-06-01,0,1,1
+Elmwood Place,Black,2019-08-01,0,1,1
+Elmwood Place,Black,2019-09-01,1,2,3
+Elmwood Place,Black,2019-11-01,1,2,3
+Elmwood Place,Black,2019-12-01,1,1,2
+Elmwood Place,Black,2020-03-01,1,0,1
+Elmwood Place,Black,2020-08-01,1,0,1
+Elmwood Place,Black,2020-09-01,1,0,1
+Elmwood Place,Black,2020-12-01,0,1,1
+Elmwood Place,Black,2021-05-01,1,3,4
+Elmwood Place,Black,2021-07-01,1,1,2
+Elmwood Place,Black,2021-09-01,2,0,2
+Elmwood Place,Black,2021-10-01,1,0,1
+Elmwood Place,Black,2022-01-01,0,1,1
+Elmwood Place,Black,2022-02-01,0,1,1
+Elmwood Place,Black,2022-03-01,0,1,1
+Elmwood Place,Black,2022-05-01,1,0,1
+Elmwood Place,Black,2022-06-01,2,0,2
+Elmwood Place,Black,2022-08-01,0,1,1
+Elmwood Place,Black,2022-09-01,1,1,2
+Elmwood Place,Black,2023-01-01,1,0,1
+Elmwood Place,Black,2023-02-01,1,0,1
+Elmwood Place,Black,2023-04-01,1,0,1
+Elmwood Place,Black,2023-05-01,1,1,2
+Elmwood Place,Black,2023-09-01,1,0,1
+Elmwood Place,Black,2023-10-01,1,0,1
+Elmwood Place,Black,2024-04-01,1,0,1
+Elmwood Place,Other race,2019-10-01,0,1,1
+Elmwood Place,Other race,2019-12-01,0,1,1
+Elmwood Place,Other race,2020-07-01,0,1,1
+Elmwood Place,Other race,2020-12-01,0,1,1
+Elmwood Place,Other race,2021-04-01,0,1,1
+Elmwood Place,Other race,2021-05-01,1,0,1
+English Woods,Black,2019-04-01,0,1,1
+English Woods,Black,2019-07-01,1,0,1
+English Woods,Black,2020-03-01,1,0,1
+English Woods,Black,2022-03-01,0,1,1
+English Woods,Black,2022-06-01,0,1,1
+English Woods,Black,2022-11-01,0,1,1
+English Woods,Black,2023-05-01,1,0,1
+English Woods,Black,2023-12-01,1,0,1
+English Woods,Black,2024-06-01,0,1,1
+English Woods,Other race,2022-05-01,1,0,1
+English Woods,Other race,2023-04-01,1,0,1
+English Woods,Other race,2024-04-01,1,0,1
+English Woods,Other race,2024-05-01,1,0,1
+English Woods,Other race,2024-07-01,1,0,1
+Evanston,Black,2019-02-01,1,0,1
+Evanston,Black,2019-03-01,0,1,1
+Evanston,Black,2019-04-01,2,1,3
+Evanston,Black,2019-05-01,2,2,4
+Evanston,Black,2019-06-01,1,2,3
+Evanston,Black,2019-07-01,0,1,1
+Evanston,Black,2019-09-01,2,1,3
+Evanston,Black,2019-10-01,2,2,4
+Evanston,Black,2019-11-01,0,2,2
+Evanston,Black,2019-12-01,0,3,3
+Evanston,Black,2020-02-01,3,1,4
+Evanston,Black,2020-03-01,0,2,2
+Evanston,Black,2020-04-01,0,1,1
+Evanston,Black,2020-05-01,1,2,3
+Evanston,Black,2020-06-01,0,3,3
+Evanston,Black,2020-07-01,1,0,1
+Evanston,Black,2020-08-01,1,0,1
+Evanston,Black,2020-09-01,1,1,2
+Evanston,Black,2020-10-01,4,1,5
+Evanston,Black,2020-11-01,0,1,1
+Evanston,Black,2020-12-01,1,0,1
+Evanston,Black,2021-03-01,2,2,4
+Evanston,Black,2021-04-01,1,0,1
+Evanston,Black,2021-05-01,0,3,3
+Evanston,Black,2021-06-01,0,2,2
+Evanston,Black,2021-07-01,2,1,3
+Evanston,Black,2021-08-01,0,1,1
+Evanston,Black,2021-09-01,0,2,2
+Evanston,Black,2021-10-01,1,0,1
+Evanston,Black,2021-11-01,1,2,3
+Evanston,Black,2021-12-01,0,2,2
+Evanston,Black,2022-01-01,1,1,2
+Evanston,Black,2022-02-01,3,2,5
+Evanston,Black,2022-03-01,1,1,2
+Evanston,Black,2022-04-01,2,6,8
+Evanston,Black,2022-05-01,4,0,4
+Evanston,Black,2022-06-01,1,0,1
+Evanston,Black,2022-08-01,2,3,5
+Evanston,Black,2022-09-01,2,2,4
+Evanston,Black,2022-10-01,0,2,2
+Evanston,Black,2022-11-01,1,2,3
+Evanston,Black,2022-12-01,0,1,1
+Evanston,Black,2023-01-01,1,0,1
+Evanston,Black,2023-02-01,0,1,1
+Evanston,Black,2023-03-01,0,3,3
+Evanston,Black,2023-04-01,2,1,3
+Evanston,Black,2023-05-01,0,2,2
+Evanston,Black,2023-06-01,1,2,3
+Evanston,Black,2023-07-01,0,1,1
+Evanston,Black,2023-08-01,1,2,3
+Evanston,Black,2023-09-01,4,3,7
+Evanston,Black,2023-10-01,3,2,5
+Evanston,Black,2023-11-01,1,0,1
+Evanston,Black,2023-12-01,0,1,1
+Evanston,Black,2024-01-01,1,1,2
+Evanston,Black,2024-02-01,3,3,6
+Evanston,Black,2024-03-01,1,1,2
+Evanston,Black,2024-04-01,3,1,4
+Evanston,Black,2024-05-01,0,1,1
+Evanston,Black,2024-06-01,0,2,2
+Evanston,Black,2024-07-01,1,0,1
+Evanston,Other race,2019-10-01,0,1,1
+Evanston,Other race,2019-11-01,0,1,1
+Evanston,Other race,2020-02-01,2,1,3
+Evanston,Other race,2020-08-01,1,0,1
+Evanston,Other race,2020-11-01,0,1,1
+Evanston,Other race,2023-02-01,1,0,1
+Evanston,Other race,2023-06-01,1,0,1
+Evanston,Other race,2024-02-01,1,0,1
+Evanston,Other race,2024-04-01,0,1,1
+Evendale,Black,2024-01-01,0,1,1
+Evendale,Other race,2022-09-01,0,2,2
+Evendale,Other race,2024-07-01,0,1,1
+Fairfax,Other race,2019-01-01,1,0,1
+Fairfax,Other race,2020-08-01,0,1,1
+Fairfax,Other race,2021-10-01,0,1,1
+Fairfax,Other race,2021-11-01,0,1,1
+Fairfax,Other race,2022-10-01,0,1,1
+Forest Park,Black,2019-01-01,0,3,3
+Forest Park,Black,2019-02-01,1,4,5
+Forest Park,Black,2019-03-01,0,2,2
+Forest Park,Black,2019-04-01,1,1,2
+Forest Park,Black,2019-05-01,0,3,3
+Forest Park,Black,2019-06-01,1,2,3
+Forest Park,Black,2019-07-01,0,2,2
+Forest Park,Black,2019-08-01,1,1,2
+Forest Park,Black,2019-09-01,3,3,6
+Forest Park,Black,2019-10-01,0,6,6
+Forest Park,Black,2019-12-01,2,4,6
+Forest Park,Black,2020-01-01,0,3,3
+Forest Park,Black,2020-02-01,0,3,3
+Forest Park,Black,2020-03-01,1,2,3
+Forest Park,Black,2020-05-01,0,1,1
+Forest Park,Black,2020-06-01,1,1,2
+Forest Park,Black,2020-07-01,1,0,1
+Forest Park,Black,2020-08-01,0,1,1
+Forest Park,Black,2020-10-01,1,2,3
+Forest Park,Black,2020-11-01,0,2,2
+Forest Park,Black,2020-12-01,1,1,2
+Forest Park,Black,2021-02-01,1,2,3
+Forest Park,Black,2021-03-01,1,0,1
+Forest Park,Black,2021-04-01,0,1,1
+Forest Park,Black,2021-05-01,0,5,5
+Forest Park,Black,2021-06-01,2,3,5
+Forest Park,Black,2021-07-01,0,3,3
+Forest Park,Black,2021-08-01,1,2,3
+Forest Park,Black,2021-09-01,1,3,4
+Forest Park,Black,2021-10-01,1,1,2
+Forest Park,Black,2021-11-01,2,1,3
+Forest Park,Black,2021-12-01,0,2,2
+Forest Park,Black,2022-01-01,1,1,2
+Forest Park,Black,2022-02-01,1,2,3
+Forest Park,Black,2022-03-01,0,2,2
+Forest Park,Black,2022-04-01,2,0,2
+Forest Park,Black,2022-05-01,2,4,6
+Forest Park,Black,2022-06-01,0,2,2
+Forest Park,Black,2022-07-01,0,3,3
+Forest Park,Black,2022-08-01,2,1,3
+Forest Park,Black,2022-09-01,3,2,5
+Forest Park,Black,2022-10-01,1,2,3
+Forest Park,Black,2022-11-01,2,1,3
+Forest Park,Black,2022-12-01,1,3,4
+Forest Park,Black,2023-01-01,1,5,6
+Forest Park,Black,2023-02-01,1,3,4
+Forest Park,Black,2023-03-01,1,1,2
+Forest Park,Black,2023-04-01,1,6,7
+Forest Park,Black,2023-05-01,1,3,4
+Forest Park,Black,2023-07-01,0,2,2
+Forest Park,Black,2023-08-01,2,2,4
+Forest Park,Black,2023-09-01,2,0,2
+Forest Park,Black,2023-10-01,1,3,4
+Forest Park,Black,2023-12-01,0,2,2
+Forest Park,Black,2024-02-01,1,1,2
+Forest Park,Black,2024-03-01,0,3,3
+Forest Park,Black,2024-04-01,0,2,2
+Forest Park,Black,2024-05-01,1,0,1
+Forest Park,Other race,2019-01-01,1,0,1
+Forest Park,Other race,2019-03-01,0,1,1
+Forest Park,Other race,2019-09-01,2,1,3
+Forest Park,Other race,2019-11-01,1,0,1
+Forest Park,Other race,2019-12-01,1,0,1
+Forest Park,Other race,2020-02-01,0,1,1
+Forest Park,Other race,2020-12-01,0,1,1
+Forest Park,Other race,2021-02-01,1,0,1
+Forest Park,Other race,2021-07-01,0,1,1
+Forest Park,Other race,2021-09-01,0,2,2
+Forest Park,Other race,2021-10-01,1,0,1
+Forest Park,Other race,2021-11-01,1,2,3
+Forest Park,Other race,2021-12-01,0,1,1
+Forest Park,Other race,2022-01-01,0,1,1
+Forest Park,Other race,2022-03-01,0,1,1
+Forest Park,Other race,2022-05-01,0,1,1
+Forest Park,Other race,2022-06-01,0,1,1
+Forest Park,Other race,2022-08-01,1,2,3
+Forest Park,Other race,2022-11-01,2,1,3
+Forest Park,Other race,2022-12-01,0,2,2
+Forest Park,Other race,2023-05-01,0,1,1
+Forest Park,Other race,2023-07-01,2,2,4
+Forest Park,Other race,2023-09-01,1,1,2
+Forest Park,Other race,2023-11-01,1,2,3
+Forest Park,Other race,2023-12-01,0,1,1
+Forest Park,Other race,2024-01-01,0,1,1
+Glendale,Other race,2019-12-01,1,0,1
+Glendale,Other race,2023-02-01,0,1,1
+Glendale,Other race,2023-04-01,0,1,1
+Glendale,Other race,2023-12-01,0,1,1
+Glendale,Other race,2024-03-01,1,0,1
+Golf Manor,Black,2019-05-01,0,2,2
+Golf Manor,Black,2019-07-01,0,1,1
+Golf Manor,Black,2019-09-01,1,2,3
+Golf Manor,Black,2020-02-01,0,1,1
+Golf Manor,Black,2020-03-01,1,0,1
+Golf Manor,Black,2020-04-01,0,1,1
+Golf Manor,Black,2020-05-01,0,1,1
+Golf Manor,Black,2020-10-01,1,0,1
+Golf Manor,Black,2021-02-01,0,1,1
+Golf Manor,Black,2021-04-01,1,0,1
+Golf Manor,Black,2021-06-01,1,0,1
+Golf Manor,Black,2021-07-01,0,1,1
+Golf Manor,Black,2021-08-01,1,0,1
+Golf Manor,Black,2021-09-01,1,1,2
+Golf Manor,Black,2021-10-01,1,2,3
+Golf Manor,Black,2022-02-01,0,1,1
+Golf Manor,Black,2022-03-01,0,1,1
+Golf Manor,Black,2022-04-01,1,0,1
+Golf Manor,Black,2022-05-01,0,1,1
+Golf Manor,Black,2022-08-01,1,1,2
+Golf Manor,Black,2022-09-01,1,1,2
+Golf Manor,Black,2022-11-01,1,1,2
+Golf Manor,Black,2022-12-01,0,1,1
+Golf Manor,Black,2023-03-01,0,2,2
+Golf Manor,Black,2023-04-01,1,0,1
+Golf Manor,Black,2023-10-01,1,0,1
+Golf Manor,Black,2024-04-01,1,0,1
+Golf Manor,Black,2024-05-01,0,1,1
+Golf Manor,Other race,2019-05-01,0,1,1
+Golf Manor,Other race,2019-08-01,0,1,1
+Golf Manor,Other race,2019-09-01,0,1,1
+Golf Manor,Other race,2021-10-01,1,0,1
+Golf Manor,Other race,2021-11-01,0,1,1
+Golf Manor,Other race,2021-12-01,0,1,1
+Golf Manor,Other race,2022-03-01,1,0,1
+Golf Manor,Other race,2023-09-01,0,1,1
+Golf Manor,Other race,2024-05-01,0,1,1
+Green Township,Black,2019-04-01,2,1,3
+Green Township,Black,2019-07-01,0,2,2
+Green Township,Black,2019-08-01,0,2,2
+Green Township,Black,2019-09-01,2,0,2
+Green Township,Black,2019-10-01,0,1,1
+Green Township,Black,2019-11-01,2,1,3
+Green Township,Black,2020-01-01,0,2,2
+Green Township,Black,2020-02-01,0,1,1
+Green Township,Black,2020-05-01,1,1,2
+Green Township,Black,2020-06-01,0,1,1
+Green Township,Black,2020-07-01,0,1,1
+Green Township,Black,2020-09-01,1,0,1
+Green Township,Black,2020-10-01,2,1,3
+Green Township,Black,2020-12-01,2,0,2
+Green Township,Black,2021-01-01,1,0,1
+Green Township,Black,2021-03-01,2,0,2
+Green Township,Black,2021-04-01,1,0,1
+Green Township,Black,2021-06-01,1,0,1
+Green Township,Black,2021-07-01,1,1,2
+Green Township,Black,2021-09-01,0,1,1
+Green Township,Black,2021-11-01,0,2,2
+Green Township,Black,2021-12-01,0,1,1
+Green Township,Black,2022-03-01,0,1,1
+Green Township,Black,2022-04-01,0,1,1
+Green Township,Black,2022-05-01,1,0,1
+Green Township,Black,2022-08-01,1,0,1
+Green Township,Black,2022-09-01,1,2,3
+Green Township,Black,2022-10-01,1,0,1
+Green Township,Black,2022-11-01,2,1,3
+Green Township,Black,2023-01-01,1,0,1
+Green Township,Black,2023-04-01,1,0,1
+Green Township,Black,2023-05-01,1,1,2
+Green Township,Black,2023-06-01,0,1,1
+Green Township,Black,2023-08-01,0,1,1
+Green Township,Black,2023-09-01,1,0,1
+Green Township,Black,2023-11-01,1,1,2
+Green Township,Black,2024-01-01,0,1,1
+Green Township,Black,2024-02-01,0,2,2
+Green Township,Black,2024-03-01,1,0,1
+Green Township,Black,2024-04-01,0,1,1
+Green Township,Other race,2019-01-01,1,0,1
+Green Township,Other race,2019-02-01,0,2,2
+Green Township,Other race,2019-04-01,0,1,1
+Green Township,Other race,2019-05-01,1,2,3
+Green Township,Other race,2019-07-01,0,1,1
+Green Township,Other race,2019-08-01,1,0,1
+Green Township,Other race,2019-09-01,1,3,4
+Green Township,Other race,2019-11-01,1,2,3
+Green Township,Other race,2019-12-01,3,2,5
+Green Township,Other race,2020-02-01,2,1,3
+Green Township,Other race,2020-03-01,3,3,6
+Green Township,Other race,2020-10-01,2,0,2
+Green Township,Other race,2020-11-01,1,1,2
+Green Township,Other race,2020-12-01,1,0,1
+Green Township,Other race,2021-04-01,1,0,1
+Green Township,Other race,2021-05-01,1,0,1
+Green Township,Other race,2021-08-01,0,1,1
+Green Township,Other race,2021-09-01,0,1,1
+Green Township,Other race,2021-11-01,3,2,5
+Green Township,Other race,2021-12-01,2,1,3
+Green Township,Other race,2022-02-01,0,1,1
+Green Township,Other race,2022-03-01,0,1,1
+Green Township,Other race,2022-04-01,0,1,1
+Green Township,Other race,2022-07-01,1,0,1
+Green Township,Other race,2022-08-01,0,3,3
+Green Township,Other race,2022-09-01,0,1,1
+Green Township,Other race,2022-10-01,2,2,4
+Green Township,Other race,2022-11-01,2,2,4
+Green Township,Other race,2022-12-01,1,0,1
+Green Township,Other race,2023-01-01,2,3,5
+Green Township,Other race,2023-02-01,1,1,2
+Green Township,Other race,2023-03-01,3,2,5
+Green Township,Other race,2023-04-01,1,1,2
+Green Township,Other race,2023-06-01,0,1,1
+Green Township,Other race,2023-10-01,3,0,3
+Green Township,Other race,2023-11-01,1,0,1
+Green Township,Other race,2023-12-01,1,0,1
+Green Township,Other race,2024-01-01,1,2,3
+Green Township,Other race,2024-02-01,1,0,1
+Green Township,Other race,2024-03-01,1,1,2
+Green Township,Other race,2024-04-01,1,0,1
+Green Township,Other race,2024-05-01,1,1,2
+Green Township,Other race,2024-06-01,1,0,1
+Green Township,Other race,2024-07-01,1,0,1
+Green Township,NA,2019-01-01,1,0,1
+Greenhills,Black,2019-05-01,1,0,1
+Greenhills,Black,2019-09-01,1,1,2
+Greenhills,Black,2019-10-01,0,1,1
+Greenhills,Black,2019-12-01,0,2,2
+Greenhills,Black,2022-11-01,0,1,1
+Greenhills,Black,2023-08-01,0,1,1
+Greenhills,Black,2024-04-01,0,1,1
+Greenhills,Other race,2019-10-01,1,0,1
+Greenhills,Other race,2019-11-01,1,0,1
+Greenhills,Other race,2020-10-01,2,1,3
+Greenhills,Other race,2021-01-01,1,0,1
+Greenhills,Other race,2022-10-01,2,0,2
+Greenhills,Other race,2023-01-01,1,0,1
+Greenhills,Other race,2024-04-01,0,1,1
+Harrison Township,Black,2022-08-01,1,0,1
+Harrison Township,Black,2023-12-01,1,0,1
+Harrison Township,Other race,2019-05-01,0,1,1
+Harrison Township,Other race,2019-10-01,1,2,3
+Harrison Township,Other race,2019-11-01,0,1,1
+Harrison Township,Other race,2019-12-01,0,1,1
+Harrison Township,Other race,2020-01-01,0,1,1
+Harrison Township,Other race,2020-09-01,0,1,1
+Harrison Township,Other race,2020-10-01,0,1,1
+Harrison Township,Other race,2021-09-01,0,2,2
+Harrison Township,Other race,2021-11-01,1,0,1
+Harrison Township,Other race,2021-12-01,0,1,1
+Harrison Township,Other race,2022-03-01,1,0,1
+Harrison Township,Other race,2022-04-01,0,1,1
+Harrison Township,Other race,2022-05-01,1,1,2
+Harrison Township,Other race,2022-08-01,0,1,1
+Harrison Township,Other race,2022-09-01,2,0,2
+Harrison Township,Other race,2022-11-01,0,1,1
+Harrison Township,Other race,2023-01-01,0,1,1
+Harrison Township,Other race,2023-03-01,2,1,3
+Harrison Township,Other race,2023-05-01,3,0,3
+Harrison Township,Other race,2023-06-01,0,1,1
+Harrison Township,Other race,2023-08-01,1,0,1
+Harrison Township,Other race,2023-10-01,1,0,1
+Harrison Township,Other race,2023-12-01,0,1,1
+Harrison Township,Other race,2024-01-01,0,1,1
+Harrison Township,Other race,2024-02-01,1,1,2
+Harrison Township,Other race,2024-03-01,1,0,1
+Harrison Township,Other race,2024-04-01,3,0,3
+Hartwell,Black,2019-03-01,1,0,1
+Hartwell,Black,2019-05-01,0,1,1
+Hartwell,Black,2019-09-01,1,1,2
+Hartwell,Black,2019-11-01,0,1,1
+Hartwell,Black,2019-12-01,0,1,1
+Hartwell,Black,2020-02-01,0,1,1
+Hartwell,Black,2020-03-01,0,1,1
+Hartwell,Black,2021-04-01,1,1,2
+Hartwell,Black,2021-05-01,0,1,1
+Hartwell,Black,2021-09-01,3,0,3
+Hartwell,Black,2021-10-01,0,1,1
+Hartwell,Black,2021-12-01,0,1,1
+Hartwell,Black,2022-01-01,0,1,1
+Hartwell,Black,2022-02-01,0,1,1
+Hartwell,Black,2022-03-01,0,1,1
+Hartwell,Black,2022-05-01,1,0,1
+Hartwell,Black,2022-09-01,0,1,1
+Hartwell,Black,2022-10-01,0,1,1
+Hartwell,Black,2022-11-01,1,0,1
+Hartwell,Black,2023-04-01,0,1,1
+Hartwell,Black,2023-10-01,1,1,2
+Hartwell,Black,2024-02-01,1,0,1
+Hartwell,Other race,2020-11-01,1,0,1
+Hartwell,Other race,2021-01-01,1,0,1
+Hartwell,Other race,2021-10-01,0,1,1
+Hartwell,Other race,2021-11-01,0,1,1
+Hartwell,Other race,2021-12-01,1,0,1
+Hartwell,Other race,2022-04-01,1,0,1
+Hartwell,Other race,2022-05-01,1,0,1
+Hartwell,Other race,2023-03-01,0,1,1
+Hartwell,Other race,2023-08-01,0,2,2
+Hartwell,Other race,2023-10-01,1,0,1
+Hartwell,Other race,2024-02-01,0,1,1
+Hartwell,NA,2022-09-01,0,1,1
+Hyde Park,Black,2019-01-01,0,1,1
+Hyde Park,Black,2019-07-01,1,0,1
+Hyde Park,Black,2019-11-01,0,1,1
+Hyde Park,Black,2020-02-01,1,0,1
+Hyde Park,Black,2020-12-01,0,1,1
+Hyde Park,Black,2021-03-01,0,1,1
+Hyde Park,Black,2021-04-01,0,1,1
+Hyde Park,Black,2021-10-01,0,1,1
+Hyde Park,Black,2022-01-01,0,2,2
+Hyde Park,Black,2022-04-01,0,1,1
+Hyde Park,Black,2023-04-01,1,0,1
+Hyde Park,Black,2023-10-01,0,1,1
+Hyde Park,Black,2024-01-01,0,2,2
+Hyde Park,Other race,2019-01-01,0,2,2
+Hyde Park,Other race,2019-12-01,0,2,2
+Hyde Park,Other race,2020-02-01,0,1,1
+Hyde Park,Other race,2020-10-01,1,0,1
+Hyde Park,Other race,2021-08-01,0,1,1
+Hyde Park,Other race,2022-06-01,0,1,1
+Hyde Park,Other race,2022-08-01,0,1,1
+Hyde Park,Other race,2022-11-01,1,0,1
+Hyde Park,Other race,2023-05-01,1,1,2
+Hyde Park,Other race,2023-08-01,1,0,1
+Hyde Park,Other race,2024-04-01,1,0,1
+Hyde Park,Other race,2024-06-01,1,0,1
+Indian Hill,Other race,2019-05-01,0,1,1
+Indian Hill,Other race,2021-06-01,0,1,1
+Indian Hill,Other race,2021-09-01,3,1,4
+Indian Hill,Other race,2021-10-01,1,0,1
+Indian Hill,Other race,2022-03-01,0,1,1
+Indian Hill,Other race,2022-06-01,0,1,1
+Indian Hill,Other race,2022-08-01,1,0,1
+Indian Hill,Other race,2022-11-01,0,1,1
+Indian Hill,Other race,2022-12-01,1,0,1
+Indian Hill,Other race,2023-11-01,1,1,2
+Indian Hill,NA,2023-02-01,0,1,1
+Kennedy Heights,Black,2019-01-01,0,1,1
+Kennedy Heights,Black,2019-02-01,0,1,1
+Kennedy Heights,Black,2019-09-01,1,0,1
+Kennedy Heights,Black,2019-10-01,0,1,1
+Kennedy Heights,Black,2019-12-01,0,1,1
+Kennedy Heights,Black,2020-01-01,0,1,1
+Kennedy Heights,Black,2020-02-01,0,1,1
+Kennedy Heights,Black,2020-10-01,1,0,1
+Kennedy Heights,Black,2021-06-01,0,1,1
+Kennedy Heights,Black,2021-07-01,0,1,1
+Kennedy Heights,Black,2021-09-01,1,0,1
+Kennedy Heights,Black,2021-11-01,3,0,3
+Kennedy Heights,Black,2022-08-01,1,0,1
+Kennedy Heights,Black,2022-09-01,2,1,3
+Kennedy Heights,Black,2022-10-01,0,1,1
+Kennedy Heights,Black,2022-12-01,1,0,1
+Kennedy Heights,Black,2023-03-01,1,0,1
+Kennedy Heights,Black,2023-05-01,1,0,1
+Kennedy Heights,Other race,2019-04-01,1,0,1
+Kennedy Heights,Other race,2019-09-01,0,1,1
+Kennedy Heights,Other race,2020-01-01,1,0,1
+Kennedy Heights,Other race,2022-07-01,1,0,1
+Lincoln Heights,Black,2019-01-01,1,0,1
+Lincoln Heights,Black,2019-04-01,0,1,1
+Lincoln Heights,Black,2019-05-01,0,1,1
+Lincoln Heights,Black,2019-07-01,0,2,2
+Lincoln Heights,Black,2019-09-01,0,1,1
+Lincoln Heights,Black,2019-10-01,0,1,1
+Lincoln Heights,Black,2019-11-01,2,0,2
+Lincoln Heights,Black,2019-12-01,1,2,3
+Lincoln Heights,Black,2020-01-01,0,1,1
+Lincoln Heights,Black,2020-02-01,0,2,2
+Lincoln Heights,Black,2020-05-01,0,1,1
+Lincoln Heights,Black,2020-07-01,1,1,2
+Lincoln Heights,Black,2020-10-01,1,1,2
+Lincoln Heights,Black,2021-04-01,0,1,1
+Lincoln Heights,Black,2021-05-01,1,0,1
+Lincoln Heights,Black,2021-07-01,0,2,2
+Lincoln Heights,Black,2021-08-01,1,1,2
+Lincoln Heights,Black,2021-09-01,0,1,1
+Lincoln Heights,Black,2021-10-01,0,2,2
+Lincoln Heights,Black,2021-12-01,1,0,1
+Lincoln Heights,Black,2022-02-01,1,0,1
+Lincoln Heights,Black,2022-04-01,1,0,1
+Lincoln Heights,Black,2022-06-01,1,0,1
+Lincoln Heights,Black,2022-07-01,0,1,1
+Lincoln Heights,Black,2022-08-01,0,1,1
+Lincoln Heights,Black,2022-10-01,1,2,3
+Lincoln Heights,Black,2022-11-01,2,1,3
+Lincoln Heights,Black,2023-01-01,0,1,1
+Lincoln Heights,Black,2023-04-01,0,2,2
+Lincoln Heights,Black,2023-05-01,0,1,1
+Lincoln Heights,Black,2023-09-01,1,3,4
+Lincoln Heights,Black,2023-12-01,1,0,1
+Lincoln Heights,Black,2024-01-01,1,0,1
+Lincoln Heights,Black,2024-02-01,0,2,2
+Lincoln Heights,Black,2024-07-01,0,1,1
+Lincoln Heights,Other race,2021-07-01,0,1,1
+Lincoln Heights,Other race,2022-01-01,1,0,1
+Lincoln Heights,Other race,2022-11-01,0,1,1
+Linwood,Black,2022-09-01,1,0,1
+Linwood,Other race,2022-03-01,1,0,1
+Linwood,Other race,2022-04-01,1,0,1
+Linwood,Other race,2022-08-01,1,0,1
+Lockland,Black,2019-03-01,1,0,1
+Lockland,Black,2019-06-01,1,0,1
+Lockland,Black,2019-09-01,1,0,1
+Lockland,Black,2020-01-01,0,1,1
+Lockland,Black,2023-02-01,0,1,1
+Lockland,Black,2023-03-01,1,0,1
+Lockland,Black,2023-04-01,1,0,1
+Lockland,Black,2023-06-01,0,1,1
+Lockland,Black,2024-02-01,2,0,2
+Lockland,Black,2024-03-01,0,1,1
+Lockland,Other race,2021-07-01,0,1,1
+Lockland,Other race,2021-09-01,0,1,1
+Lockland,Other race,2021-10-01,1,2,3
+Lockland,Other race,2022-03-01,1,0,1
+Lockland,Other race,2022-04-01,1,0,1
+Lockland,Other race,2022-09-01,0,2,2
+Lockland,Other race,2022-11-01,1,1,2
+Lockland,Other race,2022-12-01,0,1,1
+Lockland,Other race,2023-01-01,0,1,1
+Lockland,Other race,2023-11-01,1,0,1
+Lockland,NA,2020-05-01,0,1,1
+Loveland,Other race,2019-01-01,0,1,1
+Loveland,Other race,2019-04-01,0,1,1
+Loveland,Other race,2019-07-01,0,1,1
+Loveland,Other race,2019-10-01,1,0,1
+Loveland,Other race,2020-02-01,0,1,1
+Loveland,Other race,2020-03-01,0,2,2
+Loveland,Other race,2020-08-01,0,2,2
+Loveland,Other race,2020-10-01,2,1,3
+Loveland,Other race,2021-06-01,1,0,1
+Loveland,Other race,2021-07-01,0,1,1
+Loveland,Other race,2021-09-01,0,1,1
+Loveland,Other race,2021-10-01,0,1,1
+Loveland,Other race,2021-12-01,2,0,2
+Loveland,Other race,2022-03-01,2,0,2
+Loveland,Other race,2022-04-01,1,0,1
+Loveland,Other race,2022-08-01,0,1,1
+Loveland,Other race,2022-10-01,2,2,4
+Loveland,Other race,2023-03-01,0,1,1
+Loveland,Other race,2023-12-01,1,1,2
+Loveland,Other race,2024-01-01,1,0,1
+Loveland,Other race,2024-03-01,0,1,1
+Lower Price Hill,Black,2019-05-01,0,1,1
+Lower Price Hill,Black,2019-09-01,0,1,1
+Lower Price Hill,Black,2020-03-01,0,1,1
+Lower Price Hill,Black,2020-11-01,1,0,1
+Lower Price Hill,Black,2022-03-01,0,1,1
+Lower Price Hill,Black,2023-04-01,0,1,1
+Lower Price Hill,Black,2023-08-01,1,0,1
+Lower Price Hill,Black,2023-11-01,0,1,1
+Lower Price Hill,Black,2023-12-01,1,0,1
+Lower Price Hill,Black,2024-01-01,1,0,1
+Lower Price Hill,Black,2024-04-01,1,1,2
+Lower Price Hill,Other race,2020-11-01,1,0,1
+Lower Price Hill,Other race,2022-08-01,0,1,1
+Lower Price Hill,Other race,2023-11-01,0,1,1
+Madeira,Other race,2019-02-01,0,1,1
+Madeira,Other race,2019-04-01,1,2,3
+Madeira,Other race,2019-08-01,0,1,1
+Madeira,Other race,2019-09-01,0,1,1
+Madeira,Other race,2019-10-01,0,1,1
+Madeira,Other race,2021-01-01,1,0,1
+Madeira,Other race,2021-03-01,0,1,1
+Madeira,Other race,2021-09-01,0,1,1
+Madeira,Other race,2022-07-01,1,0,1
+Madeira,Other race,2022-09-01,1,1,2
+Madeira,Other race,2022-10-01,0,1,1
+Madeira,Other race,2023-01-01,2,0,2
+Madeira,Other race,2023-05-01,0,1,1
+Madeira,Other race,2023-06-01,0,1,1
+Madeira,Other race,2023-09-01,0,1,1
+Madeira,Other race,2023-11-01,0,1,1
+Madeira,Other race,2023-12-01,0,1,1
+Madeira,Other race,2024-04-01,1,0,1
+Madisonville,Black,2019-01-01,0,2,2
+Madisonville,Black,2019-03-01,0,2,2
+Madisonville,Black,2019-04-01,1,1,2
+Madisonville,Black,2019-05-01,0,1,1
+Madisonville,Black,2019-06-01,0,2,2
+Madisonville,Black,2019-07-01,0,1,1
+Madisonville,Black,2019-08-01,0,1,1
+Madisonville,Black,2019-09-01,1,1,2
+Madisonville,Black,2019-10-01,2,1,3
+Madisonville,Black,2019-11-01,3,1,4
+Madisonville,Black,2019-12-01,0,1,1
+Madisonville,Black,2020-01-01,0,2,2
+Madisonville,Black,2020-02-01,0,1,1
+Madisonville,Black,2020-03-01,1,1,2
+Madisonville,Black,2020-06-01,2,0,2
+Madisonville,Black,2020-07-01,0,1,1
+Madisonville,Black,2021-02-01,0,1,1
+Madisonville,Black,2021-05-01,1,0,1
+Madisonville,Black,2021-06-01,1,2,3
+Madisonville,Black,2021-07-01,0,1,1
+Madisonville,Black,2021-10-01,1,0,1
+Madisonville,Black,2021-11-01,1,1,2
+Madisonville,Black,2021-12-01,0,1,1
+Madisonville,Black,2022-01-01,0,1,1
+Madisonville,Black,2022-03-01,1,0,1
+Madisonville,Black,2022-07-01,0,1,1
+Madisonville,Black,2022-09-01,1,1,2
+Madisonville,Black,2022-10-01,0,2,2
+Madisonville,Black,2022-12-01,0,1,1
+Madisonville,Black,2023-01-01,2,0,2
+Madisonville,Black,2023-02-01,0,1,1
+Madisonville,Black,2023-03-01,0,1,1
+Madisonville,Black,2023-04-01,0,1,1
+Madisonville,Black,2023-08-01,0,2,2
+Madisonville,Black,2023-09-01,0,1,1
+Madisonville,Black,2023-10-01,1,3,4
+Madisonville,Black,2023-11-01,0,1,1
+Madisonville,Black,2023-12-01,3,1,4
+Madisonville,Black,2024-02-01,0,1,1
+Madisonville,Black,2024-03-01,1,5,6
+Madisonville,Black,2024-05-01,1,0,1
+Madisonville,Other race,2019-01-01,1,0,1
+Madisonville,Other race,2019-05-01,0,1,1
+Madisonville,Other race,2019-09-01,1,0,1
+Madisonville,Other race,2021-10-01,1,0,1
+Madisonville,Other race,2021-11-01,1,0,1
+Madisonville,Other race,2022-03-01,1,2,3
+Madisonville,Other race,2022-07-01,0,1,1
+Madisonville,Other race,2022-10-01,1,0,1
+Madisonville,Other race,2022-11-01,0,1,1
+Madisonville,Other race,2023-01-01,1,0,1
+Madisonville,Other race,2023-02-01,0,2,2
+Madisonville,Other race,2023-03-01,0,1,1
+Madisonville,Other race,2023-07-01,1,0,1
+Madisonville,Other race,2024-04-01,2,0,2
+Mariemont,Other race,2019-11-01,0,1,1
+Mariemont,Other race,2020-01-01,0,1,1
+Mariemont,Other race,2021-09-01,0,1,1
+Mariemont,Other race,2021-10-01,0,1,1
+Mariemont,Other race,2023-10-01,1,0,1
+Miami Township,Black,2021-09-01,1,1,2
+Miami Township,Other race,2019-05-01,0,1,1
+Miami Township,Other race,2019-07-01,0,1,1
+Miami Township,Other race,2019-08-01,0,1,1
+Miami Township,Other race,2020-01-01,0,1,1
+Miami Township,Other race,2020-09-01,1,0,1
+Miami Township,Other race,2020-10-01,0,1,1
+Miami Township,Other race,2020-11-01,0,1,1
+Miami Township,Other race,2021-05-01,0,1,1
+Miami Township,Other race,2021-10-01,1,0,1
+Miami Township,Other race,2022-09-01,0,1,1
+Miami Township,Other race,2022-11-01,1,0,1
+Miami Township,Other race,2022-12-01,2,2,4
+Miami Township,Other race,2023-03-01,0,1,1
+Miami Township,Other race,2023-06-01,0,1,1
+Miami Township,Other race,2023-08-01,1,0,1
+Miami Township,Other race,2023-09-01,0,1,1
+Miami Township,Other race,2023-10-01,0,1,1
+Miami Township,Other race,2024-01-01,0,1,1
+Miami Township,Other race,2024-02-01,0,1,1
+Miami Township,Other race,2024-03-01,0,1,1
+Millvale,Black,2019-01-01,0,1,1
+Millvale,Black,2019-02-01,2,0,2
+Millvale,Black,2019-03-01,0,1,1
+Millvale,Black,2019-04-01,0,1,1
+Millvale,Black,2019-05-01,1,2,3
+Millvale,Black,2019-06-01,0,2,2
+Millvale,Black,2019-08-01,1,1,2
+Millvale,Black,2019-09-01,1,0,1
+Millvale,Black,2019-10-01,0,2,2
+Millvale,Black,2019-11-01,2,1,3
+Millvale,Black,2019-12-01,0,1,1
+Millvale,Black,2020-02-01,0,1,1
+Millvale,Black,2020-03-01,0,1,1
+Millvale,Black,2020-07-01,0,2,2
+Millvale,Black,2020-09-01,1,1,2
+Millvale,Black,2020-11-01,0,1,1
+Millvale,Black,2020-12-01,1,1,2
+Millvale,Black,2021-01-01,0,1,1
+Millvale,Black,2021-04-01,0,1,1
+Millvale,Black,2021-05-01,1,0,1
+Millvale,Black,2021-06-01,2,0,2
+Millvale,Black,2021-07-01,1,0,1
+Millvale,Black,2021-08-01,1,1,2
+Millvale,Black,2021-09-01,2,1,3
+Millvale,Black,2021-10-01,1,2,3
+Millvale,Black,2021-11-01,0,1,1
+Millvale,Black,2021-12-01,6,1,7
+Millvale,Black,2022-01-01,0,1,1
+Millvale,Black,2022-03-01,0,2,2
+Millvale,Black,2022-04-01,0,2,2
+Millvale,Black,2022-05-01,0,1,1
+Millvale,Black,2022-07-01,1,0,1
+Millvale,Black,2022-08-01,1,1,2
+Millvale,Black,2022-09-01,2,1,3
+Millvale,Black,2022-10-01,1,2,3
+Millvale,Black,2022-11-01,0,1,1
+Millvale,Black,2023-01-01,1,0,1
+Millvale,Black,2023-03-01,2,1,3
+Millvale,Black,2023-04-01,1,0,1
+Millvale,Black,2023-06-01,1,0,1
+Millvale,Black,2023-07-01,1,2,3
+Millvale,Black,2023-08-01,0,3,3
+Millvale,Black,2023-09-01,2,1,3
+Millvale,Black,2023-10-01,0,3,3
+Millvale,Black,2023-11-01,0,1,1
+Millvale,Black,2024-01-01,0,1,1
+Millvale,Black,2024-03-01,1,0,1
+Millvale,Black,2024-04-01,1,1,2
+Millvale,Black,2024-05-01,0,1,1
+Millvale,Black,2024-06-01,0,1,1
+Millvale,Other race,2019-01-01,1,0,1
+Millvale,Other race,2020-08-01,0,1,1
+Millvale,Other race,2022-10-01,0,1,1
+Montgomery,Black,2019-05-01,0,1,1
+Montgomery,Black,2019-10-01,0,1,1
+Montgomery,Black,2020-02-01,0,1,1
+Montgomery,Black,2021-06-01,1,0,1
+Montgomery,Other race,2019-04-01,0,1,1
+Montgomery,Other race,2019-05-01,0,1,1
+Montgomery,Other race,2019-06-01,0,1,1
+Montgomery,Other race,2019-11-01,0,1,1
+Montgomery,Other race,2020-03-01,0,1,1
+Montgomery,Other race,2021-04-01,0,1,1
+Montgomery,Other race,2022-04-01,0,1,1
+Montgomery,Other race,2022-05-01,0,1,1
+Montgomery,Other race,2022-10-01,1,0,1
+Montgomery,Other race,2023-02-01,0,1,1
+Montgomery,Other race,2023-04-01,1,0,1
+Montgomery,Other race,2023-10-01,0,1,1
+Mount Healthy,Black,2019-01-01,0,1,1
+Mount Healthy,Black,2019-02-01,0,1,1
+Mount Healthy,Black,2019-03-01,0,1,1
+Mount Healthy,Black,2019-04-01,1,0,1
+Mount Healthy,Black,2019-08-01,1,1,2
+Mount Healthy,Black,2019-09-01,0,1,1
+Mount Healthy,Black,2019-10-01,0,1,1
+Mount Healthy,Black,2019-12-01,0,2,2
+Mount Healthy,Black,2020-01-01,0,1,1
+Mount Healthy,Black,2020-02-01,0,2,2
+Mount Healthy,Black,2020-04-01,0,1,1
+Mount Healthy,Black,2020-10-01,1,2,3
+Mount Healthy,Black,2020-11-01,0,1,1
+Mount Healthy,Black,2020-12-01,0,1,1
+Mount Healthy,Black,2021-01-01,0,1,1
+Mount Healthy,Black,2021-04-01,0,1,1
+Mount Healthy,Black,2021-05-01,1,0,1
+Mount Healthy,Black,2021-06-01,1,0,1
+Mount Healthy,Black,2021-09-01,4,1,5
+Mount Healthy,Black,2021-10-01,0,1,1
+Mount Healthy,Black,2021-11-01,1,2,3
+Mount Healthy,Black,2021-12-01,2,3,5
+Mount Healthy,Black,2022-02-01,1,1,2
+Mount Healthy,Black,2022-03-01,2,1,3
+Mount Healthy,Black,2022-06-01,1,1,2
+Mount Healthy,Black,2022-08-01,2,0,2
+Mount Healthy,Black,2022-09-01,0,2,2
+Mount Healthy,Black,2022-10-01,0,1,1
+Mount Healthy,Black,2022-11-01,2,0,2
+Mount Healthy,Black,2022-12-01,2,0,2
+Mount Healthy,Black,2023-01-01,1,1,2
+Mount Healthy,Black,2023-04-01,0,2,2
+Mount Healthy,Black,2023-05-01,1,1,2
+Mount Healthy,Black,2023-06-01,0,2,2
+Mount Healthy,Black,2023-09-01,1,3,4
+Mount Healthy,Black,2023-10-01,0,1,1
+Mount Healthy,Black,2023-11-01,0,1,1
+Mount Healthy,Black,2023-12-01,0,1,1
+Mount Healthy,Black,2024-01-01,0,1,1
+Mount Healthy,Black,2024-04-01,0,1,1
+Mount Healthy,Black,2024-05-01,1,1,2
+Mount Healthy,Other race,2019-05-01,0,1,1
+Mount Healthy,Other race,2019-11-01,0,1,1
+Mount Healthy,Other race,2020-01-01,1,0,1
+Mount Healthy,Other race,2020-03-01,0,1,1
+Mount Healthy,Other race,2020-09-01,1,1,2
+Mount Healthy,Other race,2020-10-01,0,1,1
+Mount Healthy,Other race,2020-12-01,1,0,1
+Mount Healthy,Other race,2021-06-01,0,1,1
+Mount Healthy,Other race,2021-09-01,1,0,1
+Mount Healthy,Other race,2021-11-01,1,1,2
+Mt. Airy,Black,2019-01-01,0,1,1
+Mt. Airy,Black,2019-02-01,2,1,3
+Mt. Airy,Black,2019-03-01,0,1,1
+Mt. Airy,Black,2019-04-01,3,3,6
+Mt. Airy,Black,2019-05-01,3,1,4
+Mt. Airy,Black,2019-07-01,0,1,1
+Mt. Airy,Black,2019-08-01,0,1,1
+Mt. Airy,Black,2019-09-01,1,1,2
+Mt. Airy,Black,2019-10-01,0,3,3
+Mt. Airy,Black,2019-11-01,2,0,2
+Mt. Airy,Black,2019-12-01,0,1,1
+Mt. Airy,Black,2020-01-01,1,3,4
+Mt. Airy,Black,2020-02-01,0,3,3
+Mt. Airy,Black,2020-03-01,3,2,5
+Mt. Airy,Black,2020-04-01,1,0,1
+Mt. Airy,Black,2020-05-01,0,1,1
+Mt. Airy,Black,2020-06-01,1,2,3
+Mt. Airy,Black,2020-07-01,0,2,2
+Mt. Airy,Black,2020-09-01,1,0,1
+Mt. Airy,Black,2020-10-01,1,1,2
+Mt. Airy,Black,2020-12-01,0,1,1
+Mt. Airy,Black,2021-01-01,0,1,1
+Mt. Airy,Black,2021-02-01,0,1,1
+Mt. Airy,Black,2021-03-01,0,2,2
+Mt. Airy,Black,2021-04-01,2,3,5
+Mt. Airy,Black,2021-05-01,1,4,5
+Mt. Airy,Black,2021-06-01,2,3,5
+Mt. Airy,Black,2021-08-01,2,1,3
+Mt. Airy,Black,2021-09-01,1,1,2
+Mt. Airy,Black,2021-10-01,1,3,4
+Mt. Airy,Black,2021-11-01,1,3,4
+Mt. Airy,Black,2021-12-01,0,1,1
+Mt. Airy,Black,2022-01-01,0,1,1
+Mt. Airy,Black,2022-02-01,0,1,1
+Mt. Airy,Black,2022-03-01,2,3,5
+Mt. Airy,Black,2022-04-01,2,3,5
+Mt. Airy,Black,2022-05-01,3,3,6
+Mt. Airy,Black,2022-06-01,1,2,3
+Mt. Airy,Black,2022-07-01,3,2,5
+Mt. Airy,Black,2022-08-01,1,3,4
+Mt. Airy,Black,2022-09-01,1,3,4
+Mt. Airy,Black,2022-10-01,5,3,8
+Mt. Airy,Black,2022-11-01,2,4,6
+Mt. Airy,Black,2022-12-01,0,1,1
+Mt. Airy,Black,2023-01-01,2,1,3
+Mt. Airy,Black,2023-02-01,1,0,1
+Mt. Airy,Black,2023-03-01,1,5,6
+Mt. Airy,Black,2023-04-01,0,2,2
+Mt. Airy,Black,2023-05-01,1,1,2
+Mt. Airy,Black,2023-06-01,0,1,1
+Mt. Airy,Black,2023-08-01,1,2,3
+Mt. Airy,Black,2023-09-01,3,0,3
+Mt. Airy,Black,2023-10-01,0,2,2
+Mt. Airy,Black,2023-11-01,1,0,1
+Mt. Airy,Black,2023-12-01,1,0,1
+Mt. Airy,Black,2024-01-01,1,0,1
+Mt. Airy,Black,2024-02-01,2,0,2
+Mt. Airy,Black,2024-03-01,0,1,1
+Mt. Airy,Black,2024-04-01,0,1,1
+Mt. Airy,Black,2024-05-01,2,2,4
+Mt. Airy,Black,2024-06-01,1,0,1
+Mt. Airy,Other race,2019-11-01,2,1,3
+Mt. Airy,Other race,2022-04-01,0,1,1
+Mt. Airy,Other race,2023-07-01,1,0,1
+Mt. Airy,NA,2021-10-01,0,1,1
+Mt. Auburn,Black,2019-03-01,1,2,3
+Mt. Auburn,Black,2019-04-01,1,0,1
+Mt. Auburn,Black,2019-05-01,2,3,5
+Mt. Auburn,Black,2019-06-01,1,0,1
+Mt. Auburn,Black,2019-08-01,0,1,1
+Mt. Auburn,Black,2019-10-01,0,1,1
+Mt. Auburn,Black,2019-11-01,1,1,2
+Mt. Auburn,Black,2019-12-01,0,1,1
+Mt. Auburn,Black,2020-01-01,1,0,1
+Mt. Auburn,Black,2020-02-01,2,0,2
+Mt. Auburn,Black,2020-03-01,0,2,2
+Mt. Auburn,Black,2020-07-01,1,0,1
+Mt. Auburn,Black,2020-08-01,1,0,1
+Mt. Auburn,Black,2020-11-01,1,0,1
+Mt. Auburn,Black,2021-03-01,1,0,1
+Mt. Auburn,Black,2021-04-01,0,1,1
+Mt. Auburn,Black,2021-05-01,0,1,1
+Mt. Auburn,Black,2021-06-01,1,0,1
+Mt. Auburn,Black,2021-08-01,0,1,1
+Mt. Auburn,Black,2021-09-01,0,1,1
+Mt. Auburn,Black,2021-10-01,0,1,1
+Mt. Auburn,Black,2022-01-01,1,0,1
+Mt. Auburn,Black,2022-02-01,2,0,2
+Mt. Auburn,Black,2022-03-01,1,0,1
+Mt. Auburn,Black,2022-05-01,0,1,1
+Mt. Auburn,Black,2022-07-01,1,0,1
+Mt. Auburn,Black,2022-08-01,3,1,4
+Mt. Auburn,Black,2022-09-01,2,2,4
+Mt. Auburn,Black,2022-10-01,0,1,1
+Mt. Auburn,Black,2022-11-01,0,1,1
+Mt. Auburn,Black,2023-01-01,1,0,1
+Mt. Auburn,Black,2023-02-01,1,0,1
+Mt. Auburn,Black,2023-05-01,2,1,3
+Mt. Auburn,Black,2023-08-01,1,0,1
+Mt. Auburn,Black,2023-09-01,0,1,1
+Mt. Auburn,Black,2023-10-01,0,2,2
+Mt. Auburn,Black,2023-12-01,0,1,1
+Mt. Auburn,Black,2024-01-01,1,0,1
+Mt. Auburn,Other race,2019-01-01,0,2,2
+Mt. Auburn,Other race,2019-04-01,0,1,1
+Mt. Auburn,Other race,2019-08-01,0,2,2
+Mt. Auburn,Other race,2020-01-01,0,1,1
+Mt. Auburn,Other race,2021-09-01,0,1,1
+Mt. Auburn,Other race,2024-02-01,0,1,1
+Mt. Lookout,Black,2019-05-01,0,1,1
+Mt. Lookout,Other race,2021-07-01,0,1,1
+Mt. Lookout,Other race,2022-01-01,0,1,1
+Mt. Lookout,Other race,2023-05-01,1,0,1
+Mt. Lookout,Other race,2023-11-01,1,0,1
+Mt. Lookout,Other race,2023-12-01,0,1,1
+Mt. Lookout,Other race,2024-02-01,0,1,1
+Mt. Lookout,NA,2022-11-01,0,1,1
+Mt. Washington,Black,2019-02-01,0,1,1
+Mt. Washington,Black,2019-05-01,0,1,1
+Mt. Washington,Black,2019-07-01,0,1,1
+Mt. Washington,Black,2019-10-01,0,1,1
+Mt. Washington,Black,2019-12-01,1,0,1
+Mt. Washington,Black,2020-05-01,0,1,1
+Mt. Washington,Black,2020-11-01,0,1,1
+Mt. Washington,Black,2021-04-01,1,0,1
+Mt. Washington,Black,2021-08-01,1,0,1
+Mt. Washington,Black,2021-11-01,0,1,1
+Mt. Washington,Black,2021-12-01,0,1,1
+Mt. Washington,Black,2022-05-01,1,0,1
+Mt. Washington,Black,2022-12-01,0,1,1
+Mt. Washington,Black,2023-02-01,0,1,1
+Mt. Washington,Black,2023-04-01,1,0,1
+Mt. Washington,Black,2024-02-01,1,2,3
+Mt. Washington,Black,2024-05-01,0,2,2
+Mt. Washington,Black,2024-07-01,0,1,1
+Mt. Washington,Other race,2019-06-01,0,1,1
+Mt. Washington,Other race,2019-08-01,0,1,1
+Mt. Washington,Other race,2019-09-01,0,1,1
+Mt. Washington,Other race,2021-09-01,0,1,1
+Mt. Washington,Other race,2022-03-01,0,1,1
+Mt. Washington,Other race,2022-04-01,0,1,1
+Mt. Washington,Other race,2022-08-01,1,0,1
+Mt. Washington,Other race,2022-09-01,0,1,1
+Mt. Washington,Other race,2023-05-01,1,0,1
+Mt. Washington,Other race,2023-10-01,1,0,1
+Mt. Washington,Other race,2023-12-01,1,0,1
+Mt. Washington,Other race,2024-02-01,1,0,1
+Mt. Washington,Other race,2024-05-01,1,0,1
+Mt. Washington,Other race,2024-06-01,1,0,1
+Newtown,Black,2019-05-01,1,0,1
+Newtown,Other race,2021-10-01,0,1,1
+Newtown,Other race,2022-08-01,1,0,1
+Newtown,Other race,2023-11-01,0,1,1
+Newtown,Other race,2024-05-01,0,1,1
+North Avondale - Paddock Hills,Black,2019-01-01,0,1,1
+North Avondale - Paddock Hills,Black,2019-02-01,1,0,1
+North Avondale - Paddock Hills,Black,2019-03-01,0,1,1
+North Avondale - Paddock Hills,Black,2019-04-01,0,1,1
+North Avondale - Paddock Hills,Black,2019-06-01,1,0,1
+North Avondale - Paddock Hills,Black,2019-07-01,1,0,1
+North Avondale - Paddock Hills,Black,2019-10-01,1,0,1
+North Avondale - Paddock Hills,Black,2020-01-01,0,1,1
+North Avondale - Paddock Hills,Black,2020-03-01,0,1,1
+North Avondale - Paddock Hills,Black,2020-08-01,0,1,1
+North Avondale - Paddock Hills,Black,2020-09-01,1,0,1
+North Avondale - Paddock Hills,Black,2021-01-01,0,1,1
+North Avondale - Paddock Hills,Black,2021-06-01,1,0,1
+North Avondale - Paddock Hills,Black,2021-07-01,0,1,1
+North Avondale - Paddock Hills,Black,2021-08-01,1,0,1
+North Avondale - Paddock Hills,Black,2021-09-01,2,0,2
+North Avondale - Paddock Hills,Black,2021-11-01,0,1,1
+North Avondale - Paddock Hills,Black,2021-12-01,0,1,1
+North Avondale - Paddock Hills,Black,2022-04-01,0,1,1
+North Avondale - Paddock Hills,Black,2022-06-01,0,1,1
+North Avondale - Paddock Hills,Black,2022-08-01,1,2,3
+North Avondale - Paddock Hills,Black,2022-09-01,1,0,1
+North Avondale - Paddock Hills,Black,2022-11-01,1,0,1
+North Avondale - Paddock Hills,Black,2023-02-01,1,0,1
+North Avondale - Paddock Hills,Black,2023-03-01,1,1,2
+North Avondale - Paddock Hills,Black,2023-06-01,1,0,1
+North Avondale - Paddock Hills,Black,2023-07-01,1,0,1
+North Avondale - Paddock Hills,Black,2023-08-01,0,1,1
+North Avondale - Paddock Hills,Black,2023-09-01,0,1,1
+North Avondale - Paddock Hills,Black,2023-10-01,1,1,2
+North Avondale - Paddock Hills,Black,2023-11-01,0,1,1
+North Avondale - Paddock Hills,Black,2023-12-01,0,1,1
+North Avondale - Paddock Hills,Black,2024-01-01,1,0,1
+North Avondale - Paddock Hills,Black,2024-02-01,0,2,2
+North Avondale - Paddock Hills,Black,2024-04-01,0,1,1
+North Avondale - Paddock Hills,Black,2024-05-01,1,0,1
+North Avondale - Paddock Hills,Black,2024-06-01,0,1,1
+North Avondale - Paddock Hills,Black,2024-07-01,0,1,1
+North Avondale - Paddock Hills,Other race,2019-05-01,0,1,1
+North Avondale - Paddock Hills,Other race,2022-05-01,0,1,1
+North Avondale - Paddock Hills,Other race,2022-10-01,1,0,1
+North Avondale - Paddock Hills,Other race,2024-03-01,0,1,1
+North College Hill,Black,2019-01-01,0,1,1
+North College Hill,Black,2019-03-01,0,1,1
+North College Hill,Black,2019-04-01,0,1,1
+North College Hill,Black,2019-05-01,0,3,3
+North College Hill,Black,2019-07-01,0,1,1
+North College Hill,Black,2019-09-01,1,3,4
+North College Hill,Black,2019-10-01,1,0,1
+North College Hill,Black,2019-11-01,1,1,2
+North College Hill,Black,2019-12-01,0,4,4
+North College Hill,Black,2020-01-01,0,1,1
+North College Hill,Black,2020-02-01,2,1,3
+North College Hill,Black,2020-03-01,0,1,1
+North College Hill,Black,2020-04-01,0,1,1
+North College Hill,Black,2020-07-01,0,1,1
+North College Hill,Black,2020-09-01,1,0,1
+North College Hill,Black,2020-10-01,0,2,2
+North College Hill,Black,2020-11-01,1,1,2
+North College Hill,Black,2020-12-01,1,0,1
+North College Hill,Black,2021-02-01,0,2,2
+North College Hill,Black,2021-03-01,0,1,1
+North College Hill,Black,2021-04-01,1,2,3
+North College Hill,Black,2021-05-01,1,0,1
+North College Hill,Black,2021-06-01,0,1,1
+North College Hill,Black,2021-07-01,0,1,1
+North College Hill,Black,2021-09-01,1,2,3
+North College Hill,Black,2021-10-01,2,2,4
+North College Hill,Black,2021-11-01,1,1,2
+North College Hill,Black,2021-12-01,1,0,1
+North College Hill,Black,2022-01-01,0,1,1
+North College Hill,Black,2022-02-01,0,1,1
+North College Hill,Black,2022-03-01,0,1,1
+North College Hill,Black,2022-04-01,1,0,1
+North College Hill,Black,2022-06-01,1,1,2
+North College Hill,Black,2022-07-01,2,0,2
+North College Hill,Black,2022-08-01,2,1,3
+North College Hill,Black,2022-09-01,3,0,3
+North College Hill,Black,2022-10-01,2,3,5
+North College Hill,Black,2022-11-01,1,2,3
+North College Hill,Black,2022-12-01,2,1,3
+North College Hill,Black,2023-02-01,0,1,1
+North College Hill,Black,2023-03-01,0,1,1
+North College Hill,Black,2023-04-01,2,1,3
+North College Hill,Black,2023-06-01,0,2,2
+North College Hill,Black,2023-08-01,1,1,2
+North College Hill,Black,2023-09-01,1,0,1
+North College Hill,Black,2023-10-01,2,0,2
+North College Hill,Black,2024-02-01,0,1,1
+North College Hill,Black,2024-03-01,0,1,1
+North College Hill,Black,2024-04-01,1,1,2
+North College Hill,Black,2024-07-01,0,1,1
+North College Hill,Other race,2019-08-01,1,0,1
+North College Hill,Other race,2022-08-01,1,0,1
+North College Hill,Other race,2022-10-01,0,1,1
+North College Hill,Other race,2022-11-01,1,0,1
+North College Hill,Other race,2023-01-01,1,0,1
+North College Hill,Other race,2023-12-01,0,1,1
+North College Hill,Other race,2024-01-01,1,0,1
+North College Hill,Other race,2024-02-01,0,2,2
+North College Hill,Other race,2024-04-01,0,1,1
+North College Hill,Other race,2024-07-01,0,1,1
+North Fairmount,Black,2019-01-01,0,1,1
+North Fairmount,Black,2019-03-01,1,0,1
+North Fairmount,Black,2019-04-01,1,1,2
+North Fairmount,Black,2019-06-01,1,0,1
+North Fairmount,Black,2019-07-01,0,1,1
+North Fairmount,Black,2020-01-01,0,1,1
+North Fairmount,Black,2021-05-01,0,1,1
+North Fairmount,Black,2021-08-01,1,1,2
+North Fairmount,Black,2021-09-01,0,1,1
+North Fairmount,Black,2022-03-01,0,1,1
+North Fairmount,Black,2022-04-01,1,0,1
+North Fairmount,Black,2022-05-01,0,1,1
+North Fairmount,Black,2022-12-01,0,1,1
+North Fairmount,Black,2023-03-01,0,1,1
+North Fairmount,Black,2023-08-01,0,1,1
+North Fairmount,Black,2023-10-01,0,3,3
+North Fairmount,Black,2023-11-01,2,1,3
+North Fairmount,Other race,2022-09-01,0,1,1
+North Fairmount,Other race,2022-12-01,2,0,2
+North Fairmount,Other race,2023-02-01,1,0,1
+Northside,Black,2019-01-01,0,1,1
+Northside,Black,2019-02-01,0,2,2
+Northside,Black,2019-04-01,0,1,1
+Northside,Black,2019-05-01,0,1,1
+Northside,Black,2019-06-01,0,1,1
+Northside,Black,2019-07-01,1,0,1
+Northside,Black,2019-08-01,0,1,1
+Northside,Black,2019-09-01,0,3,3
+Northside,Black,2019-11-01,0,2,2
+Northside,Black,2020-01-01,0,2,2
+Northside,Black,2020-02-01,0,1,1
+Northside,Black,2020-03-01,0,2,2
+Northside,Black,2020-10-01,1,0,1
+Northside,Black,2021-03-01,1,0,1
+Northside,Black,2021-09-01,0,1,1
+Northside,Black,2021-10-01,1,0,1
+Northside,Black,2021-11-01,1,0,1
+Northside,Black,2021-12-01,1,0,1
+Northside,Black,2022-02-01,1,1,2
+Northside,Black,2022-04-01,1,0,1
+Northside,Black,2022-06-01,1,0,1
+Northside,Black,2022-08-01,1,0,1
+Northside,Black,2022-09-01,0,1,1
+Northside,Black,2022-10-01,2,0,2
+Northside,Black,2022-11-01,0,1,1
+Northside,Black,2022-12-01,0,1,1
+Northside,Black,2023-03-01,0,1,1
+Northside,Black,2023-05-01,1,0,1
+Northside,Black,2023-08-01,0,1,1
+Northside,Black,2023-09-01,0,1,1
+Northside,Black,2023-10-01,0,2,2
+Northside,Black,2024-01-01,0,1,1
+Northside,Black,2024-05-01,0,1,1
+Northside,Black,2024-07-01,0,1,1
+Northside,Other race,2019-02-01,1,0,1
+Northside,Other race,2019-04-01,0,1,1
+Northside,Other race,2019-12-01,0,1,1
+Northside,Other race,2020-03-01,0,1,1
+Northside,Other race,2020-10-01,1,2,3
+Northside,Other race,2021-01-01,0,1,1
+Northside,Other race,2021-08-01,1,0,1
+Northside,Other race,2021-10-01,0,1,1
+Northside,Other race,2021-11-01,2,0,2
+Northside,Other race,2022-08-01,1,0,1
+Northside,Other race,2023-03-01,0,1,1
+Northside,Other race,2023-10-01,1,0,1
+Northside,Other race,2023-11-01,0,1,1
+Northside,Other race,2024-01-01,0,1,1
+Northside,Other race,2024-05-01,0,1,1
+Northside,Other race,2024-06-01,0,1,1
+Norwood,Black,2019-02-01,0,2,2
+Norwood,Black,2019-04-01,1,1,2
+Norwood,Black,2019-05-01,1,1,2
+Norwood,Black,2019-06-01,0,1,1
+Norwood,Black,2019-09-01,1,0,1
+Norwood,Black,2019-11-01,1,0,1
+Norwood,Black,2020-02-01,0,1,1
+Norwood,Black,2020-03-01,0,1,1
+Norwood,Black,2020-06-01,0,1,1
+Norwood,Black,2020-08-01,1,0,1
+Norwood,Black,2020-10-01,1,0,1
+Norwood,Black,2020-12-01,0,2,2
+Norwood,Black,2021-02-01,1,1,2
+Norwood,Black,2021-06-01,2,0,2
+Norwood,Black,2021-10-01,0,2,2
+Norwood,Black,2022-03-01,0,1,1
+Norwood,Black,2022-04-01,0,1,1
+Norwood,Black,2022-07-01,1,0,1
+Norwood,Black,2022-09-01,2,1,3
+Norwood,Black,2022-12-01,0,1,1
+Norwood,Black,2023-03-01,1,2,3
+Norwood,Black,2023-05-01,1,0,1
+Norwood,Black,2023-06-01,1,0,1
+Norwood,Black,2023-07-01,1,0,1
+Norwood,Black,2023-08-01,0,1,1
+Norwood,Black,2023-11-01,0,1,1
+Norwood,Black,2023-12-01,0,1,1
+Norwood,Black,2024-01-01,1,1,2
+Norwood,Black,2024-04-01,0,2,2
+Norwood,Black,2024-05-01,0,1,1
+Norwood,Black,2024-06-01,0,1,1
+Norwood,Other race,2019-03-01,1,0,1
+Norwood,Other race,2019-04-01,1,3,4
+Norwood,Other race,2019-05-01,0,2,2
+Norwood,Other race,2019-09-01,0,1,1
+Norwood,Other race,2019-10-01,3,1,4
+Norwood,Other race,2019-11-01,0,1,1
+Norwood,Other race,2019-12-01,0,2,2
+Norwood,Other race,2020-01-01,0,2,2
+Norwood,Other race,2020-02-01,2,1,3
+Norwood,Other race,2020-03-01,1,0,1
+Norwood,Other race,2020-07-01,0,2,2
+Norwood,Other race,2020-11-01,1,0,1
+Norwood,Other race,2021-04-01,1,0,1
+Norwood,Other race,2021-08-01,0,2,2
+Norwood,Other race,2021-09-01,0,1,1
+Norwood,Other race,2021-10-01,0,2,2
+Norwood,Other race,2021-12-01,0,1,1
+Norwood,Other race,2022-01-01,1,0,1
+Norwood,Other race,2022-05-01,1,0,1
+Norwood,Other race,2022-06-01,0,2,2
+Norwood,Other race,2022-07-01,1,0,1
+Norwood,Other race,2022-09-01,0,1,1
+Norwood,Other race,2022-10-01,0,2,2
+Norwood,Other race,2022-11-01,1,1,2
+Norwood,Other race,2023-04-01,1,1,2
+Norwood,Other race,2023-05-01,0,1,1
+Norwood,Other race,2023-07-01,0,1,1
+Norwood,Other race,2023-10-01,1,0,1
+Norwood,Other race,2024-04-01,1,0,1
+Norwood,Other race,2024-06-01,1,0,1
+Norwood,NA,2019-02-01,0,1,1
+Norwood,NA,2019-10-01,0,1,1
+Norwood,NA,2019-11-01,1,0,1
+Norwood,NA,2020-11-01,0,1,1
+Oakley,Black,2020-04-01,0,1,1
+Oakley,Black,2022-10-01,0,1,1
+Oakley,Other race,2019-03-01,0,1,1
+Oakley,Other race,2019-11-01,0,1,1
+Oakley,Other race,2019-12-01,1,0,1
+Oakley,Other race,2023-09-01,1,0,1
+Oakley,Other race,2023-11-01,1,0,1
+Over-the-Rhine,Black,2019-01-01,3,1,4
+Over-the-Rhine,Black,2019-02-01,0,4,4
+Over-the-Rhine,Black,2019-04-01,0,5,5
+Over-the-Rhine,Black,2019-05-01,1,1,2
+Over-the-Rhine,Black,2019-06-01,0,2,2
+Over-the-Rhine,Black,2019-08-01,0,1,1
+Over-the-Rhine,Black,2019-09-01,0,2,2
+Over-the-Rhine,Black,2019-10-01,1,2,3
+Over-the-Rhine,Black,2019-11-01,0,1,1
+Over-the-Rhine,Black,2019-12-01,1,0,1
+Over-the-Rhine,Black,2020-01-01,0,3,3
+Over-the-Rhine,Black,2020-02-01,2,4,6
+Over-the-Rhine,Black,2020-03-01,2,3,5
+Over-the-Rhine,Black,2020-04-01,0,2,2
+Over-the-Rhine,Black,2020-06-01,1,0,1
+Over-the-Rhine,Black,2020-08-01,0,1,1
+Over-the-Rhine,Black,2020-09-01,0,2,2
+Over-the-Rhine,Black,2020-10-01,1,1,2
+Over-the-Rhine,Black,2021-01-01,1,1,2
+Over-the-Rhine,Black,2021-03-01,1,0,1
+Over-the-Rhine,Black,2021-04-01,0,2,2
+Over-the-Rhine,Black,2021-05-01,1,1,2
+Over-the-Rhine,Black,2021-08-01,0,1,1
+Over-the-Rhine,Black,2021-09-01,1,2,3
+Over-the-Rhine,Black,2021-10-01,1,2,3
+Over-the-Rhine,Black,2021-11-01,2,2,4
+Over-the-Rhine,Black,2021-12-01,1,0,1
+Over-the-Rhine,Black,2022-02-01,1,0,1
+Over-the-Rhine,Black,2022-03-01,0,3,3
+Over-the-Rhine,Black,2022-04-01,1,0,1
+Over-the-Rhine,Black,2022-05-01,1,5,6
+Over-the-Rhine,Black,2022-06-01,0,1,1
+Over-the-Rhine,Black,2022-07-01,0,1,1
+Over-the-Rhine,Black,2022-08-01,1,4,5
+Over-the-Rhine,Black,2022-09-01,2,6,8
+Over-the-Rhine,Black,2022-10-01,0,3,3
+Over-the-Rhine,Black,2022-11-01,0,4,4
+Over-the-Rhine,Black,2022-12-01,0,2,2
+Over-the-Rhine,Black,2023-02-01,0,1,1
+Over-the-Rhine,Black,2023-03-01,3,1,4
+Over-the-Rhine,Black,2023-05-01,0,1,1
+Over-the-Rhine,Black,2023-06-01,2,2,4
+Over-the-Rhine,Black,2023-08-01,0,1,1
+Over-the-Rhine,Black,2023-09-01,1,2,3
+Over-the-Rhine,Black,2023-10-01,0,2,2
+Over-the-Rhine,Black,2023-11-01,0,5,5
+Over-the-Rhine,Black,2023-12-01,0,2,2
+Over-the-Rhine,Black,2024-01-01,0,1,1
+Over-the-Rhine,Black,2024-03-01,3,1,4
+Over-the-Rhine,Black,2024-04-01,1,1,2
+Over-the-Rhine,Black,2024-05-01,0,3,3
+Over-the-Rhine,Black,2024-06-01,1,1,2
+Over-the-Rhine,Black,2024-07-01,0,1,1
+Over-the-Rhine,Other race,2019-01-01,1,0,1
+Over-the-Rhine,Other race,2019-04-01,1,0,1
+Over-the-Rhine,Other race,2019-11-01,0,1,1
+Over-the-Rhine,Other race,2019-12-01,0,1,1
+Over-the-Rhine,Other race,2020-01-01,1,0,1
+Over-the-Rhine,Other race,2020-07-01,1,0,1
+Over-the-Rhine,Other race,2020-12-01,1,0,1
+Over-the-Rhine,Other race,2021-02-01,0,1,1
+Over-the-Rhine,Other race,2021-07-01,1,0,1
+Over-the-Rhine,Other race,2021-08-01,1,0,1
+Over-the-Rhine,Other race,2022-02-01,0,1,1
+Over-the-Rhine,Other race,2022-03-01,0,1,1
+Over-the-Rhine,Other race,2022-11-01,1,0,1
+Over-the-Rhine,Other race,2023-01-01,0,1,1
+Over-the-Rhine,Other race,2023-02-01,0,2,2
+Over-the-Rhine,Other race,2023-03-01,0,1,1
+Over-the-Rhine,Other race,2023-04-01,1,1,2
+Over-the-Rhine,Other race,2023-11-01,0,1,1
+Over-the-Rhine,Other race,2023-12-01,1,1,2
+Over-the-Rhine,Other race,2024-02-01,0,1,1
+Over-the-Rhine,Other race,2024-03-01,1,0,1
+Pendleton,Black,2019-03-01,0,1,1
+Pendleton,Black,2019-05-01,1,0,1
+Pendleton,Black,2019-10-01,0,1,1
+Pendleton,Black,2019-11-01,1,0,1
+Pendleton,Black,2020-02-01,1,0,1
+Pendleton,Black,2020-04-01,0,2,2
+Pendleton,Black,2020-05-01,0,1,1
+Pendleton,Black,2021-04-01,0,1,1
+Pendleton,Black,2021-05-01,0,2,2
+Pendleton,Black,2021-08-01,0,1,1
+Pendleton,Black,2021-09-01,1,0,1
+Pendleton,Black,2022-01-01,0,1,1
+Pendleton,Black,2022-03-01,2,2,4
+Pendleton,Black,2022-06-01,0,1,1
+Pendleton,Black,2022-08-01,0,1,1
+Pendleton,Black,2022-10-01,1,1,2
+Pendleton,Black,2022-11-01,1,0,1
+Pendleton,Black,2023-03-01,0,1,1
+Pleasant Ridge,Black,2019-02-01,0,1,1
+Pleasant Ridge,Black,2019-03-01,0,1,1
+Pleasant Ridge,Black,2019-07-01,0,1,1
+Pleasant Ridge,Black,2019-08-01,2,0,2
+Pleasant Ridge,Black,2019-10-01,0,1,1
+Pleasant Ridge,Black,2021-05-01,1,1,2
+Pleasant Ridge,Black,2021-07-01,0,1,1
+Pleasant Ridge,Black,2021-09-01,0,1,1
+Pleasant Ridge,Black,2021-11-01,0,1,1
+Pleasant Ridge,Black,2021-12-01,0,1,1
+Pleasant Ridge,Black,2022-03-01,0,1,1
+Pleasant Ridge,Black,2022-05-01,0,1,1
+Pleasant Ridge,Black,2022-07-01,1,0,1
+Pleasant Ridge,Black,2022-08-01,0,1,1
+Pleasant Ridge,Black,2022-09-01,0,1,1
+Pleasant Ridge,Black,2022-10-01,1,0,1
+Pleasant Ridge,Black,2023-01-01,1,0,1
+Pleasant Ridge,Black,2023-02-01,1,0,1
+Pleasant Ridge,Black,2023-09-01,1,0,1
+Pleasant Ridge,Black,2023-10-01,0,1,1
+Pleasant Ridge,Black,2023-12-01,1,0,1
+Pleasant Ridge,Other race,2019-02-01,1,1,2
+Pleasant Ridge,Other race,2019-03-01,0,1,1
+Pleasant Ridge,Other race,2019-08-01,0,1,1
+Pleasant Ridge,Other race,2019-10-01,0,1,1
+Pleasant Ridge,Other race,2020-12-01,0,1,1
+Pleasant Ridge,Other race,2021-11-01,0,1,1
+Pleasant Ridge,Other race,2022-02-01,1,1,2
+Pleasant Ridge,Other race,2023-04-01,0,1,1
+Pleasant Ridge,Other race,2024-06-01,0,1,1
+Reading,Black,2019-02-01,1,0,1
+Reading,Black,2020-08-01,1,0,1
+Reading,Black,2021-02-01,1,0,1
+Reading,Black,2021-03-01,0,1,1
+Reading,Black,2021-05-01,1,0,1
+Reading,Black,2021-06-01,0,1,1
+Reading,Black,2021-11-01,0,1,1
+Reading,Black,2022-05-01,0,1,1
+Reading,Black,2022-08-01,0,1,1
+Reading,Black,2022-09-01,1,0,1
+Reading,Black,2023-01-01,0,1,1
+Reading,Black,2023-03-01,1,0,1
+Reading,Black,2023-09-01,0,2,2
+Reading,Black,2023-11-01,1,0,1
+Reading,Black,2023-12-01,0,1,1
+Reading,Black,2024-07-01,1,0,1
+Reading,Other race,2019-02-01,0,1,1
+Reading,Other race,2019-05-01,1,0,1
+Reading,Other race,2019-07-01,0,1,1
+Reading,Other race,2019-10-01,0,1,1
+Reading,Other race,2019-11-01,1,0,1
+Reading,Other race,2019-12-01,1,0,1
+Reading,Other race,2020-02-01,1,0,1
+Reading,Other race,2020-03-01,0,2,2
+Reading,Other race,2020-09-01,1,0,1
+Reading,Other race,2021-07-01,0,1,1
+Reading,Other race,2022-01-01,1,0,1
+Reading,Other race,2022-08-01,1,0,1
+Reading,Other race,2022-09-01,1,0,1
+Reading,Other race,2022-11-01,1,0,1
+Reading,Other race,2023-05-01,0,1,1
+Reading,Other race,2023-06-01,1,0,1
+Reading,Other race,2023-07-01,0,1,1
+Reading,Other race,2023-09-01,1,0,1
+Reading,Other race,2023-11-01,0,2,2
+Reading,Other race,2024-02-01,1,0,1
+Reading,Other race,2024-03-01,0,1,1
+Reading,Other race,2024-06-01,0,1,1
+Riverside,Black,2019-05-01,1,0,1
+Riverside,Black,2019-11-01,0,1,1
+Riverside,Black,2020-07-01,0,1,1
+Riverside,Black,2020-12-01,0,1,1
+Riverside,Black,2021-01-01,1,0,1
+Riverside,Black,2022-03-01,0,1,1
+Riverside,Black,2022-05-01,1,0,1
+Riverside,Black,2022-09-01,0,1,1
+Riverside,Black,2022-10-01,0,1,1
+Riverside,Other race,2019-04-01,0,1,1
+Riverside,Other race,2019-07-01,1,0,1
+Riverside,Other race,2020-03-01,0,1,1
+Riverside,Other race,2021-11-01,0,1,1
+Riverside,Other race,2023-04-01,1,0,1
+Riverside,Other race,2023-08-01,1,0,1
+Riverside,Other race,2023-09-01,2,0,2
+Roll Hill,Black,2019-01-01,0,1,1
+Roll Hill,Black,2019-03-01,0,1,1
+Roll Hill,Black,2019-04-01,0,1,1
+Roll Hill,Black,2019-05-01,2,0,2
+Roll Hill,Black,2019-08-01,0,1,1
+Roll Hill,Black,2019-09-01,1,1,2
+Roll Hill,Black,2019-11-01,0,2,2
+Roll Hill,Black,2020-01-01,0,2,2
+Roll Hill,Black,2020-02-01,1,0,1
+Roll Hill,Black,2020-03-01,1,1,2
+Roll Hill,Black,2020-06-01,0,2,2
+Roll Hill,Black,2020-08-01,1,0,1
+Roll Hill,Black,2021-02-01,0,1,1
+Roll Hill,Black,2021-04-01,0,1,1
+Roll Hill,Black,2021-07-01,2,0,2
+Roll Hill,Black,2021-08-01,1,1,2
+Roll Hill,Black,2021-10-01,0,3,3
+Roll Hill,Black,2021-11-01,1,0,1
+Roll Hill,Black,2021-12-01,1,3,4
+Roll Hill,Black,2022-01-01,0,1,1
+Roll Hill,Black,2022-02-01,3,0,3
+Roll Hill,Black,2022-04-01,1,0,1
+Roll Hill,Black,2022-06-01,0,1,1
+Roll Hill,Black,2022-07-01,1,1,2
+Roll Hill,Black,2022-08-01,0,1,1
+Roll Hill,Black,2022-09-01,1,0,1
+Roll Hill,Black,2022-10-01,0,1,1
+Roll Hill,Black,2022-11-01,1,2,3
+Roll Hill,Black,2023-01-01,0,1,1
+Roll Hill,Black,2023-03-01,1,0,1
+Roll Hill,Black,2023-04-01,0,1,1
+Roll Hill,Black,2023-05-01,0,1,1
+Roll Hill,Black,2023-09-01,1,0,1
+Roll Hill,Black,2023-10-01,1,0,1
+Roll Hill,Black,2024-01-01,0,1,1
+Roll Hill,Black,2024-02-01,0,1,1
+Roll Hill,Black,2024-03-01,0,2,2
+Roll Hill,Black,2024-05-01,0,1,1
+Roll Hill,Other race,2020-02-01,0,1,1
+Roll Hill,Other race,2020-07-01,0,1,1
+Roll Hill,Other race,2020-08-01,0,1,1
+Roll Hill,Other race,2024-04-01,0,1,1
+Roselawn,Black,2019-01-01,1,1,2
+Roselawn,Black,2019-02-01,1,3,4
+Roselawn,Black,2019-03-01,1,0,1
+Roselawn,Black,2019-04-01,0,3,3
+Roselawn,Black,2019-05-01,2,3,5
+Roselawn,Black,2019-06-01,0,2,2
+Roselawn,Black,2019-07-01,1,0,1
+Roselawn,Black,2019-08-01,1,1,2
+Roselawn,Black,2019-09-01,2,4,6
+Roselawn,Black,2019-10-01,0,2,2
+Roselawn,Black,2019-11-01,2,3,5
+Roselawn,Black,2019-12-01,0,1,1
+Roselawn,Black,2020-01-01,1,2,3
+Roselawn,Black,2020-02-01,2,1,3
+Roselawn,Black,2020-03-01,0,4,4
+Roselawn,Black,2020-06-01,0,2,2
+Roselawn,Black,2020-07-01,0,1,1
+Roselawn,Black,2020-08-01,0,1,1
+Roselawn,Black,2020-09-01,0,2,2
+Roselawn,Black,2020-10-01,0,2,2
+Roselawn,Black,2020-11-01,1,1,2
+Roselawn,Black,2020-12-01,0,1,1
+Roselawn,Black,2021-01-01,1,0,1
+Roselawn,Black,2021-03-01,1,1,2
+Roselawn,Black,2021-04-01,1,1,2
+Roselawn,Black,2021-05-01,0,2,2
+Roselawn,Black,2021-06-01,1,1,2
+Roselawn,Black,2021-07-01,2,2,4
+Roselawn,Black,2021-08-01,0,1,1
+Roselawn,Black,2021-09-01,1,0,1
+Roselawn,Black,2021-11-01,1,1,2
+Roselawn,Black,2021-12-01,1,0,1
+Roselawn,Black,2022-01-01,1,4,5
+Roselawn,Black,2022-03-01,1,1,2
+Roselawn,Black,2022-04-01,1,0,1
+Roselawn,Black,2022-05-01,1,0,1
+Roselawn,Black,2022-07-01,1,0,1
+Roselawn,Black,2022-08-01,1,1,2
+Roselawn,Black,2022-09-01,2,2,4
+Roselawn,Black,2022-11-01,1,2,3
+Roselawn,Black,2022-12-01,0,1,1
+Roselawn,Black,2023-02-01,0,2,2
+Roselawn,Black,2023-04-01,0,1,1
+Roselawn,Black,2023-05-01,0,1,1
+Roselawn,Black,2023-06-01,0,1,1
+Roselawn,Black,2023-08-01,0,2,2
+Roselawn,Black,2023-09-01,1,2,3
+Roselawn,Black,2023-10-01,0,1,1
+Roselawn,Black,2023-11-01,0,5,5
+Roselawn,Black,2024-02-01,1,1,2
+Roselawn,Black,2024-03-01,1,1,2
+Roselawn,Black,2024-04-01,0,1,1
+Roselawn,Other race,2020-01-01,0,1,1
+Sayler Park,Black,2019-08-01,0,1,1
+Sayler Park,Black,2019-12-01,1,0,1
+Sayler Park,Black,2021-05-01,0,1,1
+Sayler Park,Black,2021-07-01,1,0,1
+Sayler Park,Black,2021-11-01,1,0,1
+Sayler Park,Black,2024-05-01,1,0,1
+Sayler Park,Other race,2019-03-01,0,1,1
+Sayler Park,Other race,2023-11-01,1,0,1
+Sedamsville,Black,2024-01-01,0,1,1
+Sharonville,Black,2019-07-01,0,1,1
+Sharonville,Black,2019-10-01,1,1,2
+Sharonville,Black,2019-11-01,0,1,1
+Sharonville,Black,2019-12-01,1,0,1
+Sharonville,Black,2020-10-01,0,1,1
+Sharonville,Black,2021-04-01,2,0,2
+Sharonville,Black,2021-07-01,0,1,1
+Sharonville,Black,2021-10-01,1,0,1
+Sharonville,Black,2021-11-01,0,1,1
+Sharonville,Black,2022-03-01,1,0,1
+Sharonville,Black,2022-05-01,0,5,5
+Sharonville,Black,2022-07-01,0,1,1
+Sharonville,Black,2022-08-01,0,1,1
+Sharonville,Black,2022-09-01,1,0,1
+Sharonville,Black,2022-10-01,1,2,3
+Sharonville,Black,2022-12-01,1,1,2
+Sharonville,Black,2023-03-01,0,1,1
+Sharonville,Black,2023-07-01,1,0,1
+Sharonville,Black,2023-09-01,0,1,1
+Sharonville,Black,2024-02-01,1,0,1
+Sharonville,Black,2024-03-01,1,0,1
+Sharonville,Other race,2019-04-01,0,1,1
+Sharonville,Other race,2019-10-01,0,1,1
+Sharonville,Other race,2020-01-01,0,1,1
+Sharonville,Other race,2020-02-01,0,1,1
+Sharonville,Other race,2021-05-01,0,1,1
+Sharonville,Other race,2021-10-01,0,1,1
+Sharonville,Other race,2022-03-01,0,1,1
+Sharonville,Other race,2022-04-01,1,0,1
+Sharonville,Other race,2022-07-01,0,1,1
+Sharonville,Other race,2022-09-01,1,2,3
+Sharonville,Other race,2023-04-01,1,0,1
+Sharonville,Other race,2024-01-01,0,2,2
+Silverton,Black,2019-04-01,0,1,1
+Silverton,Black,2019-05-01,0,1,1
+Silverton,Black,2019-11-01,0,1,1
+Silverton,Black,2020-03-01,0,2,2
+Silverton,Black,2020-04-01,0,1,1
+Silverton,Black,2020-05-01,0,1,1
+Silverton,Black,2020-10-01,0,1,1
+Silverton,Black,2021-11-01,0,1,1
+Silverton,Black,2022-01-01,0,1,1
+Silverton,Black,2022-04-01,0,1,1
+Silverton,Black,2022-06-01,0,1,1
+Silverton,Black,2022-08-01,1,0,1
+Silverton,Black,2023-01-01,0,1,1
+Silverton,Black,2023-11-01,0,1,1
+Silverton,Black,2024-03-01,1,0,1
+Silverton,Black,2024-04-01,0,1,1
+Silverton,Other race,2019-09-01,0,1,1
+Silverton,Other race,2019-10-01,0,1,1
+Silverton,Other race,2019-11-01,0,1,1
+Silverton,Other race,2019-12-01,0,1,1
+Silverton,Other race,2020-12-01,0,1,1
+Silverton,Other race,2022-02-01,0,1,1
+Silverton,Other race,2022-04-01,0,1,1
+Silverton,Other race,2023-08-01,1,1,2
+Silverton,Other race,2023-10-01,1,1,2
+Silverton,Other race,2023-11-01,0,1,1
+South Cumminsville,Black,2020-05-01,0,1,1
+South Cumminsville,Black,2021-04-01,0,1,1
+South Cumminsville,Black,2021-05-01,1,0,1
+South Cumminsville,Black,2022-03-01,0,1,1
+South Cumminsville,Black,2022-04-01,0,1,1
+South Cumminsville,Black,2022-10-01,0,1,1
+South Cumminsville,Black,2023-03-01,1,0,1
+South Cumminsville,Black,2023-04-01,0,1,1
+South Cumminsville,Black,2023-08-01,0,1,1
+South Cumminsville,Black,2024-05-01,0,1,1
+South Fairmount,Black,2019-02-01,0,2,2
+South Fairmount,Black,2019-05-01,1,0,1
+South Fairmount,Black,2019-06-01,2,1,3
+South Fairmount,Black,2019-07-01,0,1,1
+South Fairmount,Black,2019-10-01,0,2,2
+South Fairmount,Black,2020-01-01,0,1,1
+South Fairmount,Black,2020-03-01,0,1,1
+South Fairmount,Black,2021-06-01,0,1,1
+South Fairmount,Black,2021-08-01,1,0,1
+South Fairmount,Black,2021-09-01,0,1,1
+South Fairmount,Black,2021-11-01,1,0,1
+South Fairmount,Black,2022-07-01,0,1,1
+South Fairmount,Black,2022-10-01,1,0,1
+South Fairmount,Black,2022-11-01,1,0,1
+South Fairmount,Black,2022-12-01,1,0,1
+South Fairmount,Black,2023-03-01,0,1,1
+South Fairmount,Black,2023-07-01,1,0,1
+South Fairmount,Black,2023-08-01,1,1,2
+South Fairmount,Black,2023-09-01,0,1,1
+South Fairmount,Black,2024-02-01,0,2,2
+South Fairmount,Black,2024-04-01,1,0,1
+South Fairmount,Black,2024-05-01,1,0,1
+South Fairmount,Black,2024-06-01,0,2,2
+Spring Grove Village,Black,2019-04-01,0,1,1
+Spring Grove Village,Black,2019-06-01,0,1,1
+Spring Grove Village,Black,2020-03-01,1,0,1
+Spring Grove Village,Black,2020-05-01,0,1,1
+Spring Grove Village,Black,2020-06-01,1,0,1
+Spring Grove Village,Black,2020-08-01,1,0,1
+Spring Grove Village,Black,2020-10-01,1,0,1
+Spring Grove Village,Black,2021-02-01,0,1,1
+Spring Grove Village,Black,2021-06-01,1,0,1
+Spring Grove Village,Black,2021-10-01,1,0,1
+Spring Grove Village,Black,2022-03-01,0,1,1
+Spring Grove Village,Black,2022-06-01,1,0,1
+Spring Grove Village,Black,2022-11-01,2,1,3
+Spring Grove Village,Black,2023-04-01,0,1,1
+Spring Grove Village,Black,2023-05-01,1,0,1
+Spring Grove Village,Black,2023-07-01,1,0,1
+Spring Grove Village,Black,2024-04-01,0,1,1
+Spring Grove Village,Black,2024-05-01,1,0,1
+Springdale,Black,2019-01-01,1,1,2
+Springdale,Black,2019-02-01,0,1,1
+Springdale,Black,2019-03-01,0,1,1
+Springdale,Black,2019-04-01,0,1,1
+Springdale,Black,2019-05-01,2,0,2
+Springdale,Black,2019-07-01,0,1,1
+Springdale,Black,2019-09-01,0,2,2
+Springdale,Black,2019-10-01,0,1,1
+Springdale,Black,2019-11-01,0,1,1
+Springdale,Black,2020-01-01,1,2,3
+Springdale,Black,2020-02-01,0,1,1
+Springdale,Black,2020-05-01,0,1,1
+Springdale,Black,2020-06-01,0,1,1
+Springdale,Black,2020-07-01,0,1,1
+Springdale,Black,2020-10-01,0,1,1
+Springdale,Black,2020-11-01,0,1,1
+Springdale,Black,2021-05-01,0,1,1
+Springdale,Black,2021-07-01,0,2,2
+Springdale,Black,2021-08-01,1,2,3
+Springdale,Black,2021-10-01,0,1,1
+Springdale,Black,2021-11-01,1,1,2
+Springdale,Black,2021-12-01,2,0,2
+Springdale,Black,2022-01-01,0,1,1
+Springdale,Black,2022-03-01,0,1,1
+Springdale,Black,2022-04-01,0,1,1
+Springdale,Black,2022-05-01,0,3,3
+Springdale,Black,2022-07-01,1,1,2
+Springdale,Black,2022-08-01,1,0,1
+Springdale,Black,2022-10-01,0,1,1
+Springdale,Black,2022-11-01,0,2,2
+Springdale,Black,2023-01-01,1,0,1
+Springdale,Black,2023-02-01,1,1,2
+Springdale,Black,2023-03-01,0,1,1
+Springdale,Black,2023-04-01,0,1,1
+Springdale,Black,2023-08-01,1,3,4
+Springdale,Black,2023-09-01,1,0,1
+Springdale,Black,2023-10-01,1,1,2
+Springdale,Black,2023-11-01,1,2,3
+Springdale,Black,2024-02-01,1,0,1
+Springdale,Black,2024-07-01,1,0,1
+Springdale,Other race,2019-04-01,0,2,2
+Springdale,Other race,2019-05-01,0,2,2
+Springdale,Other race,2019-07-01,0,1,1
+Springdale,Other race,2019-10-01,2,0,2
+Springdale,Other race,2020-02-01,2,0,2
+Springdale,Other race,2020-09-01,0,1,1
+Springdale,Other race,2021-03-01,0,1,1
+Springdale,Other race,2021-08-01,0,1,1
+Springdale,Other race,2021-10-01,1,0,1
+Springdale,Other race,2021-11-01,0,1,1
+Springdale,Other race,2022-01-01,0,1,1
+Springdale,Other race,2022-05-01,0,2,2
+Springdale,Other race,2022-08-01,1,1,2
+Springdale,Other race,2022-12-01,0,1,1
+Springdale,Other race,2023-04-01,0,1,1
+Springdale,Other race,2023-06-01,0,1,1
+Springdale,Other race,2024-01-01,0,1,1
+Springdale,Other race,2024-03-01,0,1,1
+Springfield Township,Black,2019-01-01,1,5,6
+Springfield Township,Black,2019-02-01,1,4,5
+Springfield Township,Black,2019-03-01,1,2,3
+Springfield Township,Black,2019-04-01,1,5,6
+Springfield Township,Black,2019-05-01,6,3,9
+Springfield Township,Black,2019-06-01,0,4,4
+Springfield Township,Black,2019-07-01,3,5,8
+Springfield Township,Black,2019-08-01,1,8,9
+Springfield Township,Black,2019-09-01,2,8,10
+Springfield Township,Black,2019-10-01,4,4,8
+Springfield Township,Black,2019-11-01,1,4,5
+Springfield Township,Black,2019-12-01,0,2,2
+Springfield Township,Black,2020-01-01,0,4,4
+Springfield Township,Black,2020-02-01,2,4,6
+Springfield Township,Black,2020-03-01,0,4,4
+Springfield Township,Black,2020-05-01,2,2,4
+Springfield Township,Black,2020-06-01,2,1,3
+Springfield Township,Black,2020-07-01,0,1,1
+Springfield Township,Black,2020-08-01,0,1,1
+Springfield Township,Black,2020-09-01,2,1,3
+Springfield Township,Black,2020-10-01,2,5,7
+Springfield Township,Black,2020-11-01,0,1,1
+Springfield Township,Black,2020-12-01,4,2,6
+Springfield Township,Black,2021-01-01,2,1,3
+Springfield Township,Black,2021-02-01,1,2,3
+Springfield Township,Black,2021-03-01,0,2,2
+Springfield Township,Black,2021-04-01,0,6,6
+Springfield Township,Black,2021-05-01,2,0,2
+Springfield Township,Black,2021-07-01,4,7,11
+Springfield Township,Black,2021-08-01,2,4,6
+Springfield Township,Black,2021-09-01,3,7,10
+Springfield Township,Black,2021-10-01,2,4,6
+Springfield Township,Black,2021-11-01,2,6,8
+Springfield Township,Black,2021-12-01,3,5,8
+Springfield Township,Black,2022-01-01,1,2,3
+Springfield Township,Black,2022-02-01,0,4,4
+Springfield Township,Black,2022-03-01,1,5,6
+Springfield Township,Black,2022-04-01,2,0,2
+Springfield Township,Black,2022-05-01,3,3,6
+Springfield Township,Black,2022-06-01,0,2,2
+Springfield Township,Black,2022-07-01,2,2,4
+Springfield Township,Black,2022-08-01,3,6,9
+Springfield Township,Black,2022-09-01,4,4,8
+Springfield Township,Black,2022-10-01,2,7,9
+Springfield Township,Black,2022-11-01,0,3,3
+Springfield Township,Black,2022-12-01,4,2,6
+Springfield Township,Black,2023-01-01,0,5,5
+Springfield Township,Black,2023-02-01,2,1,3
+Springfield Township,Black,2023-03-01,1,3,4
+Springfield Township,Black,2023-04-01,0,2,2
+Springfield Township,Black,2023-05-01,1,0,1
+Springfield Township,Black,2023-06-01,1,0,1
+Springfield Township,Black,2023-07-01,0,2,2
+Springfield Township,Black,2023-08-01,5,1,6
+Springfield Township,Black,2023-09-01,2,10,12
+Springfield Township,Black,2023-10-01,2,5,7
+Springfield Township,Black,2023-11-01,3,8,11
+Springfield Township,Black,2023-12-01,2,1,3
+Springfield Township,Black,2024-01-01,0,1,1
+Springfield Township,Black,2024-02-01,1,0,1
+Springfield Township,Black,2024-03-01,2,2,4
+Springfield Township,Black,2024-04-01,1,6,7
+Springfield Township,Black,2024-05-01,2,5,7
+Springfield Township,Black,2024-06-01,1,0,1
+Springfield Township,Other race,2019-01-01,1,1,2
+Springfield Township,Other race,2019-02-01,1,0,1
+Springfield Township,Other race,2019-03-01,1,0,1
+Springfield Township,Other race,2019-05-01,0,1,1
+Springfield Township,Other race,2019-09-01,0,2,2
+Springfield Township,Other race,2019-12-01,3,0,3
+Springfield Township,Other race,2020-01-01,0,1,1
+Springfield Township,Other race,2020-02-01,0,1,1
+Springfield Township,Other race,2020-03-01,0,2,2
+Springfield Township,Other race,2020-07-01,0,1,1
+Springfield Township,Other race,2020-10-01,0,1,1
+Springfield Township,Other race,2020-11-01,0,1,1
+Springfield Township,Other race,2021-05-01,0,1,1
+Springfield Township,Other race,2021-06-01,1,0,1
+Springfield Township,Other race,2021-07-01,1,0,1
+Springfield Township,Other race,2021-09-01,1,0,1
+Springfield Township,Other race,2021-10-01,0,2,2
+Springfield Township,Other race,2021-11-01,1,0,1
+Springfield Township,Other race,2021-12-01,0,1,1
+Springfield Township,Other race,2022-02-01,1,1,2
+Springfield Township,Other race,2022-03-01,1,0,1
+Springfield Township,Other race,2022-05-01,1,0,1
+Springfield Township,Other race,2022-06-01,1,0,1
+Springfield Township,Other race,2022-08-01,2,0,2
+Springfield Township,Other race,2022-09-01,1,0,1
+Springfield Township,Other race,2022-11-01,1,2,3
+Springfield Township,Other race,2023-01-01,1,0,1
+Springfield Township,Other race,2023-02-01,0,1,1
+Springfield Township,Other race,2023-05-01,2,1,3
+Springfield Township,Other race,2023-09-01,0,2,2
+Springfield Township,Other race,2023-10-01,1,1,2
+Springfield Township,Other race,2023-12-01,0,1,1
+Springfield Township,Other race,2024-01-01,1,0,1
+Springfield Township,Other race,2024-05-01,0,1,1
+Springfield Township,Other race,2024-07-01,1,0,1
+Springfield Township,NA,2021-08-01,1,0,1
+Springfield Township,NA,2022-12-01,0,1,1
+St. Bernard,Black,2019-05-01,0,1,1
+St. Bernard,Black,2019-10-01,0,1,1
+St. Bernard,Black,2020-02-01,0,1,1
+St. Bernard,Black,2020-03-01,1,0,1
+St. Bernard,Black,2020-08-01,1,0,1
+St. Bernard,Black,2020-09-01,1,0,1
+St. Bernard,Black,2020-10-01,1,0,1
+St. Bernard,Black,2021-01-01,0,1,1
+St. Bernard,Black,2021-04-01,0,1,1
+St. Bernard,Black,2021-07-01,0,2,2
+St. Bernard,Black,2021-08-01,1,0,1
+St. Bernard,Black,2021-09-01,0,1,1
+St. Bernard,Black,2022-05-01,1,0,1
+St. Bernard,Black,2022-06-01,0,1,1
+St. Bernard,Black,2023-02-01,0,1,1
+St. Bernard,Black,2023-04-01,1,0,1
+St. Bernard,Black,2023-09-01,0,1,1
+St. Bernard,Black,2023-12-01,0,1,1
+St. Bernard,Black,2024-03-01,0,1,1
+St. Bernard,Other race,2019-10-01,0,1,1
+St. Bernard,Other race,2020-11-01,1,0,1
+St. Bernard,Other race,2021-11-01,0,1,1
+St. Bernard,Other race,2021-12-01,0,1,1
+St. Bernard,Other race,2022-08-01,1,0,1
+St. Bernard,Other race,2022-12-01,0,1,1
+Sycamore Township,Black,2019-08-01,1,0,1
+Sycamore Township,Black,2019-09-01,0,1,1
+Sycamore Township,Black,2019-12-01,1,0,1
+Sycamore Township,Black,2020-06-01,1,0,1
+Sycamore Township,Black,2020-10-01,0,1,1
+Sycamore Township,Black,2021-07-01,0,1,1
+Sycamore Township,Black,2021-10-01,0,1,1
+Sycamore Township,Black,2022-05-01,1,0,1
+Sycamore Township,Black,2022-07-01,1,0,1
+Sycamore Township,Black,2022-11-01,0,1,1
+Sycamore Township,Black,2022-12-01,0,1,1
+Sycamore Township,Black,2023-02-01,0,1,1
+Sycamore Township,Black,2023-06-01,1,0,1
+Sycamore Township,Black,2023-11-01,0,1,1
+Sycamore Township,Black,2024-02-01,0,1,1
+Sycamore Township,Black,2024-04-01,1,0,1
+Sycamore Township,Black,2024-05-01,0,1,1
+Sycamore Township,Other race,2019-01-01,0,1,1
+Sycamore Township,Other race,2019-04-01,0,1,1
+Sycamore Township,Other race,2019-06-01,0,1,1
+Sycamore Township,Other race,2019-07-01,0,1,1
+Sycamore Township,Other race,2019-08-01,2,0,2
+Sycamore Township,Other race,2019-09-01,1,0,1
+Sycamore Township,Other race,2019-10-01,0,1,1
+Sycamore Township,Other race,2019-11-01,2,0,2
+Sycamore Township,Other race,2020-01-01,0,1,1
+Sycamore Township,Other race,2020-02-01,1,0,1
+Sycamore Township,Other race,2020-03-01,0,1,1
+Sycamore Township,Other race,2020-04-01,1,0,1
+Sycamore Township,Other race,2021-07-01,0,1,1
+Sycamore Township,Other race,2021-08-01,1,0,1
+Sycamore Township,Other race,2021-10-01,0,2,2
+Sycamore Township,Other race,2021-11-01,1,0,1
+Sycamore Township,Other race,2021-12-01,1,0,1
+Sycamore Township,Other race,2022-02-01,0,1,1
+Sycamore Township,Other race,2022-03-01,1,2,3
+Sycamore Township,Other race,2022-08-01,1,0,1
+Sycamore Township,Other race,2022-09-01,0,1,1
+Sycamore Township,Other race,2022-10-01,0,2,2
+Sycamore Township,Other race,2022-11-01,2,0,2
+Sycamore Township,Other race,2023-01-01,0,1,1
+Sycamore Township,Other race,2023-03-01,1,0,1
+Sycamore Township,Other race,2023-05-01,0,2,2
+Sycamore Township,Other race,2023-07-01,0,1,1
+Sycamore Township,Other race,2023-09-01,1,0,1
+Sycamore Township,Other race,2024-03-01,2,0,2
+Sycamore Township,Other race,2024-04-01,0,3,3
+Sycamore Township,Other race,2024-05-01,1,0,1
+Symmes Township,Black,2019-04-01,1,0,1
+Symmes Township,Black,2020-03-01,0,1,1
+Symmes Township,Black,2020-09-01,0,1,1
+Symmes Township,Black,2022-04-01,1,0,1
+Symmes Township,Black,2022-10-01,0,2,2
+Symmes Township,Black,2024-01-01,0,2,2
+Symmes Township,Black,2024-04-01,1,0,1
+Symmes Township,Other race,2019-09-01,0,3,3
+Symmes Township,Other race,2020-10-01,0,1,1
+Symmes Township,Other race,2021-04-01,1,0,1
+Symmes Township,Other race,2021-05-01,1,0,1
+Symmes Township,Other race,2022-01-01,1,0,1
+Symmes Township,Other race,2022-08-01,1,0,1
+Symmes Township,Other race,2022-09-01,0,1,1
+Symmes Township,Other race,2022-10-01,0,1,1
+Symmes Township,Other race,2022-11-01,0,1,1
+Symmes Township,Other race,2023-02-01,0,1,1
+Symmes Township,Other race,2023-05-01,0,1,1
+Terrace Park,Other race,2019-06-01,1,0,1
+Terrace Park,Other race,2020-02-01,0,1,1
+Terrace Park,Other race,2024-04-01,0,1,1
+Walnut Hills,Black,2019-01-01,1,0,1
+Walnut Hills,Black,2019-02-01,1,3,4
+Walnut Hills,Black,2019-03-01,0,2,2
+Walnut Hills,Black,2019-04-01,1,0,1
+Walnut Hills,Black,2019-05-01,0,2,2
+Walnut Hills,Black,2019-08-01,1,0,1
+Walnut Hills,Black,2019-10-01,0,3,3
+Walnut Hills,Black,2019-12-01,0,3,3
+Walnut Hills,Black,2020-02-01,0,4,4
+Walnut Hills,Black,2020-03-01,1,0,1
+Walnut Hills,Black,2020-07-01,0,1,1
+Walnut Hills,Black,2020-10-01,0,1,1
+Walnut Hills,Black,2020-11-01,0,1,1
+Walnut Hills,Black,2021-02-01,0,1,1
+Walnut Hills,Black,2021-04-01,0,1,1
+Walnut Hills,Black,2021-05-01,0,1,1
+Walnut Hills,Black,2021-06-01,0,1,1
+Walnut Hills,Black,2021-07-01,1,0,1
+Walnut Hills,Black,2021-08-01,3,1,4
+Walnut Hills,Black,2021-09-01,1,2,3
+Walnut Hills,Black,2021-10-01,0,1,1
+Walnut Hills,Black,2021-11-01,0,1,1
+Walnut Hills,Black,2021-12-01,2,0,2
+Walnut Hills,Black,2022-03-01,0,1,1
+Walnut Hills,Black,2022-05-01,2,0,2
+Walnut Hills,Black,2022-06-01,0,1,1
+Walnut Hills,Black,2022-09-01,0,2,2
+Walnut Hills,Black,2022-10-01,1,3,4
+Walnut Hills,Black,2022-11-01,0,2,2
+Walnut Hills,Black,2023-02-01,0,1,1
+Walnut Hills,Black,2023-05-01,1,1,2
+Walnut Hills,Black,2023-09-01,0,2,2
+Walnut Hills,Black,2023-10-01,2,1,3
+Walnut Hills,Black,2023-11-01,1,0,1
+Walnut Hills,Black,2023-12-01,0,1,1
+Walnut Hills,Black,2024-01-01,0,1,1
+Walnut Hills,Black,2024-02-01,0,1,1
+Walnut Hills,Black,2024-03-01,0,2,2
+Walnut Hills,Black,2024-04-01,1,1,2
+Walnut Hills,Black,2024-05-01,0,1,1
+Walnut Hills,Black,2024-07-01,0,1,1
+Walnut Hills,Other race,2019-04-01,1,0,1
+Walnut Hills,Other race,2021-09-01,1,0,1
+Walnut Hills,Other race,2024-05-01,1,0,1
+Walnut Hills,NA,2019-05-01,0,1,1
+West End,Black,2019-01-01,0,2,2
+West End,Black,2019-03-01,1,0,1
+West End,Black,2019-04-01,1,1,2
+West End,Black,2019-05-01,2,3,5
+West End,Black,2019-06-01,2,5,7
+West End,Black,2019-07-01,0,2,2
+West End,Black,2019-08-01,1,2,3
+West End,Black,2019-09-01,0,2,2
+West End,Black,2019-10-01,0,7,7
+West End,Black,2019-11-01,0,4,4
+West End,Black,2019-12-01,3,4,7
+West End,Black,2020-01-01,0,6,6
+West End,Black,2020-02-01,3,1,4
+West End,Black,2020-03-01,2,8,10
+West End,Black,2020-05-01,1,0,1
+West End,Black,2020-06-01,0,1,1
+West End,Black,2020-08-01,2,0,2
+West End,Black,2020-09-01,0,4,4
+West End,Black,2020-10-01,2,1,3
+West End,Black,2020-11-01,1,1,2
+West End,Black,2020-12-01,0,1,1
+West End,Black,2021-01-01,1,2,3
+West End,Black,2021-02-01,1,1,2
+West End,Black,2021-03-01,0,2,2
+West End,Black,2021-04-01,0,2,2
+West End,Black,2021-05-01,1,5,6
+West End,Black,2021-06-01,2,3,5
+West End,Black,2021-07-01,2,2,4
+West End,Black,2021-08-01,1,3,4
+West End,Black,2021-09-01,1,7,8
+West End,Black,2021-10-01,4,4,8
+West End,Black,2021-11-01,2,2,4
+West End,Black,2021-12-01,0,2,2
+West End,Black,2022-02-01,2,2,4
+West End,Black,2022-03-01,2,3,5
+West End,Black,2022-04-01,0,3,3
+West End,Black,2022-05-01,3,2,5
+West End,Black,2022-06-01,1,1,2
+West End,Black,2022-07-01,1,0,1
+West End,Black,2022-08-01,2,2,4
+West End,Black,2022-09-01,4,4,8
+West End,Black,2022-10-01,5,5,10
+West End,Black,2022-11-01,5,3,8
+West End,Black,2022-12-01,2,0,2
+West End,Black,2023-02-01,1,1,2
+West End,Black,2023-03-01,0,3,3
+West End,Black,2023-04-01,0,1,1
+West End,Black,2023-05-01,2,2,4
+West End,Black,2023-06-01,1,1,2
+West End,Black,2023-07-01,2,0,2
+West End,Black,2023-08-01,1,3,4
+West End,Black,2023-09-01,3,0,3
+West End,Black,2023-10-01,1,2,3
+West End,Black,2023-11-01,0,3,3
+West End,Black,2023-12-01,1,2,3
+West End,Black,2024-01-01,1,2,3
+West End,Black,2024-02-01,0,1,1
+West End,Black,2024-03-01,1,2,3
+West End,Black,2024-04-01,1,0,1
+West End,Black,2024-05-01,0,1,1
+West End,Black,2024-06-01,0,1,1
+West End,Other race,2022-01-01,0,1,1
+West End,Other race,2022-05-01,1,0,1
+West End,Other race,2022-08-01,1,0,1
+West End,Other race,2023-09-01,0,1,1
+West Price Hill,Black,2019-01-01,1,1,2
+West Price Hill,Black,2019-02-01,0,1,1
+West Price Hill,Black,2019-04-01,0,1,1
+West Price Hill,Black,2019-05-01,0,2,2
+West Price Hill,Black,2019-06-01,1,0,1
+West Price Hill,Black,2019-07-01,1,1,2
+West Price Hill,Black,2019-08-01,1,1,2
+West Price Hill,Black,2019-09-01,1,3,4
+West Price Hill,Black,2019-10-01,1,1,2
+West Price Hill,Black,2019-11-01,2,3,5
+West Price Hill,Black,2019-12-01,3,2,5
+West Price Hill,Black,2020-02-01,1,3,4
+West Price Hill,Black,2020-05-01,1,0,1
+West Price Hill,Black,2020-06-01,0,2,2
+West Price Hill,Black,2020-07-01,1,0,1
+West Price Hill,Black,2020-09-01,1,3,4
+West Price Hill,Black,2020-11-01,1,0,1
+West Price Hill,Black,2020-12-01,1,1,2
+West Price Hill,Black,2021-01-01,1,0,1
+West Price Hill,Black,2021-03-01,0,1,1
+West Price Hill,Black,2021-04-01,1,0,1
+West Price Hill,Black,2021-05-01,1,0,1
+West Price Hill,Black,2021-06-01,1,2,3
+West Price Hill,Black,2021-07-01,0,1,1
+West Price Hill,Black,2021-08-01,1,2,3
+West Price Hill,Black,2021-09-01,0,1,1
+West Price Hill,Black,2021-10-01,0,2,2
+West Price Hill,Black,2021-11-01,1,1,2
+West Price Hill,Black,2021-12-01,0,1,1
+West Price Hill,Black,2022-01-01,2,0,2
+West Price Hill,Black,2022-02-01,1,2,3
+West Price Hill,Black,2022-03-01,1,1,2
+West Price Hill,Black,2022-04-01,0,1,1
+West Price Hill,Black,2022-05-01,0,1,1
+West Price Hill,Black,2022-07-01,0,2,2
+West Price Hill,Black,2022-08-01,2,0,2
+West Price Hill,Black,2022-09-01,0,1,1
+West Price Hill,Black,2022-10-01,0,1,1
+West Price Hill,Black,2022-11-01,0,1,1
+West Price Hill,Black,2022-12-01,1,2,3
+West Price Hill,Black,2023-01-01,1,1,2
+West Price Hill,Black,2023-04-01,1,1,2
+West Price Hill,Black,2023-05-01,0,2,2
+West Price Hill,Black,2023-06-01,0,1,1
+West Price Hill,Black,2023-07-01,0,1,1
+West Price Hill,Black,2023-08-01,0,2,2
+West Price Hill,Black,2023-09-01,0,1,1
+West Price Hill,Black,2023-10-01,0,1,1
+West Price Hill,Black,2023-12-01,0,1,1
+West Price Hill,Black,2024-01-01,0,1,1
+West Price Hill,Black,2024-02-01,0,2,2
+West Price Hill,Black,2024-03-01,1,0,1
+West Price Hill,Black,2024-04-01,2,0,2
+West Price Hill,Black,2024-05-01,0,3,3
+West Price Hill,Other race,2019-01-01,0,1,1
+West Price Hill,Other race,2019-05-01,0,2,2
+West Price Hill,Other race,2019-07-01,1,1,2
+West Price Hill,Other race,2019-09-01,0,1,1
+West Price Hill,Other race,2019-11-01,1,1,2
+West Price Hill,Other race,2019-12-01,1,0,1
+West Price Hill,Other race,2020-02-01,0,1,1
+West Price Hill,Other race,2020-03-01,1,2,3
+West Price Hill,Other race,2020-06-01,0,1,1
+West Price Hill,Other race,2020-10-01,1,1,2
+West Price Hill,Other race,2020-11-01,1,0,1
+West Price Hill,Other race,2021-01-01,1,0,1
+West Price Hill,Other race,2021-02-01,0,1,1
+West Price Hill,Other race,2021-03-01,1,1,2
+West Price Hill,Other race,2021-05-01,0,1,1
+West Price Hill,Other race,2021-06-01,0,1,1
+West Price Hill,Other race,2021-08-01,1,1,2
+West Price Hill,Other race,2021-09-01,1,0,1
+West Price Hill,Other race,2021-10-01,1,0,1
+West Price Hill,Other race,2022-04-01,0,2,2
+West Price Hill,Other race,2022-05-01,0,2,2
+West Price Hill,Other race,2022-06-01,1,1,2
+West Price Hill,Other race,2022-08-01,1,0,1
+West Price Hill,Other race,2022-09-01,2,2,4
+West Price Hill,Other race,2022-10-01,1,1,2
+West Price Hill,Other race,2022-11-01,0,1,1
+West Price Hill,Other race,2023-02-01,2,0,2
+West Price Hill,Other race,2023-04-01,2,0,2
+West Price Hill,Other race,2023-07-01,0,1,1
+West Price Hill,Other race,2023-09-01,2,0,2
+West Price Hill,Other race,2023-12-01,1,0,1
+West Price Hill,Other race,2024-02-01,1,0,1
+West Price Hill,Other race,2024-06-01,1,0,1
+West Price Hill,NA,2019-12-01,0,1,1
+West Price Hill,NA,2023-09-01,0,1,1
+Westwood,Black,2019-01-01,0,1,1
+Westwood,Black,2019-02-01,3,1,4
+Westwood,Black,2019-03-01,0,4,4
+Westwood,Black,2019-04-01,4,7,11
+Westwood,Black,2019-05-01,6,10,16
+Westwood,Black,2019-06-01,0,2,2
+Westwood,Black,2019-07-01,2,5,7
+Westwood,Black,2019-08-01,4,6,10
+Westwood,Black,2019-09-01,1,4,5
+Westwood,Black,2019-10-01,8,6,14
+Westwood,Black,2019-11-01,3,6,9
+Westwood,Black,2019-12-01,3,1,4
+Westwood,Black,2020-01-01,1,2,3
+Westwood,Black,2020-02-01,0,3,3
+Westwood,Black,2020-03-01,0,4,4
+Westwood,Black,2020-04-01,0,2,2
+Westwood,Black,2020-05-01,2,5,7
+Westwood,Black,2020-06-01,1,0,1
+Westwood,Black,2020-07-01,2,1,3
+Westwood,Black,2020-08-01,2,1,3
+Westwood,Black,2020-09-01,0,2,2
+Westwood,Black,2020-10-01,1,2,3
+Westwood,Black,2020-11-01,1,4,5
+Westwood,Black,2020-12-01,1,0,1
+Westwood,Black,2021-01-01,1,2,3
+Westwood,Black,2021-03-01,3,5,8
+Westwood,Black,2021-04-01,0,4,4
+Westwood,Black,2021-05-01,2,6,8
+Westwood,Black,2021-06-01,1,2,3
+Westwood,Black,2021-07-01,1,2,3
+Westwood,Black,2021-08-01,4,12,16
+Westwood,Black,2021-09-01,2,4,6
+Westwood,Black,2021-10-01,1,4,5
+Westwood,Black,2021-11-01,7,5,12
+Westwood,Black,2021-12-01,2,3,5
+Westwood,Black,2022-01-01,0,1,1
+Westwood,Black,2022-02-01,0,1,1
+Westwood,Black,2022-03-01,3,1,4
+Westwood,Black,2022-04-01,1,3,4
+Westwood,Black,2022-05-01,4,5,9
+Westwood,Black,2022-06-01,3,1,4
+Westwood,Black,2022-07-01,2,5,7
+Westwood,Black,2022-08-01,2,3,5
+Westwood,Black,2022-09-01,3,5,8
+Westwood,Black,2022-10-01,3,2,5
+Westwood,Black,2022-11-01,1,7,8
+Westwood,Black,2022-12-01,2,1,3
+Westwood,Black,2023-01-01,0,2,2
+Westwood,Black,2023-02-01,1,1,2
+Westwood,Black,2023-03-01,1,1,2
+Westwood,Black,2023-04-01,4,3,7
+Westwood,Black,2023-05-01,1,3,4
+Westwood,Black,2023-06-01,1,1,2
+Westwood,Black,2023-07-01,1,0,1
+Westwood,Black,2023-08-01,2,0,2
+Westwood,Black,2023-09-01,1,4,5
+Westwood,Black,2023-10-01,2,2,4
+Westwood,Black,2023-11-01,2,4,6
+Westwood,Black,2023-12-01,1,2,3
+Westwood,Black,2024-01-01,1,3,4
+Westwood,Black,2024-02-01,2,1,3
+Westwood,Black,2024-03-01,2,1,3
+Westwood,Black,2024-04-01,1,3,4
+Westwood,Black,2024-05-01,0,1,1
+Westwood,Black,2024-06-01,2,0,2
+Westwood,Other race,2019-03-01,0,1,1
+Westwood,Other race,2019-05-01,0,1,1
+Westwood,Other race,2019-06-01,0,2,2
+Westwood,Other race,2019-07-01,0,1,1
+Westwood,Other race,2019-09-01,2,0,2
+Westwood,Other race,2019-11-01,0,4,4
+Westwood,Other race,2019-12-01,0,1,1
+Westwood,Other race,2020-01-01,0,1,1
+Westwood,Other race,2020-02-01,1,0,1
+Westwood,Other race,2020-03-01,0,1,1
+Westwood,Other race,2020-08-01,0,2,2
+Westwood,Other race,2021-04-01,0,1,1
+Westwood,Other race,2021-06-01,0,1,1
+Westwood,Other race,2021-07-01,2,0,2
+Westwood,Other race,2021-08-01,1,0,1
+Westwood,Other race,2021-10-01,0,1,1
+Westwood,Other race,2021-11-01,0,1,1
+Westwood,Other race,2021-12-01,1,0,1
+Westwood,Other race,2022-02-01,1,0,1
+Westwood,Other race,2022-03-01,1,1,2
+Westwood,Other race,2022-04-01,1,0,1
+Westwood,Other race,2022-05-01,0,1,1
+Westwood,Other race,2022-07-01,1,0,1
+Westwood,Other race,2022-08-01,1,2,3
+Westwood,Other race,2022-10-01,0,1,1
+Westwood,Other race,2023-01-01,0,1,1
+Westwood,Other race,2023-02-01,1,1,2
+Westwood,Other race,2023-04-01,2,0,2
+Westwood,Other race,2023-06-01,0,1,1
+Westwood,Other race,2023-07-01,1,1,2
+Westwood,Other race,2023-10-01,0,2,2
+Westwood,Other race,2023-12-01,1,2,3
+Westwood,Other race,2024-02-01,1,1,2
+Westwood,Other race,2024-03-01,1,0,1
+Westwood,Other race,2024-04-01,0,1,1
+Westwood,Other race,2024-06-01,0,1,1
+Westwood,NA,2022-10-01,1,0,1
+Whitewater Township,Other race,2019-02-01,1,0,1
+Whitewater Township,Other race,2019-03-01,1,0,1
+Whitewater Township,Other race,2019-05-01,1,0,1
+Whitewater Township,Other race,2019-09-01,0,1,1
+Whitewater Township,Other race,2019-11-01,0,1,1
+Whitewater Township,Other race,2019-12-01,0,1,1
+Whitewater Township,Other race,2021-02-01,0,1,1
+Whitewater Township,Other race,2021-05-01,1,0,1
+Whitewater Township,Other race,2023-04-01,0,1,1
+Winton Hills,Black,2019-01-01,1,5,6
+Winton Hills,Black,2019-02-01,2,2,4
+Winton Hills,Black,2019-03-01,3,3,6
+Winton Hills,Black,2019-04-01,2,5,7
+Winton Hills,Black,2019-05-01,6,7,13
+Winton Hills,Black,2019-06-01,0,1,1
+Winton Hills,Black,2019-07-01,2,1,3
+Winton Hills,Black,2019-08-01,3,1,4
+Winton Hills,Black,2019-09-01,1,2,3
+Winton Hills,Black,2019-10-01,1,2,3
+Winton Hills,Black,2019-11-01,3,6,9
+Winton Hills,Black,2019-12-01,1,4,5
+Winton Hills,Black,2020-01-01,2,4,6
+Winton Hills,Black,2020-02-01,1,2,3
+Winton Hills,Black,2020-03-01,1,1,2
+Winton Hills,Black,2020-04-01,0,1,1
+Winton Hills,Black,2020-05-01,0,2,2
+Winton Hills,Black,2020-06-01,0,1,1
+Winton Hills,Black,2020-07-01,2,2,4
+Winton Hills,Black,2020-08-01,0,2,2
+Winton Hills,Black,2020-09-01,0,5,5
+Winton Hills,Black,2020-11-01,1,3,4
+Winton Hills,Black,2020-12-01,1,0,1
+Winton Hills,Black,2021-01-01,1,1,2
+Winton Hills,Black,2021-03-01,3,1,4
+Winton Hills,Black,2021-04-01,1,0,1
+Winton Hills,Black,2021-05-01,1,0,1
+Winton Hills,Black,2021-06-01,0,1,1
+Winton Hills,Black,2021-07-01,1,2,3
+Winton Hills,Black,2021-08-01,0,3,3
+Winton Hills,Black,2021-09-01,1,0,1
+Winton Hills,Black,2021-10-01,1,3,4
+Winton Hills,Black,2021-11-01,0,2,2
+Winton Hills,Black,2021-12-01,2,2,4
+Winton Hills,Black,2022-01-01,0,1,1
+Winton Hills,Black,2022-02-01,2,0,2
+Winton Hills,Black,2022-04-01,2,0,2
+Winton Hills,Black,2022-05-01,0,1,1
+Winton Hills,Black,2022-06-01,0,2,2
+Winton Hills,Black,2022-07-01,2,1,3
+Winton Hills,Black,2022-09-01,1,3,4
+Winton Hills,Black,2022-10-01,0,3,3
+Winton Hills,Black,2022-11-01,0,3,3
+Winton Hills,Black,2023-01-01,1,4,5
+Winton Hills,Black,2023-02-01,1,2,3
+Winton Hills,Black,2023-03-01,2,0,2
+Winton Hills,Black,2023-04-01,0,2,2
+Winton Hills,Black,2023-05-01,0,1,1
+Winton Hills,Black,2023-06-01,0,1,1
+Winton Hills,Black,2023-08-01,0,1,1
+Winton Hills,Black,2023-09-01,1,1,2
+Winton Hills,Black,2023-10-01,3,4,7
+Winton Hills,Black,2023-11-01,0,2,2
+Winton Hills,Black,2023-12-01,1,0,1
+Winton Hills,Black,2024-01-01,1,0,1
+Winton Hills,Black,2024-02-01,0,1,1
+Winton Hills,Black,2024-03-01,2,1,3
+Winton Hills,Black,2024-04-01,1,1,2
+Winton Hills,Black,2024-05-01,1,0,1
+Winton Hills,Black,2024-06-01,0,1,1
+Winton Hills,Black,2024-07-01,1,0,1
+Winton Hills,Other race,2019-01-01,1,0,1
+Winton Hills,Other race,2019-11-01,0,1,1
+Winton Hills,Other race,2020-02-01,1,1,2
+Winton Hills,Other race,2020-08-01,0,1,1
+Winton Hills,Other race,2021-01-01,0,1,1
+Winton Hills,Other race,2021-04-01,0,1,1
+Winton Hills,Other race,2021-05-01,0,2,2
+Winton Hills,Other race,2021-06-01,1,0,1
+Winton Hills,Other race,2021-09-01,1,0,1
+Winton Hills,Other race,2021-11-01,1,0,1
+Winton Hills,Other race,2022-03-01,1,0,1
+Winton Hills,Other race,2022-06-01,0,1,1
+Winton Hills,Other race,2022-08-01,1,0,1
+Winton Hills,Other race,2023-08-01,1,0,1
+Winton Hills,Other race,2023-10-01,1,0,1
+Winton Hills,Other race,2023-11-01,0,1,1
+Winton Hills,Other race,2023-12-01,1,0,1
+Winton Hills,Other race,2024-01-01,1,0,1
+Winton Hills,Other race,2024-02-01,0,1,1
+Winton Hills,Other race,2024-04-01,0,1,1
+Winton Hills,Other race,2024-05-01,0,1,1
+Woodlawn,Black,2019-01-01,1,0,1
+Woodlawn,Black,2019-02-01,0,1,1
+Woodlawn,Black,2019-05-01,0,1,1
+Woodlawn,Black,2019-10-01,0,1,1
+Woodlawn,Black,2019-11-01,1,0,1
+Woodlawn,Black,2020-09-01,1,0,1
+Woodlawn,Black,2021-01-01,1,0,1
+Woodlawn,Black,2021-04-01,1,1,2
+Woodlawn,Black,2021-06-01,0,1,1
+Woodlawn,Black,2021-10-01,0,1,1
+Woodlawn,Black,2021-11-01,1,0,1
+Woodlawn,Black,2021-12-01,2,0,2
+Woodlawn,Black,2022-02-01,1,0,1
+Woodlawn,Black,2022-03-01,0,1,1
+Woodlawn,Black,2022-08-01,1,0,1
+Woodlawn,Black,2023-02-01,1,0,1
+Woodlawn,Black,2023-12-01,0,1,1
+Woodlawn,Black,2024-03-01,0,2,2
+Woodlawn,Black,2024-06-01,1,0,1
+Woodlawn,Other race,2021-05-01,0,1,1
+Woodlawn,Other race,2021-11-01,1,0,1
+Woodlawn,Other race,2022-07-01,1,0,1
+Woodlawn,Other race,2023-07-01,0,1,1
+Woodlawn,Other race,2023-08-01,0,1,1
+Woodlawn,Other race,2023-12-01,0,1,1
+Wyoming,Black,2019-11-01,0,1,1
+Wyoming,Black,2021-01-01,1,0,1
+Wyoming,Black,2021-10-01,1,0,1
+Wyoming,Black,2021-11-01,1,0,1
+Wyoming,Black,2022-03-01,0,1,1
+Wyoming,Black,2022-10-01,1,0,1
+Wyoming,Black,2023-05-01,0,1,1
+Wyoming,Other race,2019-03-01,0,1,1
+Wyoming,Other race,2019-04-01,1,0,1
+Wyoming,Other race,2019-06-01,0,1,1
+Wyoming,Other race,2019-09-01,1,0,1
+Wyoming,Other race,2019-10-01,0,1,1
+Wyoming,Other race,2020-03-01,2,0,2
+Wyoming,Other race,2020-09-01,0,1,1
+Wyoming,Other race,2021-10-01,1,0,1
+Wyoming,Other race,2021-11-01,0,1,1
+Wyoming,Other race,2022-03-01,1,0,1
+Wyoming,Other race,2022-05-01,0,2,2
+Wyoming,Other race,2022-08-01,1,0,1
+Wyoming,Other race,2022-09-01,1,0,1
+Wyoming,Other race,2022-10-01,0,1,1
+Wyoming,Other race,2022-11-01,0,1,1
+Wyoming,Other race,2023-02-01,0,1,1
+Wyoming,Other race,2023-04-01,2,1,3
+Wyoming,Other race,2023-09-01,1,0,1
+Wyoming,Other race,2023-11-01,1,0,1
+Wyoming,Other race,2024-02-01,1,0,1
+Wyoming,Other race,2024-06-01,0,2,2
+NA,Black,2019-11-01,1,0,1
+NA,Black,2021-07-01,1,0,1
+NA,Black,2024-02-01,0,1,1
+NA,Black,2024-03-01,1,2,3
+NA,Black,2024-04-01,1,0,1
+NA,Black,2024-07-01,1,0,1
+NA,Other race,2019-01-01,1,0,1
+NA,Other race,2021-12-01,1,0,1
+NA,Other race,2024-06-01,0,1,1
+NA,Other race,2024-07-01,1,0,1
