@@ -1,6 +1,7 @@
 library(tidyverse)
 library(odbc)
 library(tidycensus)
+library(pins)
 
 sdn <- c(
   "Avondale",
@@ -619,6 +620,12 @@ reg_frame <- registry |>
   reframe(Patients = n()) |>
   full_join(ster) |>
   mutate(Steroids = coalesce(Steroids, 0))
+
+salt.board <- board_connect(
+  auth = "manual",
+  server = Sys.getenv("CONNECT_SERVER"),
+  key = Sys.getenv("CONNECT_API_KEY")
+)
 
 write_csv(df1, "cop measures.csv")
 write_csv(reg_frame, "registry measures.csv")
