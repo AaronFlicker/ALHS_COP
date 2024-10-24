@@ -508,7 +508,7 @@ readmit <- filter(encounters_hamco, encounter_type == "Admission") |>
   discharge_date,
   ContactMonth:Avondale
   ) |>
-  filter(ContactMonth < today()-120) |>
+  filter(ContactMonth < today()-60) |>
   inner_join(
     encounters |> 
       filter(encounter_type == "Admission") |> 
@@ -534,6 +534,39 @@ readmit <- filter(encounters_hamco, encounter_type == "Admission") |>
   ) |>
   group_by(encounter_type, ContactMonth, Race, SDN, Avondale) |>
   reframe(across(c(Readmit30, Readmit90, Readmit365), sum))
+
+readmited <- filter(encounters_hamco, encounter_type == "Admission") |>
+  select(
+    pat_id:pat_enc_csn_id, 
+    discharge_date,
+    ContactMonth:Avondale
+  ) |>
+  filter(ContactMonth < today()-60) |>
+  inner_join(
+    encounters |> 
+      filter(encounter_type %in% c("Admission", "ED")) |> 
+      select(pat_id, pat_enc_csn_id, contact_date), 
+    join_by(pat_id),
+    multiple = "all"
+  ) |>
+  filter(
+    contact_date >= discharge_date,
+    pat_enc_csn_id.x != pat_enc_csn_id.y
+  ) |>
+  group_by(pat_id, discharge_date, ContactMonth, Race, SDN, Avondale) |>
+  reframe(contact_date = min(contact_date)) |>
+  mutate(
+    ReadmitED30 = as.numeric(contact_date-discharge_date) <= 30,
+    Discharge90 = as.numeric(today()-discharge_date) >= 90,
+    ReadmitED90 = as.numeric(contact_date-discharge_date) <= 90,
+    ReadmitED90 = ifelse(Discharge90, ReadmitED90, FALSE),
+    Discharge365 = as.numeric(today()-discharge_date) >= 365,
+    ReadmitED365 = as.numeric(contact_date-discharge_date) <= 365,
+    ReadmitED365 = ifelse(Discharge365, ReadmitED365, FALSE),
+    encounter_type = "Admission"
+  ) |>
+  group_by(encounter_type, ContactMonth, Race, SDN, Avondale) |>
+  reframe(across(c(ReadmitED30, ReadmitED90, ReadmitED365), sum))
 
 # admit_ed <- select(
 #   admit_hamco, 
@@ -599,7 +632,9 @@ dateframe <- data.frame(
 )
 
 df1 <- left_join(dateframe, enc_count) |>
-  left_join(readmit) 
+  left_join(readmit) |>
+  left_join(readmited) |>
+  mutate(across(Encounters:ReadmitED365, \(x) coalesce(x, 0)))
 
 # reg_frame <- registry |>
 #   group_by(Race, Avondale, SDN) |>
