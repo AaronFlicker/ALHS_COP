@@ -2216,6 +2216,36 @@
         "Built": "R 4.1.3; ; 2023-04-17 16:08:40 UTC; windows"
       }
     },
+    "pins": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Type": "Package",
+        "Package": "pins",
+        "Title": "Pin, Discover, and Share Resources",
+        "Version": "1.4.0",
+        "Authors@R": "c(\n    person(\"Julia\", \"Silge\", , \"julia.silge@posit.co\", role = c(\"cre\", \"aut\"),\n           comment = c(ORCID = \"0000-0002-3671-836X\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Javier\", \"Luraschi\", , \"jluraschi@gmail.com\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Publish data sets, models, and other R objects, making it\n    easy to share them across projects and with your colleagues. You can\n    pin objects to a variety of \"boards\", including local folders (to\n    share on a networked drive or with 'DropBox'), 'Posit Connect',\n    'AWS S3', and more.",
+        "License": "Apache License (>= 2)",
+        "URL": "https://pins.rstudio.com/, https://github.com/rstudio/pins-r",
+        "BugReports": "https://github.com/rstudio/pins-r/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli, digest, fs, generics, glue, httr, jsonlite, lifecycle,\nmagrittr, purrr (>= 1.0.0), rappdirs, rlang (>= 1.1.0), tibble,\nwhisker, withr (>= 2.4.3), yaml",
+        "Suggests": "archive, arrow, AzureStor, covr, data.table, datasets,\nfilelock, gitcreds, googleCloudStorageR, googledrive, httr2,\nids, knitr, Microsoft365R, mime, mockery, nanoparquet, openssl,\npaws.storage, qs, R.utils, rmarkdown, rsconnect, shiny, sodium,\ntestthat (>= 3.1.7), webfakes (>= 1.2.0), xml2, zip",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-10-07 15:34:43 UTC; juliasilge",
+        "Author": "Julia Silge [cre, aut] (<https://orcid.org/0000-0002-3671-836X>),\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Javier Luraschi [aut],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Julia Silge <julia.silge@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-10-07 16:00:03 UTC",
+        "Built": "R 4.1.0; ; 2024-10-18 14:43:39 UTC; windows"
+      }
+    },
     "pkgconfig": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -2668,31 +2698,30 @@
       "Repository": "https://cran.rstudio.com",
       "description": {
         "Package": "rlang",
-        "Version": "1.0.6",
+        "Version": "1.1.4",
         "Title": "Functions for Base Types and Core R and 'Tidyverse' Features",
         "Description": "A toolbox for working with base types, core R features\n  like the condition system, and core 'Tidyverse' features like tidy\n  evaluation.",
-        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", ,\"lionel@rstudio.com\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", ,\"hadley@rstudio.com\", \"aut\"),\n    person(given = \"mikefc\",\n           email = \"mikefc@coolbutuseless.com\", \n           role = \"cph\", \n           comment = \"Hash implementation based on Mike's xxhashlite\"),\n    person(given = \"Yann\",\n           family = \"Collet\",\n           role = \"cph\", \n           comment = \"Author of the embedded xxHash library\"),\n    person(given = \"RStudio\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", ,\"lionel@posit.co\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", ,\"hadley@posit.co\", \"aut\"),\n    person(given = \"mikefc\",\n           email = \"mikefc@coolbutuseless.com\", \n           role = \"cph\", \n           comment = \"Hash implementation based on Mike's xxhashlite\"),\n    person(given = \"Yann\",\n           family = \"Collet\",\n           role = \"cph\", \n           comment = \"Author of the embedded xxHash library\"),\n    person(given = \"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n    )",
         "License": "MIT + file LICENSE",
         "ByteCompile": "true",
         "Biarch": "true",
-        "Depends": "R (>= 3.4.0)",
+        "Depends": "R (>= 3.5.0)",
         "Imports": "utils",
         "Suggests": "cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,\nmethods, pillar, rmarkdown, stats, testthat (>= 3.0.0), tibble,\nusethis, vctrs (>= 0.2.3), withr",
         "Enhances": "winch",
-        "SystemRequirements": "C++11",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.1.9000",
+        "RoxygenNote": "7.3.1",
         "URL": "https://rlang.r-lib.org, https://github.com/r-lib/rlang",
         "BugReports": "https://github.com/r-lib/rlang/issues",
         "Config/testthat/edition": "3",
         "Config/Needs/website": "dplyr, tidyverse/tidytemplate",
         "NeedsCompilation": "yes",
-        "Packaged": "2022-09-23 16:12:48 UTC; lionel",
-        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  RStudio [cph, fnd]",
-        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
+        "Packaged": "2024-05-31 12:46:04 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  Posit, PBC [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "CRAN",
-        "Date/Publication": "2022-09-24 05:40:02 UTC",
-        "Built": "R 4.1.3; x86_64-w64-mingw32; 2022-10-05 17:10:23 UTC; windows"
+        "Date/Publication": "2024-06-04 09:45:03 UTC",
+        "Built": "R 4.1.0; x86_64-w64-mingw32; 2024-10-18 14:42:55 UTC; windows"
       }
     },
     "rmarkdown": {
@@ -3556,6 +3585,29 @@
         "Built": "R 4.1.3; x86_64-w64-mingw32; 2023-04-17 17:04:43 UTC; windows"
       }
     },
+    "whisker": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "whisker",
+        "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
+        "License": "GPL-3",
+        "Title": "{{mustache}} for R, Logicless Templating",
+        "Type": "Package",
+        "LazyLoad": "yes",
+        "Author": "Edwin de Jonge",
+        "Description": "Implements 'Mustache' logicless templating.",
+        "Version": "0.4.1",
+        "URL": "https://github.com/edwindj/whisker",
+        "Suggests": "markdown",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-12-05 15:15:55 UTC; hornik",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-12-05 15:33:50 UTC",
+        "Built": "R 4.1.3; ; 2023-03-03 18:14:12 UTC; windows"
+      }
+    },
     "withr": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -3716,29 +3768,68 @@
         "Date/Publication": "2023-01-23 18:40:02 UTC",
         "Built": "R 4.1.3; x86_64-w64-mingw32; 2023-03-30 16:33:22 UTC; windows"
       }
+    },
+    "zoo": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "zoo",
+        "Version": "1.8-12",
+        "Date": "2023-04-11",
+        "Title": "S3 Infrastructure for Regular and Irregular Time Series (Z's\nOrdered Observations)",
+        "Authors@R": "c(person(given = \"Achim\", family = \"Zeileis\", role = c(\"aut\", \"cre\"), email = \"Achim.Zeileis@R-project.org\",\n                    comment = c(ORCID = \"0000-0003-0918-3766\")),\n             person(given = \"Gabor\", family = \"Grothendieck\", role = \"aut\", email = \"ggrothendieck@gmail.com\"),\n             person(given = c(\"Jeffrey\", \"A.\"), family = \"Ryan\", role = \"aut\", email = \"jeff.a.ryan@gmail.com\"),\n             person(given = c(\"Joshua\", \"M.\"), family = \"Ulrich\", role = \"ctb\", email = \"josh.m.ulrich@gmail.com\"),\n             person(given = \"Felix\", family = \"Andrews\", role = \"ctb\", email = \"felix@nfrac.org\"))",
+        "Description": "An S3 class with methods for totally ordered indexed\n             observations. It is particularly aimed at irregular time series\n             of numeric vectors/matrices and factors. zoo's key design goals\n             are independence of a particular index/date/time class and\n             consistency with ts and base R by providing methods to extend\n             standard generics.",
+        "Depends": "R (>= 3.1.0), stats",
+        "Suggests": "AER, coda, chron, ggplot2 (>= 3.0.0), mondate, scales,\nstinepack, strucchange, timeDate, timeSeries, tis, tseries, xts",
+        "Imports": "utils, graphics, grDevices, lattice (>= 0.20-27)",
+        "License": "GPL-2 | GPL-3",
+        "URL": "https://zoo.R-Forge.R-project.org/",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-04-11 21:24:32 UTC; zeileis",
+        "Author": "Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>),\n  Gabor Grothendieck [aut],\n  Jeffrey A. Ryan [aut],\n  Joshua M. Ulrich [ctb],\n  Felix Andrews [ctb]",
+        "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-04-13 12:13:20 UTC",
+        "Built": "R 4.1.3; x86_64-w64-mingw32; 2023-04-17 14:15:45 UTC; windows"
+      }
     }
   },
   "files": {
     "cop-dash.html": {
-      "checksum": "c0525ea3d163c51049d38fb558a96d4b"
+      "checksum": "5ce685792d09b00cb795b865b585964a"
     },
     "cop dash.Rmd": {
-      "checksum": "66da186736bd26abefd06cc4cd86e110"
+      "checksum": "beca1657cd911c6ba2ea1fb59fc3c47e"
+    },
+    "cop data.R": {
+      "checksum": "3256badf217c01a89f078d9736019389"
     },
     "cop ggplotly.R": {
-      "checksum": "75d2e16378b1e4b3ea4ebe904c2d058c"
+      "checksum": "6340ae9fd5caa561c7153db67e4b781b"
+    },
+    "cop measures.csv": {
+      "checksum": "e11c20a1eacdb8caf9eaa91004e38960"
+    },
+    "cop test dash.R": {
+      "checksum": "bd095ad1d04c48ac0bed552bc64f3ea0"
     },
     "cop.R": {
       "checksum": "10154b8d09e4b4f28567dbe757a0b18a"
     },
     "data download.R": {
-      "checksum": "144a36a9c00e64a1dbef930c4e03238a"
+      "checksum": "8cd36162fb36f12d2d2cf37bc572aba3"
     },
     "hamco encounters.csv": {
       "checksum": "bd3e6558c1ccd5cb08416a8f9190f261"
     },
+    "Hamco population.csv": {
+      "checksum": "cc0ffdea9fbb8c3e7e46640ff4b4c6ec"
+    },
     "Neighborhood dataset.csv": {
       "checksum": "eaf57bfed9ceccced40764063dbd4abb"
+    },
+    "registry measures.csv": {
+      "checksum": "9f5af71879a8ec88905759f830802107"
     }
   },
   "users": null
