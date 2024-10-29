@@ -74,9 +74,9 @@ pchart <- function(df, title){
       labels = unique(df$xlab)
       ) +
     scale_y_continuous(
-      limits = c(0, 1), 
-      breaks = seq(0, 1, .2),
-      labels = seq(0, 100, 20)
+      limits = c(0, .75), 
+      breaks = seq(0, .7, .2),
+      labels = seq(0, 70, 20)
       ) +
     scale_color_manual(
       values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink)
@@ -96,8 +96,8 @@ readmit_frame <- function(df, days){
   colnames(x) <- c("ContactMonth", "Admissions", "Readmissions", "Rate")
   x <- x |>
     mutate(
-      BaseTotal = sum(Admissions[year(ContactMonth) < 2021]),
-      BaseReadmit = sum(Readmissions[year(ContactMonth) < 2021]),
+      BaseTotal = sum(Admissions[year(ContactMonth) < 2024]),
+      BaseReadmit = sum(Readmissions[year(ContactMonth) < 2024]),
       Centerline = BaseReadmit/BaseTotal,
       sigma = sqrt(Centerline*(1-Centerline)/Admissions),
       UCL = Centerline + 3*sigma,
@@ -149,7 +149,7 @@ admit_race <- cop |>
   group_by(ContactMonth, Race) |>
   reframe(Admissions = sum(Encounters)) |>
   inner_join(pop |> group_by(Race) |> reframe(Children = sum(Children))) |>
-  mutate(Rate = 100000*Admissions/sum(pop$Children)) |>
+  mutate(Rate = 100000*Admissions/Children) |> 
   arrange(Race, ContactMonth) |>
   group_by(Race) |>
   mutate(MA = rollmean(Rate, 12, align = "right", na.pad = TRUE))  |>
@@ -173,7 +173,7 @@ admit_race_chart <- ggplot(
   ) +
   scale_y_continuous(limits = c(0, 300), breaks = seq(0, 240, 20)) +
   scale_color_manual(values = c(cchmc_dark_purple, cchmc_light_green)) +
-  scale_linetype_manual(values = c("dashed", "solid")) +
+  scale_linetype_manual(values = c("solid", "dashed")) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5)) +
   guides(linetype = "none")

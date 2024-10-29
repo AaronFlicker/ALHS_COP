@@ -234,7 +234,7 @@ admits <- dbGetQuery(con, "
             OR dx.current_icd10_list LIKE '%R06%'
             OR dx.current_icd10_list LIKE '%R09.02%'
           )
-      AND peh.hosp_admsn_time > '1/1/2019'
+      AND peh.hosp_admsn_time > '1/1/2022'
       AND (a.eff_start_date <= peh.hosp_admsn_time OR a.eff_start_date IS NULL)
       AND (a.eff_end_date > peh.hosp_admsn_time OR a.eff_end_date IS NULL)
       ") 
@@ -304,7 +304,7 @@ educ <- dbGetQuery(con, "
 		      OR dx.current_icd10_list LIKE '%R06%'
 		      OR dx.current_icd10_list LIKE '%R09.02%'
 		      )
-		AND pe.contact_date BETWEEN '1/1/2019'
+		AND pe.contact_date BETWEEN '1/1/2022'
 		  AND EOMONTH(DATEADD(MONTH, -1, GETDATE()))
 		AND (a.eff_start_date <= peh.hosp_admsn_time OR a.eff_start_date IS NULL)
     AND (a.eff_end_date > peh.hosp_admsn_time OR a.eff_end_date IS NULL)
