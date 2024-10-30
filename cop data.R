@@ -347,63 +347,51 @@ encounters <- rbind(admits, educ) |>
     Avondale = Neighborhood == "Avondale" & !is.na(Neighborhood)
   )
 
-# clear <- dbGetQuery(con, "
-#   SELECT op.pat_id
-# 	    	,CONVERT(DATE, MAX(op.ordering_date)) AS MostRecentClearOrderDate
-# 		    ,op.proc_id
-# 		    ,op.proc_name AS ClearProcedure
-# 		    ,order_status_c_name
-# 	FROM hpceclarity.bmi.order_proc op
-# 	INNER JOIN hpceclarity.bmi.y_chmc_race_ethnicity_mapping r
-#         ON op.pat_id = r.pat_id
-#   LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
-#     ON op.pat_id = a.pat_id
-#     AND op.ordering_date >= a.eff_start_date
-#     AND (op.ordering_date < a.eff_end_date OR a.eff_end_date IS NULL)
-# 	WHERE proc_id = '10537336'
-# 		AND order_status_c_name = 'Sent'
-# 	GROUP BY op.pat_id
-# 		    	,op.proc_id
-# 			    ,op.proc_name
-# 			    ,op.order_status_c_name
-# 			    ,r.mapped_race
-#                     ") |>
-#   inner_join(patients)
-# 
-# help <- dbGetQuery(con, "
-#   SELECT op.pat_id
-#     		,CAST(op.ordering_date AS DATE) AS ContactDate
-# 		    ,op.proc_id
-# 		    ,op.proc_name AS ChildHeLPProcedure
-# 		    ,op.order_status_c_name
-# 		    ,g.Neighborhood
-# 	FROM hpceclarity.bmi.order_proc op
-# 	INNER JOIN hpceclarity.bmi.y_chmc_race_ethnicity_mapping r
-#     ON op.pat_id = r.pat_id
-#   LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
-#     ON op.pat_id = a.pat_id
-#     AND op.ordering_date >= a.eff_start_date
-#     AND (op.ordering_date < a.eff_end_date OR a.eff_end_date IS NULL)
-#   LEFT JOIN temptable.dbo.full_list_geocode g
-#     ON (a.addr_hx_line1 = g.add_line_1 
-#       OR (a.addr_hx_line1 IS NULL AND g.add_line_1 IS NULL))
-#     AND (a.addr_hx_line2 = g.add_line_2 
-#       OR (a.addr_hx_line2 IS NULL AND g.add_line_2 IS NULL))
-#     AND (a.city_hx = g.city OR (a.city_hx IS NULL AND g.city IS NULL))
-#     AND (a.state = g.state OR (a.state IS NULL AND g.state IS NULL))
-#     AND (a.zip_hx = g.zip OR (a.zip_hx IS NULL AND g.zip IS NULL))
-# 	WHERE proc_id = '10450182'
-# 		AND order_status_c_name = 'Sent'
-#                    ") |>
-#   inner_join(patients) |>
-#   unique() |>
-#   mutate(
-#     SDN = Neighborhood %in% sdn,
-#     Avondale = Neighborhood == "Avondale",
-#     ContactMonth = floor_date(ContactDate, "month")
-#     ) |>
-#   group_by(ContactMonth, Race, SDN, Avondale) |>
-#   reframe(HelpRefers = n())
+clear <- dbGetQuery(con, "
+  SELECT DISTINCT op.pat_id
+          				,op.ordering_date AS ContactDate
+          				,g.Neighborhood
+    FROM hpceclarity.bmi.order_proc op
+	    LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
+        ON op.pat_id = a.pat_id
+          AND op.ordering_date >= a.eff_start_date
+          AND (op.ordering_date < a.eff_end_date OR a.eff_end_date IS NULL)
+      LEFT JOIN temptable.dbo.full_list_geocode g
+        ON (a.addr_hx_line1 = g.add_line_1
+            OR (a.addr_hx_line1 IS NULL AND g.add_line_1 IS NULL))
+          AND (a.addr_hx_line2 = g.add_line_2
+            OR (a.addr_hx_line2 IS NULL AND g.add_line_2 IS NULL))
+          AND (a.city_hx = g.city OR (a.city_hx IS NULL AND g.city IS NULL))
+          AND (a.state = g.state OR (a.state IS NULL AND g.state IS NULL))
+          AND (a.zip_hx = g.zip OR (a.zip_hx IS NULL AND g.zip IS NULL))
+    WHERE op.proc_id in ('10537336', '10537313')
+	    AND year(op.ordering_date) > 2021
+                    ") |>
+  mutate(Program = "CLEAR")
+
+help <- dbGetQuery(con, "
+  SELECT op.pat_id
+    		,CAST(op.ordering_date AS DATE) AS ContactDate
+		    ,g.Neighborhood
+	FROM hpceclarity.bmi.order_proc op
+  LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
+    ON op.pat_id = a.pat_id
+    AND op.ordering_date >= a.eff_start_date
+    AND (op.ordering_date < a.eff_end_date OR a.eff_end_date IS NULL)
+  LEFT JOIN temptable.dbo.full_list_geocode g
+    ON (a.addr_hx_line1 = g.add_line_1
+      OR (a.addr_hx_line1 IS NULL AND g.add_line_1 IS NULL))
+    AND (a.addr_hx_line2 = g.add_line_2
+      OR (a.addr_hx_line2 IS NULL AND g.add_line_2 IS NULL))
+    AND (a.city_hx = g.city OR (a.city_hx IS NULL AND g.city IS NULL))
+    AND (a.state = g.state OR (a.state IS NULL AND g.state IS NULL))
+    AND (a.zip_hx = g.zip OR (a.zip_hx IS NULL AND g.zip IS NULL))
+	WHERE proc_id = '10450182'
+		AND op.ordering_date >= '2022-01-01'
+		and op.order_status_c <> 4
+                   ") |>
+  unique() |>
+  mutate(Program = "HELP") 
 
 munis <- get_decennial(
   geography = "county subdivision",
@@ -631,10 +619,27 @@ dateframe <- data.frame(
   Avondale = rep(c(TRUE, FALSE, FALSE), 3)
 )
 
+refer_dateframe <- data.frame(
+  ReferMonth = rep(unique(enc_count$ContactMonth), each = 4),
+  SDN = rep(c(TRUE, FALSE), each = 2),
+  Program = c("HELP", "CLEAR")
+) |>
+  filter(Program == "HELP" | ReferMonth >= as.Date("2022-10-01"))
+
 df1 <- left_join(dateframe, enc_count) |>
   left_join(readmit) |>
   left_join(readmited) |>
-  mutate(across(Encounters:ReadmitED365, \(x) coalesce(x, 0)))
+  mutate(across(Encounters:ReadmitED365, \(x) coalesce(x, 0))) 
+
+refers <- rbind(clear, help) |>
+  mutate(ReferMonth = floor_date(ContactDate, "month")) |>
+  select(-ContactDate) |>
+  unique() |>
+  mutate(SDN = Neighborhood %in% sdn) |>
+  group_by(ReferMonth, SDN, Program) |>
+  reframe(Referrals = n()) |>
+  right_join(refer_dateframe) |>
+  mutate(Referrals = coalesce(Referrals, 0))
 
 # reg_frame <- registry |>
 #   group_by(Race, Avondale, SDN) |>
@@ -650,6 +655,7 @@ salt_board <- board_connect(
 
 salt_board |> pin_write(pop, "fli6sh_131289@cchmc.org/Hamco_population")
 salt_board |> pin_write(df1, "fli6sh_131289@cchmc.org/cop_measures")
+salt_board |> pin_write(refers, "fli6sh_131289@cchmc.org/referrals")
 
 # write_csv(df1, "cop measures.csv")
 # write_csv(reg_frame, "registry measures.csv")

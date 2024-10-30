@@ -35,6 +35,7 @@ cchmc_dark_grey <- "#55575A"
 
 cop <- pin_read(salt_board, "fli6sh_131289@cchmc.org/cop_measures")
 pop <- pin_read(salt_board, "fli6sh_131289@cchmc.org/Hamco_population")
+ref <- pin_read(salt_board, "fli6sh_131289@cchmc.org/referrals")
 
 ## Functions ==================================================================
 
@@ -107,6 +108,33 @@ readmit_frame <- function(df, days){
     ) |>
     filter(!is.na(Rate)) |>
     pivot_longer(cols = c(Centerline, Rate, UCL, LCL))
+}
+
+refer_chart <- function(df, program, title){
+  x <- filter(df, Program == program)
+  y <- ggplot(x, aes(x = ReferMonth, y = value, color = name, linetype = name)) +
+    geom_line(linewidth = 1) +
+    labs(x = NULL, y = NULL, title = title) +
+    scale_x_date(
+      breaks = unique(x$ReferMonth),
+      labels = paste(
+        year(unique(x$ReferMonth)),
+        month(unique(x$ReferMonth)),
+        sep = "-"
+      )
+    ) +
+    scale_y_continuous(limits = c(0, ifelse(program == "HELP", 120, 20))) +
+    scale_color_manual(
+      values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink)
+    ) +
+    scale_linetype_manual(values = c("solid", "dashed", "solid", "dashed")) +
+    guides(linetype = "none", color = "none") +
+    theme_minimal() +
+    theme(
+      axis.text.x = element_text(angle = 90),
+      plot.title = element_text(hjust = .5)
+    )
+  ggplotly(y)
 }
 
 ```
@@ -454,3 +482,89 @@ readmited_365 <- readmit_frame(readmit_ED, "365")
 pchart(readmited_365, "365 days") |>
   layout(showlegend = FALSE)
 ```
+
+
+Referrals
+==================================
+Row
+----------------------------------
+
+### Hamilton County
+
+```{r}
+#| echo: false
+
+ref_all <- ref |>
+  group_by(Program, ReferMonth) |>
+  reframe(Referrals = sum(Referrals)) |>
+  group_by(Program) |>
+  mutate(
+    BaseRefers = sum(Referrals[year(ReferMonth) < 2024]),
+    Months = length(unique(ReferMonth[year(ReferMonth) < 2024])),
+    CL = BaseRefers/Months,
+    UCL = CL + (3*sqrt(CL)),
+    LCL = CL - (3*sqrt(CL)),
+    LCL = ifelse(LCL < 0, 0, LCL),
+    ReferMonth = ymd(ReferMonth)
+  ) |>
+  pivot_longer(cols = c(Referrals, CL:LCL))
+
+ref_sdn <- filter(ref, SDN) |>
+  group_by(Program, ReferMonth) |>
+  reframe(Referrals = sum(Referrals)) |>
+  group_by(Program) |>
+  mutate(
+    BaseRefers = sum(Referrals[year(ReferMonth) < 2024]),
+    Months = length(unique(ReferMonth[year(ReferMonth) < 2024])),
+    CL = BaseRefers/Months,
+    UCL = CL + (3*sqrt(CL)),
+    LCL = CL - (3*sqrt(CL)),
+    LCL = ifelse(LCL < 0, 0, LCL),
+    ReferMonth = ymd(ReferMonth)
+  ) |>
+  pivot_longer(cols = c(Referrals, CL:LCL))
+
+refer_chart(
+  ref_all, 
+  "CLEAR", 
+  "Collaboration to Lessen Environmental Asthma Risks"
+  )
+
+```
+
+### Structurally Deprived Neighborhoods
+
+```{r}
+#| echo: false
+
+refer_chart(
+  ref_sdn, 
+  "CLEAR", 
+  "Collaboration to Lessen Environmental Asthma Risks"
+  )
+
+```
+
+Row
+----------------------------------
+###
+```{r}
+#| echo: false
+refer_chart(
+  ref_all, 
+  "HELP", 
+  "Child Health Law Partnership"
+  )
+```
+###
+
+```{r}
+#| echo: false
+
+refer_chart(
+  ref_sdn, 
+  "HELP", 
+  "Child Health Law Partnership"
+  )
+```
+
