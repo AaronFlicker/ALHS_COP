@@ -55,7 +55,10 @@ movavgchart <- function(df, title, ylim){
     scale_y_continuous(limits = c(0, ylim), breaks = seq(0, ylim, 20)) +
     scale_color_manual(values = c(cchmc_dark_blue, cchmc_pink)) +
     theme_minimal() +
-    theme(plot.title = element_text(hjust = .5))
+    theme(plot.title = element_text(hjust = .5)) +
+    geom_point(aes(x = ContactMonth, y = value, size = name)) +
+    scale_size_manual(values = c(3, .5)) +
+    guides(size = "none")
   ggplotly(x) 
 }
 
@@ -68,12 +71,10 @@ pchart <- function(df, title){
     labs(
       x = NULL, 
       y = "%", 
-      title = title
+      title = title,
+      size = NULL
     ) +
-    scale_x_continuous(
-      breaks = unique(df$ContactMonth),
-      labels = unique(df$xlab)
-      ) +
+    scale_x_continuous(breaks = unique(df$ContactMonth), labels = NULL) +
     scale_y_continuous(
       limits = c(0, .75), 
       breaks = seq(0, .7, .2),
@@ -87,7 +88,10 @@ pchart <- function(df, title){
     theme(
       plot.title = element_text(hjust = .5),
       axis.text.x = element_text(angle = 90)
-      ) 
+      ) +
+    geom_point(aes(x = ContactMonth, y = value, size = name)) +
+    scale_size_manual(values = c(0.25, 0.25, 3, 0.25)) +
+    guides(size = "none", linetype = "none", color = "none")
   ggplotly(x) 
 }
 
@@ -128,12 +132,15 @@ refer_chart <- function(df, program, title){
       values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink)
     ) +
     scale_linetype_manual(values = c("solid", "dashed", "solid", "dashed")) +
-    guides(linetype = "none", color = "none") +
     theme_minimal() +
     theme(
       axis.text.x = element_text(angle = 90),
       plot.title = element_text(hjust = .5)
-    )
+    ) +
+    geom_point(aes(x = ReferMonth, y = value, size = name)) +
+    scale_size_manual(values = c(0.25, 0.25, 3, 0.25)) +
+    guides(linetype = "none", color = "none", size = "none")
+
   ggplotly(y)
 }
 
@@ -204,7 +211,9 @@ admit_race_chart <- ggplot(
   scale_linetype_manual(values = c("solid", "dashed")) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5)) +
-  guides(linetype = "none")
+  geom_point(aes(x = ContactMonth, y = value, size = name)) +
+  scale_size_manual(values = c(3, 0.5)) +
+  guides(linetype = "none", size = "none")
 ggplotly(admit_race_chart) |> layout(legend = list(x = .85, y = .95))
 ```
 
@@ -326,7 +335,9 @@ ed_race_chart <- ggplot(
   scale_linetype_manual(values = c("dashed", "solid")) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5)) +
-  guides(linetype = "none")
+  geom_point(aes(x = ContactMonth, y = value, size = name)) +
+  scale_size_manual(values = c(0.25, 3)) +
+  guides(linetype = "none", size = "none")
 ggplotly(ed_race_chart) |> layout(legend = list(x = .85, y = .95))
 ```
 
@@ -430,8 +441,7 @@ readmit_ED <- filter(cop, encounter_type == "Admission") |>
 
 readmit_30 <- readmit_frame(readmit_total, "30")
 
-pchart(readmit_30, "30 days") |>
-  layout(showlegend = FALSE)
+pchart(readmit_30, "30 days")
 
 ```
 
@@ -440,8 +450,7 @@ pchart(readmit_30, "30 days") |>
 ```{r}
 readmited_30 <- readmit_frame(readmit_ED, "30")
 
-pchart(readmited_30, "30 days") |>
-  layout(showlegend = FALSE)
+pchart(readmited_30, "30 days") 
 
 ```
 
@@ -452,16 +461,14 @@ Row
 ```{r}
 readmit_90 <- readmit_frame(readmit_total, "90")
 
-pchart(readmit_90, "90 days") |>
-  layout(showlegend = FALSE)
+pchart(readmit_90, "90 days") 
 ```
 
 ### 
 ```{r}
 readmited_90 <- readmit_frame(readmit_ED, "90")
 
-pchart(readmited_90, "90 days") |>
-  layout(showlegend = FALSE)
+pchart(readmited_90, "90 days") 
 ```
 
 Row
