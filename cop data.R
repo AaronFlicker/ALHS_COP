@@ -44,54 +44,107 @@ con <- dbConnect(odbc(), "ClarityProd")
 #       TRUE ~ "Other race"
 #       )
 #     )
-# 
-# registry <- dbGetQuery(con, "
-#   SELECT rdm.x_pat_id AS pat_id
-#         ,CAST(rdm.x_update_date AS DATE) AS LastRegistryUpdateDate
-#         ,CAST(rdm.first_include_dttm AS DATE) AS first_include_dttm
-#         ,rdm.record_id
-#         ,CAST(p.birth_date AS DATE) AS birth_date
-#         ,r.mapped_race
-#         ,p.add_line_1
-#         ,p.add_line_2
-#         ,p.city
-#         ,p.state
-#         ,p.zip
-#         ,g.countyfp
-#         ,g.statefp
-#         ,g.Neighborhood
-#         ,g.foster
-#   FROM hpceclarity.bmi.reg_data_membership rdm
-#     INNER JOIN hpceclarity.bmi.patient p
-#       ON rdm.x_pat_id = p.pat_id
-#     LEFT JOIN temptable.dbo.full_list_geocode g
-#       ON (p.add_line_1 = g.add_line_1 
-#         OR (p.add_line_1 IS NULL AND g.add_line_1 IS NULL))
-#       AND (p.add_line_2 = g.add_line_2 
-#         OR (p.add_line_2 IS NULL AND g.add_line_2 IS NULL))
-#       AND (p.city = g.city OR (p.city IS NULL AND g.city IS NULL))
-#       AND (p.state = g.state OR (p.state IS NULL AND g.state IS NULL))
-#       AND (p.zip = g.zip OR (p.zip IS NULL AND g.zip IS NULL))
-#     LEFT JOIN hpceclarity.bmi.y_chmc_race_ethnicity_mapping r
-#         ON p.pat_id = r.pat_id
-#   WHERE rdm.registry_id = '100005'
-#     AND rdm.registry_status_c = 1
-#                        ") |>
-#   filter(
-#     as.numeric(today()-birth_date) < 6575,
-#     statefp == "39",
-#     countyfp == "061"
-#     ) |>
-#   mutate(
-#     Neighborhood = ifelse(foster, NA, Neighborhood),
-#     Race = case_when(
-#       mapped_race == "Black or African American" ~ "Black",
-#       mapped_race == "Unknown" ~ NA,
-#       TRUE ~ "Other race"
-#     ),
-#     SDN = Neighborhood %in% sdn,
-#     Avondale = Neighborhood == "Avondale" & !is.na(Neighborhood)
-#     )
+
+registry <- dbGetQuery(con, "
+  SELECT rdi.networked_id as pat_id
+        ,r.change_instant_utc_dttm AS ChangeDate
+        ,r.status_c
+        ,a.addr_hx_line1
+        ,a.addr_hx_line2
+        ,a.city_hx
+        ,a.state
+        ,a.zip_hx
+        ,g.statefp
+        ,g.countyfp
+        ,g.Neighborhood
+        ,CAST(p.birth_date AS DATE) AS DOB
+    FROM hpceclarity.bmi.reg_data_hx_membership r
+      INNER JOIN hpceclarity.bmi.registry_data_info rdi
+        ON r.record_id = rdi.record_id
+      LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
+        ON rdi.networked_id = a.pat_id
+        AND a.eff_start_date <= r.change_instant_utc_dttm
+        AND (
+          a.eff_end_date > r.change_instant_utc_dttm 
+            OR a.eff_end_date IS NULL
+            )
+      LEFT Join temptable.dbo.full_list_geocode g
+        ON (
+          a.addr_hx_line1 = g.add_line_1
+            OR (a.addr_hx_line1 IS NULL AND g.add_line_1 IS NULL)
+          )
+          AND (
+            a.addr_hx_line2 = g.add_line_2
+              OR (a.addr_hx_line2 IS NULL AND g.add_line_2 IS NULL)
+            )
+          AND (a.city_hx = g.city OR (a.city_hx IS NULL AND g.city IS NULL))
+          AND (a.state = g.state OR (a.state IS NULL AND g.state IS NULL))
+          AND (a.zip_hx = g.zip OR (a.zip_hx IS NULL AND g.zip IS NULL))
+      INNER JOIN hpceclarity.bmi.patient p
+        ON rdi.networked_id = p.pat_id
+    WHERE r.registry_id = '100005'
+    ORDER BY r.record_id, r.change_instant_utc_dttm
+                       ") 
+
+registry_on <- filter(registry, status_c == 1)
+registry_off <- filter(registry, status_c == 2) |>
+  select(pat_id, ChangeDate)
+registry2 <- inner_join(
+  registry_on, 
+  registry_off, 
+  join_by(pat_id), 
+  multiple = "all"
+  ) |>
+  filter(ChangeDate.y > ChangeDate.x) |>
+  group_by(pat_id, ChangeDate.x) |>
+  filter(ChangeDate.y == min(ChangeDate.y)) |>
+  ungroup() |>
+  select(pat_id, ChangeDate = ChangeDate.x, ExitDate = ChangeDate.y) |>
+  right_join(registry_on) |>
+  mutate(
+    EntryDate = as.Date(ChangeDate),
+    ExitDate = as.Date(ExitDate),
+    ExitDate = coalesce(ExitDate, today())
+  ) 
+
+reg_count <- registry2 |>
+  filter(
+    EntryDate <= "2022-01-01",
+    ExitDate > "2022-01-01",
+    as.numeric(as.Date("2022-01-01")-DOB) <= 7305
+    ) |>
+  reframe(Registry = n()) |>
+  mutate(Date = as.Date("2022-01-01"))
+
+firsts <- seq.Date(as.Date("2022-02-01"), today(), by = "month")
+
+for(i in firsts){
+  x <- registry2 |>
+    filter(
+      EntryDate <= i,
+      ExitDate > i,
+      as.numeric(as.Date(i)-DOB) <= 7305
+    ) |>
+    reframe(Registry = n()) |>
+    mutate(Date = as.Date(i))
+  reg_count <- rbind(reg_count, x)
+}
+
+filter(
+    as.numeric(today()-birth_date) < 6575,
+    statefp == "39",
+    countyfp == "061"
+    ) |>
+  mutate(
+    Neighborhood = ifelse(foster, NA, Neighborhood),
+    Race = case_when(
+      mapped_race == "Black or African American" ~ "Black",
+      mapped_race == "Unknown" ~ NA,
+      TRUE ~ "Other race"
+    ),
+    SDN = Neighborhood %in% sdn,
+    Avondale = Neighborhood == "Avondale" & !is.na(Neighborhood)
+    )
 
 # immun <- dbGetQuery(con, "
 #   SELECT rdm.x_pat_id AS pat_id

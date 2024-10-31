@@ -496,7 +496,7 @@ Referrals
 Row
 ----------------------------------
 
-### Hamilton County
+### Total
 
 ```{r}
 #| echo: false
