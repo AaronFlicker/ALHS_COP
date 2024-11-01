@@ -36,6 +36,7 @@ cchmc_dark_grey <- "#55575A"
 cop <- pin_read(salt_board, "fli6sh_131289@cchmc.org/cop_measures")
 pop <- pin_read(salt_board, "fli6sh_131289@cchmc.org/Hamco_population")
 ref <- pin_read(salt_board, "fli6sh_131289@cchmc.org/referrals")
+reg <- pin_read(salt_board, "fli6sh_131289@cchmc.org/registry")
 
 ## Functions ==================================================================
 
@@ -573,5 +574,284 @@ refer_chart(
   "HELP", 
   "Child Health Law Partnership"
   )
+```
+
+Engagement
+==================================
+Row
+----------------------------------
+
+### Patients
+```{r}
+#| echo: FALSE
+
+reg_pat <- ggplot(reg, aes(x = Date, y = Registry)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(x = NULL, y = NULL, title = "Patients on Asthma Registry") +
+  scale_x_date(
+    #limits = c(min(reg$Date), as.Date("2024-10-01")),
+    breaks = reg$Date
+    ) +
+  scale_y_continuous(
+    limits = c(45000, 65000),
+    breaks = seq(48000, 64000, 4000),
+    labels = format(seq(48000, 64000, 4000), big.mark = ",")
+    ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  geom_point(aes(x = Date, y = Registry), size = 3, color = cchmc_dark_blue)
+ggplotly(reg_pat)
+
+reg$Visits <- sample(1:50000, nrow(reg))
+reg$VisitRate <- reg$Visits/reg$Registry
+
+
+
+```
+
+### 
+
+ 
+
+```{r}
+#| echo: false
+
+reg_visit <- ggplot(reg, aes(x = Date, y = VisitRate)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = "%", 
+    title = "% of patients with visit in past 12 months") +
+  scale_x_date(breaks = reg$Date) +
+  scale_y_continuous(breaks = NULL) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  geom_point(aes(x = Date, y = VisitRate), size = 3, color = cchmc_dark_blue) +
+  annotate("text", x = as.Date("2023-06-01"), y =.5, size = 40, label = "FAKE DATA")
+ggplotly(reg_visit) 
+
+```
+ 
+ Row
+----------------------------------
+
+### Action Teams
+```{r}
+#| echo: false
+
+action <- data.frame(
+  Date = seq.Date(
+    as.Date("2022-01-01"),
+    as.Date("2024-10-01"),
+    by = "month"
+    ),
+  Innovation = runif(34)*5,
+  Attendance = sample(10:100, 34),
+  Trained = sort(sample(10:100, 34))
+)
+
+inn <- ggplot(action, aes(x = Date, y = Innovation)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Overall innovation scale score"
+    ) +
+  scale_x_date(breaks = action$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  geom_point(aes(x = Date, y = Innovation), size = 3, color = cchmc_dark_blue) +
+  annotate("text", x = as.Date("2023-06-01"), y = 2.5, size = 24, label = "FAKE DATA")
+ggplotly(inn)
+
+```
+
+###
+
+```{r}
+#| echo:false
+att <- ggplot(action, aes(x = Date, y = Attendance)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Attendance at AP calls"
+    ) +
+  scale_x_date(breaks = action$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  geom_point(aes(x = Date, y = Attendance), size = 3, color = cchmc_dark_blue) +
+  annotate("text", x = as.Date("2023-06-01"), y = 50, size = 24, label = "FAKE DATA")
+ggplotly(att)
+
+```
+
+###
+
+```{r}
+#| echo: false
+qi <- ggplot(action, aes(x = Date, y = Trained)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Trained in QI"
+    ) +
+  scale_x_date(breaks = action$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  geom_point(aes(x = Date, y = Trained), size = 3, color = cchmc_dark_blue) +
+  annotate("text", x = as.Date("2023-06-01"), y = 50, size = 24, label = "FAKE DATA")
+ggplotly(qi)
+
+```
+
+
+Knowledge Generation
+==================================
+Row
+----------------------------------
+###
+
+```{r}
+#| echo: false
+
+know <- data.frame(
+  Date = seq.Date(
+    as.Date("2022-01-01"),
+    as.Date("2024-10-01"),
+    by = "month"
+    ),
+  Papers = sort(sample(0:10, 34, replace = TRUE)),
+  Grants = sort(sample(0:12, 34, replace = TRUE)),
+  Studies = sort(sample(0:13, 34, replace = TRUE)),
+  QI = sort(sample(0:15, 34, replace = TRUE)),
+  Tests = sort(sample(0:20, 34, replace = TRUE))
+)
+
+pap <- ggplot(know, aes(x = Date, y = Papers)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Papers"
+    ) +
+  scale_x_date(breaks = know$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  annotate("text", x = as.Date("2023-06-01"), y = 5, size = 32, label = "FAKE DATA")
+ggplotly(pap)
+
+```
+
+###
+
+```{r}
+#| echo: false
+
+grant <- ggplot(know, aes(x = Date, y = Grants)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Grants"
+    ) +
+  scale_x_date(breaks = know$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  annotate("text", x = as.Date("2023-06-01"), y = 7, size = 32, label = "FAKE DATA")
+ggplotly(grant)
+
+```
+
+Row
+----------------------------------
+
+###
+
+```{r}
+#| echo: false
+
+stud <- ggplot(know, aes(x = Date, y = Studies)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Studies"
+    ) +
+  scale_x_date(breaks = know$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  annotate("text", x = as.Date("2023-06-01"), y = 7, size = 24, label = "FAKE DATA")
+ggplotly(stud)
+```
+
+###
+
+```{r}
+#| echo: false
+
+qip <- ggplot(know, aes(x = Date, y = QI)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Quality Improvement Projects"
+  ) +
+  scale_x_date(breaks = know$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  annotate("text", x = as.Date("2023-06-01"), y = 8, size = 24, label = "FAKE DATA")
+ggplotly(qip)
+
+```
+
+###
+
+```{r}
+#| echo: false
+
+test <- ggplot(know, aes(x = Date, y = Tests)) +
+  geom_line(linewidth = 1, color = cchmc_dark_blue) +
+  labs(
+    x = NULL, 
+    y = NULL, 
+    title = "Tests of change"
+  ) +
+  scale_x_date(breaks = know$Date) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = .5),
+    axis.text.x = element_text(angle = 90)
+  ) +
+  annotate("text", x = as.Date("2023-06-01"), y = 10, size = 24, label = "FAKE DATA")
+ggplotly(test)
 ```
 

@@ -709,6 +709,7 @@ salt_board <- board_connect(
 salt_board |> pin_write(pop, "fli6sh_131289@cchmc.org/Hamco_population")
 salt_board |> pin_write(df1, "fli6sh_131289@cchmc.org/cop_measures")
 salt_board |> pin_write(refers, "fli6sh_131289@cchmc.org/referrals")
+salt_board |> pin_write(reg_count, "fli6sh_131289@cchmc.org/registry")
 
 # write_csv(df1, "cop measures.csv")
 # write_csv(reg_frame, "registry measures.csv")
