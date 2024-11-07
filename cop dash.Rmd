@@ -393,7 +393,7 @@ ed_avondale <- cop |>
     name = factor(name, levels = c("Rate", "12-month moving average"))
   )
 
-movavgchart(ed_avondale, "Structually deprived neighborhoods", 321) |>
+movavgchart(ed_avondale, "Avondale", 321) |>
   layout(showlegend = FALSE)
 ```
 
