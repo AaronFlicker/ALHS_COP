@@ -118,33 +118,17 @@ reg_count <- registry2 |>
 
 firsts <- seq.Date(as.Date("2022-02-01"), today(), by = "month")
 
-for(i in firsts){
+for(i in 1:length(firsts)){
   x <- registry2 |>
     filter(
-      EntryDate <= i,
-      ExitDate > i,
-      as.numeric(as.Date(i)-DOB) <= 7305
+      EntryDate <= firsts[i],
+      ExitDate > firsts[i],
+      as.numeric(firsts[i]-DOB) <= 7305
     ) |>
     reframe(Registry = n()) |>
-    mutate(Date = as.Date(i))
+    mutate(Date = firsts[i])
   reg_count <- rbind(reg_count, x)
 }
-
-filter(
-    as.numeric(today()-birth_date) < 6575,
-    statefp == "39",
-    countyfp == "061"
-    ) |>
-  mutate(
-    Neighborhood = ifelse(foster, NA, Neighborhood),
-    Race = case_when(
-      mapped_race == "Black or African American" ~ "Black",
-      mapped_race == "Unknown" ~ NA,
-      TRUE ~ "Other race"
-    ),
-    SDN = Neighborhood %in% sdn,
-    Avondale = Neighborhood == "Avondale" & !is.na(Neighborhood)
-    )
 
 # immun <- dbGetQuery(con, "
 #   SELECT rdm.x_pat_id AS pat_id

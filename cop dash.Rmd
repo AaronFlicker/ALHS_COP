@@ -494,10 +494,10 @@ pchart(readmited_365, "365 days") |>
 
 Referrals
 ==================================
+
 Row
 ----------------------------------
-
-### Total
+### All referrals
 
 ```{r}
 #| echo: false
@@ -540,6 +540,7 @@ refer_chart(
 
 ```
 
+
 ### Structurally Deprived Neighborhoods
 
 ```{r}
@@ -547,33 +548,26 @@ refer_chart(
 
 refer_chart(
   ref_sdn, 
-  "CLEAR", 
+  "CLEAR",
   "Collaboration to Lessen Environmental Asthma Risks"
   )
 
 ```
 
+
 Row
 ----------------------------------
-###
+### All referrals
 ```{r}
 #| echo: false
-refer_chart(
-  ref_all, 
-  "HELP", 
-  "Child Health Law Partnership"
-  )
+refer_chart(ref_all, "HELP", "Child Health Law Partnership")
 ```
-###
+### Structurally Disadvantaged Neighborhoods
 
 ```{r}
 #| echo: false
 
-refer_chart(
-  ref_sdn, 
-  "HELP", 
-  "Child Health Law Partnership"
-  )
+refer_chart(ref_sdn, "HELP", "Child Health Law Partnership")
 ```
 
 Engagement
@@ -581,7 +575,7 @@ Engagement
 Row
 ----------------------------------
 
-### Patients
+### 
 ```{r}
 #| echo: FALSE
 
@@ -641,7 +635,7 @@ ggplotly(reg_visit)
  Row
 ----------------------------------
 
-### Action Teams
+### 
 ```{r}
 #| echo: false
 
