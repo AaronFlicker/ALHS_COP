@@ -11,6 +11,7 @@ library(tidyverse)
 library(plotly)
 library(zoo)
 library(pins)
+library(lubridate)
 
 salt_board <- board_connect(
   auth = "manual",
@@ -54,6 +55,9 @@ movavgchart <- function(df, title, ylim){
       title = title
     ) +
     scale_y_continuous(limits = c(0, ylim), breaks = seq(0, ylim, 20)) +
+    scale_x_date(
+      limits = c(as.Date("2022-01-01"), floor_date(today()-31, "month"))
+      ) +
     scale_color_manual(values = c(cchmc_dark_blue, cchmc_pink)) +
     theme_minimal() +
     theme(plot.title = element_text(hjust = .5)) +
@@ -116,7 +120,11 @@ readmit_frame <- function(df, days){
 }
 
 refer_chart <- function(df, program, title){
-  x <- filter(df, Program == program)
+  x <- df |>
+    filter(
+      Program == program,
+      ReferMonth <= today()-31
+      )
   y <- ggplot(x, aes(x = ReferMonth, y = value, color = name, linetype = name)) +
     geom_line(linewidth = 1) +
     labs(x = NULL, y = NULL, title = title) +
@@ -208,6 +216,9 @@ admit_race_chart <- ggplot(
     linetype = NULL
   ) +
   scale_y_continuous(limits = c(0, 300), breaks = seq(0, 240, 20)) +
+  scale_x_date(
+    limits = c(as.Date("2022-01-01"), floor_date(today()-31, "month"))
+  ) +
   scale_color_manual(values = c(cchmc_dark_purple, cchmc_light_green)) +
   scale_linetype_manual(values = c("solid", "dashed")) +
   theme_minimal() +
@@ -332,6 +343,9 @@ ed_race_chart <- ggplot(
     linetype = NULL
   ) +
   scale_y_continuous(limits = c(0, 321), breaks = seq(0, 320, 20)) +
+  scale_x_date(
+    limits = c(as.Date("2022-01-01"), floor_date(today()-31, "month"))
+  ) +
   scale_color_manual(values = c(cchmc_dark_purple, cchmc_light_green)) +
   scale_linetype_manual(values = c("dashed", "solid")) +
   theme_minimal() +
@@ -583,8 +597,8 @@ reg_pat <- ggplot(reg, aes(x = Date, y = Registry)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(x = NULL, y = NULL, title = "Patients on Asthma Registry") +
   scale_x_date(
-    #limits = c(min(reg$Date), as.Date("2024-10-01")),
-    breaks = reg$Date
+    limits = c(min(reg$Date), as.Date("2024-10-01")),
+    breaks = reg$Date[reg$Date <= as.Date("2024-10-01")]
     ) +
   scale_y_continuous(
     limits = c(45000, 65000),
@@ -596,7 +610,8 @@ reg_pat <- ggplot(reg, aes(x = Date, y = Registry)) +
     plot.title = element_text(hjust = .5),
     axis.text.x = element_text(angle = 90)
   ) +
-  geom_point(aes(x = Date, y = Registry), size = 3, color = cchmc_dark_blue)
+  geom_point(aes(x = Date, y = Registry), size = 3, color = cchmc_dark_blue) +
+  annotate("text", x = as.Date("2023-06-01"), y = 55000, size = 36, label = "FAKE DATA")
 ggplotly(reg_pat)
 
 reg$Visits <- sample(1:50000, nrow(reg))
