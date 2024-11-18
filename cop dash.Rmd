@@ -67,7 +67,7 @@ movavgchart <- function(df, title, ylim){
   ggplotly(x) 
 }
 
-pchart <- function(df, title){
+pchart <- function(df, title, limit){
   x <- ggplot(
     df, 
     aes(x = ContactMonth, y = value, color = name, linetype = name)
@@ -81,9 +81,9 @@ pchart <- function(df, title){
     ) +
     scale_x_continuous(breaks = unique(df$ContactMonth), labels = NULL) +
     scale_y_continuous(
-      limits = c(0, .75), 
-      breaks = seq(0, .7, .2),
-      labels = seq(0, 70, 20)
+      limits = c(0, limit/100),
+      breaks = seq(0, .2*(limit/100)%/%.2, .1),
+      labels = seq(0, 20*limit%/%20, 10)
       ) +
     scale_color_manual(
       values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink)
@@ -153,12 +153,42 @@ refer_chart <- function(df, program, title){
   ggplotly(y)
 }
 
+## Dateframe =================================================================
+
+months <- seq.Date(
+    as.Date("2022-01-01"), 
+    floor_date(today()-31, "month"), 
+    by = "month"
+    )
+dateframe <- data.frame(
+  ContactMonth = rep(months, 282),
+  Neighborhood = rep(unique(pop$Neighborhood), each = 3, length(months)),
+  encounter_type = rep(c("Admission", "ED", "UC"), 3196)
+)
+  
+hood_rates <- filter(cop, ContactMonth < today()-30) |>
+  mutate(Months = length(unique(ContactMonth))) |>
+  group_by(Neighborhood, encounter_type) |>
+  reframe(Encounters = sum(Encounters)) |>
+  right_join(dateframe |> distinct(Neighborhood, encounter_type)) |>
+  mutate(
+    Encounters = coalesce(Encounters, 0),
+    Rate = Encounters/length(unique(dateframe$ContactMonth))
+    ) |>
+  full_join(
+    pop |> 
+      group_by(SDN, Neighborhood) |> 
+      reframe(Children = sum(Children))
+    ) |>
+  mutate(Rate = Rate*100000/Children)
+
 ```
 
-Admissions
+Admissions {data-orientation=columns}
 ==================================
 
-Row
+
+Column {data-width=900}
 ----------------------------------
 
 ### 
@@ -229,7 +259,7 @@ admit_race_chart <- ggplot(
 ggplotly(admit_race_chart) |> layout(legend = list(x = .85, y = .95))
 ```
 
-Row
+Column {data-width=900}
 ----------------------------------
 
 ### 
@@ -263,12 +293,21 @@ movavgchart(admit_deprived, "Structually deprived neighborhoods", 250) |>
 ```{r}
 admit_avondale <- cop |>
   filter(
-    Avondale,
+    Neighborhood == "Avondale",
     encounter_type == "Admission"
     ) |>
-  group_by(ContactMonth, Avondale) |>
+  group_by(ContactMonth, Neighborhood) |>
   reframe(Admissions = sum(Encounters)) |>
-  inner_join(pop |> group_by(Avondale) |> reframe(Children = sum(Children))) |>
+  right_join(
+    filter(dateframe, Neighborhood == "Avondale") |>
+      distinct(Neighborhood, ContactMonth)
+    ) |>
+  mutate(Admissions = coalesce(Admissions, 0))  |>
+  inner_join(
+    pop |> 
+      group_by(Neighborhood) |> 
+      reframe(Children = sum(Children))
+    ) |>
   arrange(ContactMonth) |>
   mutate(
     Rate = 100000*Admissions/Children,
@@ -278,19 +317,56 @@ admit_avondale <- cop |>
   mutate(
     name = ifelse(name == "MA", "12-month moving average", name),
     name = factor(name, levels = c("Rate", "12-month moving average"))
-  )
+  ) 
 
 movavgchart(admit_avondale, "Avondale", 250) |>
   layout(showlegend = FALSE)
 ```
 
-Emergency Department visits
-===============================================
 
-Row
+Column {data-width=600}
 ----------------------------------
 
-### 
+###
+
+```{r}
+hood_admit <- hood_rates |>
+  filter(
+    encounter_type == "Admission",
+    Neighborhood != "Milford",
+    Encounters > 0
+    ) |>
+  arrange(-Rate) |>
+  mutate(rn = row_number()) |>
+  filter(rn <= 50)
+
+hood_admit_plot <- ggplot(
+  hood_admit, 
+  aes(x = reorder(Neighborhood, Rate), y = Rate)
+  ) +
+  geom_bar(stat = "identity", fill = cchmc_light_blue) +
+  coord_flip() +
+  labs(
+    x = NULL, 
+    y = "Encounters per month\nper 100,000 children", 
+    title = "Top 50 rates by neighborhood"
+    ) +
+  scale_y_continuous(breaks = seq(0, 80, 20)) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5))
+ggplotly(hood_admit_plot)
+
+```
+
+
+
+ED visits {data-orientation=columns}
+===============================================
+
+Column {data-width=900}
+----------------------------------
+
+###
 
 ```{r}
 ed_total <- filter(cop, encounter_type == "ED") |>
@@ -311,7 +387,7 @@ movavgchart(ed_total, "Hamilton County", 321) |>
   layout(legend = list(x = 0.05, y = 0.95))
 ```
 
-### 
+###
 
 ```{r}
 ed_race <- cop |>
@@ -331,7 +407,7 @@ ed_race <- cop |>
   pivot_longer(Rate:MA)
 
 ed_race_chart <- ggplot(
-  ed_race, 
+  ed_race,
   aes(x = ContactMonth, y = value, color = Race, linetype = name)
 ) +
   geom_line(linewidth = 1) +
@@ -356,10 +432,10 @@ ed_race_chart <- ggplot(
 ggplotly(ed_race_chart) |> layout(legend = list(x = .85, y = .95))
 ```
 
-Row
+Column {data-width=900}
 ----------------------------------
 
-### 
+###
 
 ```{r}
 ed_deprived <- cop |>
@@ -385,31 +461,72 @@ movavgchart(ed_deprived, "Structually deprived neighborhoods", 321) |>
   layout(showlegend = FALSE)
 ```
 
-### 
+###
 
 ```{r}
 ed_avondale <- cop |>
   filter(
-    Avondale,
+    Neighborhood == "Avondale",
     encounter_type == "ED"
     ) |>
-  group_by(ContactMonth, Avondale) |>
-  reframe(EDVisits = sum(Encounters)) |>
-  inner_join(pop |> group_by(Avondale) |> reframe(Children = sum(Children))) |>
+  group_by(ContactMonth, Neighborhood) |>
+  reframe(Encounters = sum(Encounters)) |>
+  right_join(
+    filter(dateframe, Neighborhood == "Avondale") |>
+      distinct(Neighborhood, ContactMonth)
+    ) |>
+  mutate(Encounters = coalesce(Encounters, 0))  |>
+  inner_join(
+    pop |> 
+      group_by(Neighborhood) |> 
+      reframe(Children = sum(Children))
+    ) |>
   arrange(ContactMonth) |>
   mutate(
-    Rate = EDVisits*100000/Children,
+    Rate = 100000*Encounters/Children,
     MA = rollmean(Rate, 12, align = "right", na.pad = TRUE)
   ) |>
   pivot_longer(Rate:MA) |>
   mutate(
     name = ifelse(name == "MA", "12-month moving average", name),
     name = factor(name, levels = c("Rate", "12-month moving average"))
-  )
+  ) 
 
-movavgchart(ed_avondale, "Avondale", 321) |>
+movavgchart(ed_avondale, "Avondale", 325) |>
   layout(showlegend = FALSE)
 ```
+
+Column {data-width=600}
+----------------------------------
+###
+```{r}
+hood_ed <- hood_rates |>
+  filter(
+    encounter_type == "ED",
+    Neighborhood != "Milford",
+    Encounters > 0
+    ) |>
+  arrange(-Rate) |>
+  mutate(rn = row_number()) |>
+  filter(rn <= 50)
+
+hood_ed_plot <- ggplot(
+  hood_ed, 
+  aes(x = reorder(Neighborhood, Rate), y = Rate)
+  ) +
+  geom_bar(stat = "identity", fill = cchmc_light_blue) +
+  coord_flip() +
+  labs(
+    x = NULL, 
+    y = "Encounters per month\nper 100,000 children", 
+    title = "Top 50 rates by neighborhood"
+    ) +
+  scale_y_continuous(breaks = seq(0, 80, 20)) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5))
+ggplotly(hood_ed_plot)
+```
+
 
 Readmissions
 ===============================================
@@ -427,8 +544,8 @@ readmit_total <- filter(cop, encounter_type == "Admission") |>
     Readmit30Rate = ifelse(ContactMonth < today()-60, Readmit30/Encounters, NA),
     Readmit90Rate = ifelse(ContactMonth < today()-120, Readmit90/Encounters, NA),
     Readmit365Rate = ifelse(
-      ContactMonth < today()-395, 
-      Readmit365/Encounters, 
+      ContactMonth < today()-395,
+      Readmit365/Encounters,
       NA
       ),
   )
@@ -438,25 +555,25 @@ readmit_ED <- filter(cop, encounter_type == "Admission") |>
   reframe(across(c(Encounters, ReadmitED30:ReadmitED365), sum)) |>
   mutate(
     ReadmitED30Rate = ifelse(
-      ContactMonth < today()-60, 
-      ReadmitED30/Encounters, 
+      ContactMonth < today()-60,
+      ReadmitED30/Encounters,
       NA
       ),
     ReadmitED90Rate = ifelse(
-      ContactMonth < today()-120, 
-      ReadmitED90/Encounters, 
+      ContactMonth < today()-120,
+      ReadmitED90/Encounters,
       NA
       ),
     ReadmitED365Rate = ifelse(
-      ContactMonth < today()-395, 
-      ReadmitED365/Encounters, 
+      ContactMonth < today()-395,
+      ReadmitED365/Encounters,
       NA
       ),
   )
 
 readmit_30 <- readmit_frame(readmit_total, "30")
 
-pchart(readmit_30, "30 days")
+pchart(readmit_30, "30 days", 21)
 
 ```
 
@@ -465,25 +582,25 @@ pchart(readmit_30, "30 days")
 ```{r}
 readmited_30 <- readmit_frame(readmit_ED, "30")
 
-pchart(readmited_30, "30 days") 
+pchart(readmited_30, "30 days", 21)
 
 ```
 
 Row
 ----------------------------------
 
-### 
+###
 ```{r}
 readmit_90 <- readmit_frame(readmit_total, "90")
 
-pchart(readmit_90, "90 days") 
+pchart(readmit_90, "90 days", 44)
 ```
 
-### 
+###
 ```{r}
 readmited_90 <- readmit_frame(readmit_ED, "90")
 
-pchart(readmited_90, "90 days") 
+pchart(readmited_90, "90 days", 44)
 ```
 
 Row
@@ -493,15 +610,15 @@ Row
 ```{r}
 readmit_365 <- readmit_frame(readmit_total, "365")
 
-pchart(readmit_365, "365 days") |>
+pchart(readmit_365, "365 days", 74) |>
   layout(showlegend = FALSE)
 ```
 
-### 
+###
 ```{r}
 readmited_365 <- readmit_frame(readmit_ED, "365")
 
-pchart(readmited_365, "365 days") |>
+pchart(readmited_365, "365 days", 74) |>
   layout(showlegend = FALSE)
 ```
 
@@ -531,9 +648,13 @@ ref_all <- ref |>
   ) |>
   pivot_longer(cols = c(Referrals, CL:LCL))
 
+
+
 ref_sdn <- filter(ref, SDN) |>
   group_by(Program, ReferMonth) |>
   reframe(Referrals = sum(Referrals)) |>
+  right_join(ref_all |> distinct(ReferMonth, Program)) |>
+  mutate(Referrals = coalesce(Referrals, 0)) |>
   group_by(Program) |>
   mutate(
     BaseRefers = sum(Referrals[year(ReferMonth) < 2024]),
@@ -547,8 +668,8 @@ ref_sdn <- filter(ref, SDN) |>
   pivot_longer(cols = c(Referrals, CL:LCL))
 
 refer_chart(
-  ref_all, 
-  "CLEAR", 
+  ref_all,
+  "CLEAR",
   "Collaboration to Lessen Environmental Asthma Risks"
   )
 
@@ -561,7 +682,7 @@ refer_chart(
 #| echo: false
 
 refer_chart(
-  ref_sdn, 
+  ref_sdn,
   "CLEAR",
   "Collaboration to Lessen Environmental Asthma Risks"
   )
@@ -589,11 +710,14 @@ Engagement
 Row
 ----------------------------------
 
-### 
+###
 ```{r}
-#| echo: FALSE
 
-reg_pat <- ggplot(reg, aes(x = Date, y = Registry)) +
+reg_tot <- reg |>
+  group_by(Date) |>
+  reframe(Registry = sum(Registry))
+
+reg_pat <- ggplot(reg_tot, aes(x = Date, y = Registry)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(x = NULL, y = NULL, title = "Patients on Asthma Registry") +
   scale_x_date(
@@ -614,25 +738,24 @@ reg_pat <- ggplot(reg, aes(x = Date, y = Registry)) +
   annotate("text", x = as.Date("2023-06-01"), y = 55000, size = 36, label = "FAKE DATA")
 ggplotly(reg_pat)
 
-reg$Visits <- sample(1:50000, nrow(reg))
-reg$VisitRate <- reg$Visits/reg$Registry
+
 
 
 
 ```
 
-### 
+###
 
- 
+
 
 ```{r}
-#| echo: false
+reg_tot$VisitRate <- runif(nrow(reg_tot))*100
 
-reg_visit <- ggplot(reg, aes(x = Date, y = VisitRate)) +
+reg_visit <- ggplot(reg_tot, aes(x = Date, y = VisitRate)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = "%", 
+    x = NULL,
+    y = "%",
     title = "% of patients with visit in past 12 months") +
   scale_x_date(breaks = reg$Date) +
   scale_y_continuous(breaks = NULL) +
@@ -643,14 +766,14 @@ reg_visit <- ggplot(reg, aes(x = Date, y = VisitRate)) +
   ) +
   geom_point(aes(x = Date, y = VisitRate), size = 3, color = cchmc_dark_blue) +
   annotate("text", x = as.Date("2023-06-01"), y =.5, size = 40, label = "FAKE DATA")
-ggplotly(reg_visit) 
+ggplotly(reg_visit)
 
 ```
- 
+
  Row
 ----------------------------------
 
-### 
+###
 ```{r}
 #| echo: false
 
@@ -668,8 +791,8 @@ action <- data.frame(
 inn <- ggplot(action, aes(x = Date, y = Innovation)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Overall innovation scale score"
     ) +
   scale_x_date(breaks = action$Date) +
@@ -691,8 +814,8 @@ ggplotly(inn)
 att <- ggplot(action, aes(x = Date, y = Attendance)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Attendance at AP calls"
     ) +
   scale_x_date(breaks = action$Date) +
@@ -714,8 +837,8 @@ ggplotly(att)
 qi <- ggplot(action, aes(x = Date, y = Trained)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Trained in QI"
     ) +
   scale_x_date(breaks = action$Date) +
@@ -756,8 +879,8 @@ know <- data.frame(
 pap <- ggplot(know, aes(x = Date, y = Papers)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Papers"
     ) +
   scale_x_date(breaks = know$Date) +
@@ -779,8 +902,8 @@ ggplotly(pap)
 grant <- ggplot(know, aes(x = Date, y = Grants)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Grants"
     ) +
   scale_x_date(breaks = know$Date) +
@@ -805,8 +928,8 @@ Row
 stud <- ggplot(know, aes(x = Date, y = Studies)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Studies"
     ) +
   scale_x_date(breaks = know$Date) +
@@ -827,8 +950,8 @@ ggplotly(stud)
 qip <- ggplot(know, aes(x = Date, y = QI)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Quality Improvement Projects"
   ) +
   scale_x_date(breaks = know$Date) +
@@ -850,8 +973,8 @@ ggplotly(qip)
 test <- ggplot(know, aes(x = Date, y = Tests)) +
   geom_line(linewidth = 1, color = cchmc_dark_blue) +
   labs(
-    x = NULL, 
-    y = NULL, 
+    x = NULL,
+    y = NULL,
     title = "Tests of change"
   ) +
   scale_x_date(breaks = know$Date) +

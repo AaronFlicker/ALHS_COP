@@ -58,9 +58,13 @@ registry <- dbGetQuery(con, "
         ,g.countyfp
         ,g.Neighborhood
         ,CAST(p.birth_date AS DATE) AS DOB
+        ,p.Gender
+        ,rem.mapped_race AS Race
     FROM hpceclarity.bmi.reg_data_hx_membership r
       INNER JOIN hpceclarity.bmi.registry_data_info rdi
         ON r.record_id = rdi.record_id
+      INNER JOIN hpceclarity.bmi.y_chmc_race_ethnicity_mapping rem
+        ON rdi.networked_id = rem.pat_id
       LEFT JOIN hpceclarity.bmi.chmc_adt_addr_hx a
         ON rdi.networked_id = a.pat_id
         AND a.eff_start_date <= r.change_instant_utc_dttm
@@ -113,6 +117,7 @@ reg_count <- registry2 |>
     ExitDate > "2022-01-01",
     as.numeric(as.Date("2022-01-01")-DOB) <= 7305
     ) |>
+  group_by(Neighborhood, Gender, Race) |>
   reframe(Registry = n()) |>
   mutate(Date = as.Date("2022-01-01"))
 
@@ -125,6 +130,7 @@ for(i in 1:length(firsts)){
       ExitDate > firsts[i],
       as.numeric(firsts[i]-DOB) <= 7305
     ) |>
+    group_by(Neighborhood, Gender, Race) |>
     reframe(Registry = n()) |>
     mutate(Date = firsts[i])
   reg_count <- rbind(reg_count, x)
@@ -483,11 +489,6 @@ pop <- get_decennial(
   inner_join(allocations) |>
   mutate(
     value = value*Allocation,
-    Neighborhood = str_remove(Neighborhood, "village"),
-    Neighborhood = str_remove(Neighborhood, "city"),
-    Neighborhood = str_to_title(Neighborhood),
-    Neighborhood = str_remove(Neighborhood, "The Village Of"),
-    Neighborhood = str_trim(Neighborhood),
     Age = ifelse(str_detect(variable, "P1"), "All", "Adult"),
     Race = ifelse(str_detect(variable, "001"), "All", "Black")
   ) |>
@@ -506,10 +507,9 @@ pop <- get_decennial(
   select(Neighborhood, Child_Black, Child_NonBlack) |>
   rbind(munis) |>
   mutate(
-    SDN = Neighborhood %in% sdn | Neighborhood == "Lower Price Hill-Queensgate",
-    Avondale = Neighborhood == "Avondale"
+    SDN = Neighborhood %in% sdn | Neighborhood == "Lower Price Hill-Queensgate"
   ) |>
-  group_by(SDN, Avondale) |>
+  group_by(SDN, Neighborhood) |>
   reframe(across(Child_Black:Child_NonBlack, sum)) |>
   pivot_longer(
     Child_Black:Child_NonBlack,
@@ -524,14 +524,14 @@ pop <- get_decennial(
 encounters_hamco <- filter(encounters, HamCo == 1)
 
 enc_count <- encounters_hamco |>
-  group_by(encounter_type, ContactMonth, Race, SDN, Avondale) |>
+  group_by(encounter_type, ContactMonth, Race, SDN, Neighborhood) |>
   reframe(Encounters = n())
 
 readmit <- filter(encounters_hamco, encounter_type == "Admission") |>
   select(
   pat_id:pat_enc_csn_id, 
-  discharge_date,
-  ContactMonth:Avondale
+  discharge_date:Neighborhood,
+  ContactMonth:SDN
   ) |>
   filter(ContactMonth < today()-60) |>
   inner_join(
@@ -545,7 +545,7 @@ readmit <- filter(encounters_hamco, encounter_type == "Admission") |>
     contact_date >= discharge_date,
     pat_enc_csn_id.x != pat_enc_csn_id.y
   ) |>
-  group_by(pat_id, discharge_date, ContactMonth, Race, SDN, Avondale) |>
+  group_by(pat_id, discharge_date, ContactMonth, Race, SDN, Neighborhood) |>
   reframe(contact_date = min(contact_date)) |>
   mutate(
     Readmit30 = as.numeric(contact_date-discharge_date) <= 30,
@@ -557,13 +557,13 @@ readmit <- filter(encounters_hamco, encounter_type == "Admission") |>
     Readmit365 = ifelse(Discharge365, Readmit365, FALSE),
     encounter_type = "Admission"
   ) |>
-  group_by(encounter_type, ContactMonth, Race, SDN, Avondale) |>
+  group_by(encounter_type, ContactMonth, Race, SDN, Neighborhood) |>
   reframe(across(c(Readmit30, Readmit90, Readmit365), sum))
 
 readmited <- filter(encounters_hamco, encounter_type == "Admission") |>
   select(
     pat_id:pat_enc_csn_id, 
-    discharge_date,
+    discharge_date:Neighborhood,
     ContactMonth:Avondale
   ) |>
   filter(ContactMonth < today()-60) |>
@@ -578,7 +578,7 @@ readmited <- filter(encounters_hamco, encounter_type == "Admission") |>
     contact_date >= discharge_date,
     pat_enc_csn_id.x != pat_enc_csn_id.y
   ) |>
-  group_by(pat_id, discharge_date, ContactMonth, Race, SDN, Avondale) |>
+  group_by(pat_id, discharge_date, ContactMonth, Race, SDN, Neighborhood) |>
   reframe(contact_date = min(contact_date)) |>
   mutate(
     ReadmitED30 = as.numeric(contact_date-discharge_date) <= 30,
@@ -590,7 +590,7 @@ readmited <- filter(encounters_hamco, encounter_type == "Admission") |>
     ReadmitED365 = ifelse(Discharge365, ReadmitED365, FALSE),
     encounter_type = "Admission"
   ) |>
-  group_by(encounter_type, ContactMonth, Race, SDN, Avondale) |>
+  group_by(encounter_type, ContactMonth, Race, SDN, Neighborhood) |>
   reframe(across(c(ReadmitED30, ReadmitED90, ReadmitED365), sum))
 
 # admit_ed <- select(
@@ -648,24 +648,23 @@ readmited <- filter(encounters_hamco, encounter_type == "Admission") |>
 #   group_by(ContactMonth, Race, Avondale, SDN) |>
 #   reframe(BedDays = n())
 
-dateframe <- data.frame(
-  ContactMonth = rep(unique(enc_count$ContactMonth), each = 27),
-  encounter_type = rep(c("Admission", "ED", "UC"), each = 9),
-  Race = rep(c("Black", "Other race", NA), each = 3),
-  SDN = rep(c(TRUE, TRUE, FALSE), 3),
-  Avondale = rep(c(TRUE, FALSE, FALSE), 3)
-)
+# dateframe <- data.frame(
+#   ContactMonth = rep(unique(enc_count$ContactMonth), each = 27),
+#   encounter_type = rep(c("Admission", "ED", "UC"), each = 9),
+#   Race = rep(c("Black", "Other race", NA), each = 3),
+#   SDN = rep(c(TRUE, TRUE, FALSE), 3),
+#   Avondale = rep(c(TRUE, FALSE, FALSE), 3)
+# )
+# 
+# refer_dateframe <- data.frame(
+#   ReferMonth = rep(unique(enc_count$ContactMonth), each = 4),
+#   SDN = rep(c(TRUE, FALSE), each = 2),
+#   Program = c("HELP", "CLEAR")
+# ) |>
+#   filter(Program == "HELP" | ReferMonth >= as.Date("2022-10-01"))
 
-refer_dateframe <- data.frame(
-  ReferMonth = rep(unique(enc_count$ContactMonth), each = 4),
-  SDN = rep(c(TRUE, FALSE), each = 2),
-  Program = c("HELP", "CLEAR")
-) |>
-  filter(Program == "HELP" | ReferMonth >= as.Date("2022-10-01"))
-
-df1 <- left_join(dateframe, enc_count) |>
-  left_join(readmit) |>
-  left_join(readmited) |>
+df1 <- full_join(enc_count, readmit) |>
+  full_join(readmited) |>
   mutate(across(Encounters:ReadmitED365, \(x) coalesce(x, 0))) 
 
 refers <- rbind(clear, help) |>
@@ -673,10 +672,8 @@ refers <- rbind(clear, help) |>
   select(-ContactDate) |>
   unique() |>
   mutate(SDN = Neighborhood %in% sdn) |>
-  group_by(ReferMonth, SDN, Program) |>
-  reframe(Referrals = n()) |>
-  right_join(refer_dateframe) |>
-  mutate(Referrals = coalesce(Referrals, 0))
+  group_by(ReferMonth, SDN, Program, Neighborhood) |>
+  reframe(Referrals = n()) 
 
 # reg_frame <- registry |>
 #   group_by(Race, Avondale, SDN) |>
