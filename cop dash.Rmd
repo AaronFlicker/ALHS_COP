@@ -12,6 +12,7 @@ library(plotly)
 library(zoo)
 library(pins)
 library(lubridate)
+library(ggimage)
 
 salt_board <- board_connect(
   auth = "manual",
@@ -31,6 +32,8 @@ cchmc_medium_purple <- "#9E4679"
 cchmc_dark_purple <- "#83286B"
 cchmc_pink <- "#E64479"
 cchmc_dark_grey <- "#55575A"
+
+arrow <- system.file("arrow.png")
 
 ## Load data ==================================================================
 
@@ -63,7 +66,7 @@ movavgchart <- function(df, title, ylim){
     theme(plot.title = element_text(hjust = .5)) +
     geom_point(aes(x = ContactMonth, y = value, size = name)) +
     scale_size_manual(values = c(3, .5)) +
-    guides(size = "none")
+    guides(size = "none") 
   ggplotly(x) 
 }
 
@@ -96,8 +99,18 @@ pchart <- function(df, title, limit){
       ) +
     geom_point(aes(x = ContactMonth, y = value, size = name)) +
     scale_size_manual(values = c(0.25, 0.25, 3, 0.25)) +
-    guides(size = "none", linetype = "none", color = "none")
-  ggplotly(x) 
+    guides(size = "none", linetype = "none", color = "none") 
+  ggplotly(x) |>
+  layout(
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+  )
 }
 
 readmit_frame <- function(df, days){
@@ -160,24 +173,25 @@ months <- seq.Date(
     floor_date(today()-31, "month"), 
     by = "month"
     )
-dateframe <- data.frame(
-  ContactMonth = rep(months, 282),
-  Neighborhood = rep(unique(pop$Neighborhood), each = 3, length(months)),
-  encounter_type = rep(c("Admission", "ED", "UC"), 3196)
+dateframe <- data.frame(ContactMonth = months)
+
+hoodframe <- data.frame(
+  Neighborhood = rep(unique(cop$Neighborhood), each = 3),
+  encounter_type = c("Admission", "ED", "UC")
 )
   
 hood_rates <- filter(cop, ContactMonth < today()-30) |>
   mutate(Months = length(unique(ContactMonth))) |>
   group_by(Neighborhood, encounter_type) |>
   reframe(Encounters = sum(Encounters)) |>
-  right_join(dateframe |> distinct(Neighborhood, encounter_type)) |>
+  right_join(hoodframe) |>
   mutate(
     Encounters = coalesce(Encounters, 0),
-    Rate = Encounters/length(unique(dateframe$ContactMonth))
+    Rate = Encounters/length(months)
     ) |>
   full_join(
-    pop |> 
-      group_by(SDN, Neighborhood) |> 
+    pop |>
+      group_by(SDN, Neighborhood) |>
       reframe(Children = sum(Children))
     ) |>
   mutate(Rate = Rate*100000/Children)
@@ -209,7 +223,17 @@ admit_total <- filter(cop, encounter_type == "Admission") |>
   )
 
 movavgchart(admit_total, "Hamilton County", 250) |>
-  layout(legend = list(x = 0.05, y = 0.95))
+  layout(
+    legend = list(x = 0.05, y = 0.95),
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 ### 
@@ -256,7 +280,18 @@ admit_race_chart <- ggplot(
   geom_point(aes(x = ContactMonth, y = value, size = name)) +
   scale_size_manual(values = c(3, 0.5)) +
   guides(linetype = "none", size = "none")
-ggplotly(admit_race_chart) |> layout(legend = list(x = .85, y = .95))
+ggplotly(admit_race_chart) |> 
+  layout(
+    legend = list(x = .85, y = .95),
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .75,
+        y = .95,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 Column {data-width=900}
@@ -285,7 +320,17 @@ admit_deprived <- cop |>
   )
 
 movavgchart(admit_deprived, "Structually deprived neighborhoods", 250) |>
-  layout(showlegend = FALSE)
+  layout(
+    showlegend = FALSE,
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 ###
@@ -298,11 +343,11 @@ admit_avondale <- cop |>
     ) |>
   group_by(ContactMonth, Neighborhood) |>
   reframe(Admissions = sum(Encounters)) |>
-  right_join(
-    filter(dateframe, Neighborhood == "Avondale") |>
-      distinct(Neighborhood, ContactMonth)
-    ) |>
-  mutate(Admissions = coalesce(Admissions, 0))  |>
+  right_join(dateframe) |>
+  mutate(
+    Admissions = coalesce(Admissions, 0),
+    Neighborhood = "Avondale"
+    )  |>
   inner_join(
     pop |> 
       group_by(Neighborhood) |> 
@@ -320,7 +365,17 @@ admit_avondale <- cop |>
   ) 
 
 movavgchart(admit_avondale, "Avondale", 250) |>
-  layout(showlegend = FALSE)
+  layout(
+    showlegend = FALSE,
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 
@@ -384,7 +439,17 @@ ed_total <- filter(cop, encounter_type == "ED") |>
   )
 
 movavgchart(ed_total, "Hamilton County", 321) |>
-  layout(legend = list(x = 0.05, y = 0.95))
+  layout(
+    legend = list(x = 0.05, y = 0.95),
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 ###
@@ -429,7 +494,18 @@ ed_race_chart <- ggplot(
   geom_point(aes(x = ContactMonth, y = value, size = name)) +
   scale_size_manual(values = c(0.25, 3)) +
   guides(linetype = "none", size = "none")
-ggplotly(ed_race_chart) |> layout(legend = list(x = .85, y = .95))
+ggplotly(ed_race_chart) |> 
+  layout(
+    legend = list(x = .85, y = .95),
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .75,
+        y = .95,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 Column {data-width=900}
@@ -458,7 +534,17 @@ ed_deprived <- cop |>
   )
 
 movavgchart(ed_deprived, "Structually deprived neighborhoods", 321) |>
-  layout(showlegend = FALSE)
+  layout(
+    showlegend = FALSE,
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 ###
@@ -471,11 +557,11 @@ ed_avondale <- cop |>
     ) |>
   group_by(ContactMonth, Neighborhood) |>
   reframe(Encounters = sum(Encounters)) |>
-  right_join(
-    filter(dateframe, Neighborhood == "Avondale") |>
-      distinct(Neighborhood, ContactMonth)
-    ) |>
-  mutate(Encounters = coalesce(Encounters, 0))  |>
+  right_join(dateframe) |>
+  mutate(
+    Encounters = coalesce(Encounters, 0),
+    Neighborhood = "Avondale"
+    )  |>
   inner_join(
     pop |> 
       group_by(Neighborhood) |> 
@@ -493,7 +579,17 @@ ed_avondale <- cop |>
   ) 
 
 movavgchart(ed_avondale, "Avondale", 325) |>
-  layout(showlegend = FALSE)
+  layout(
+    showlegend = FALSE,
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+    )
 ```
 
 Column {data-width=600}
@@ -573,7 +669,7 @@ readmit_ED <- filter(cop, encounter_type == "Admission") |>
 
 readmit_30 <- readmit_frame(readmit_total, "30")
 
-pchart(readmit_30, "30 days", 21)
+pchart(readmit_30, "30 days", 21) 
 
 ```
 
@@ -623,12 +719,214 @@ pchart(readmited_365, "365 days", 74) |>
 ```
 
 
-Referrals
+Healthy Environment {data-orientation=columns}
 ==================================
 
-Row
+Column
 ----------------------------------
-### All referrals
+### Social Determinants of Health
+
+```{r}
+
+set.seed(203)
+sdoh <- data.frame(
+  Month = months,
+  Total = sample(100:200, length(months), replace = TRUE)
+  ) |>
+  mutate(
+    Screened = Total-sample(0:100, 1),
+    Rate = Screened/Total,
+    CLTotal = sum(Total[1:24]),
+    CLScreened = sum(Screened[1:24]),
+    Centerline = CLScreened/CLTotal,
+    sigma = sqrt(Centerline*(1-Centerline)/Total),
+    UCL = Centerline + 3*sigma,
+    UCL = ifelse(UCL > 1, 1, UCL),
+    LCL = Centerline - 3*sigma,
+    LCL = ifelse(LCL < 0, 0, LCL)
+    )
+
+
+pos <- data.frame(
+  Month = rep(months, each = 7),
+    Category = rep(
+    c(
+      "Caregiver Education",
+      "Food Insecurity",
+      "Financial Resources",
+      "Caregiver Health",
+      "Housing",
+      "Transportation",
+      "Firearms"
+    ),
+    length(months)
+    ),
+  Rate = runif(length(months)*7)
+) |>
+  left_join(select(sdoh, Month, Screened))
+
+sdohchart <- function(category){
+  df <- filter(pos, Category == category) |>
+    arrange(Month) |>
+    mutate(
+      Positive = round(Screened*Rate),
+      CLTotal = sum(Screened[1:24]),
+      CLScreened = sum(Positive[1:24]),
+      Centerline = CLScreened/CLTotal,
+      sigma = sqrt(Centerline*(1-Centerline)/Screened),
+      UCL = Centerline + 3*sigma,
+      UCL = ifelse(UCL > 1, 1, UCL),
+      LCL = Centerline - 3*sigma,
+      LCL = ifelse(LCL < 0, 0, LCL)
+      ) |>
+    pivot_longer(cols = c(Centerline, UCL, LCL, Rate))
+  x <- ggplot(
+    df, 
+    aes(x = Month, y = value, color = name, linetype = name)
+  ) +
+    geom_line(linewidth = 1) +
+    labs(
+      x = NULL, 
+      y = "%", 
+      title = category,
+      size = NULL
+    ) +
+    scale_x_continuous(breaks = unique(df$Month), labels = NULL) +
+    scale_y_continuous(
+      limits = c(0, 1),
+      breaks = seq(0, 1, .2),
+      labels = seq(0, 100, 20)
+      ) +
+    scale_color_manual(
+      values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink) 
+      ) +
+    scale_linetype_manual(values = c("solid", "dashed", "solid", "dashed")) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = .5),
+      axis.text.x = element_text(angle = 90)
+      ) +
+    geom_point(aes(x = Month, y = value, size = name)) +
+    scale_size_manual(values = c(0.25, 0.25, 3, 0.25)) +
+    guides(size = "none", linetype = "none", color = "none") +
+  annotate(
+    "text", 
+    x = as.Date("2023-06-01"), 
+    y =.5, 
+    size = 24, 
+    label = "FAKE DATA"
+    )
+  ggplotly(x) |>
+  layout(
+    images = list(
+        list(source = base64enc::dataURI(file = "down arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+  )
+}
+
+sdohframe <- sdoh |>
+  pivot_longer(cols = c(Centerline, UCL, LCL, Rate))
+
+x <- ggplot(
+    sdohframe, 
+    aes(x = Month, y = value, color = name, linetype = name)
+  ) +
+    geom_line(linewidth = 1) +
+    labs(
+      x = NULL, 
+      y = "%", 
+      title = "% of patients receiving full SDOH screening",
+      size = NULL
+    ) +
+    scale_x_continuous(breaks = unique(sdohframe$Month), labels = NULL) +
+    scale_y_continuous(
+      limits = c(0, 1),
+      breaks = seq(0, 1, .2),
+      labels = seq(0, 100, 20)
+      ) +
+    scale_color_manual(
+      values = c(cchmc_pink, cchmc_pink, cchmc_dark_blue, cchmc_pink) 
+      ) +
+    scale_linetype_manual(values = c("solid", "dashed", "solid", "dashed")) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = .5),
+      axis.text.x = element_text(angle = 90)
+      ) +
+    geom_point(aes(x = Month, y = value, size = name)) +
+    scale_size_manual(values = c(0.25, 0.25, 3, 0.25)) +
+    guides(size = "none", linetype = "none", color = "none") +
+  annotate(
+    "text", 
+    x = as.Date("2023-06-01"), 
+    y =.5, 
+    size = 24, 
+    label = "FAKE DATA"
+    )
+ggplotly(x) |>
+  layout(
+    images = list(
+        list(source = base64enc::dataURI(file = "up arrow.PNG"),
+        x = .9,
+        y = .9,
+        sizex = .2,
+        sizey = .2
+        )
+      )
+  )
+
+```
+
+### 
+```{r}
+sdohchart("Housing")
+```
+
+### 
+```{r}
+sdohchart("Caregiver Education")
+```
+
+### 
+```{r}
+sdohchart("Food Insecurity")
+```
+
+Column
+----------------------------------
+
+### Social Determinants of Health
+
+```{r}
+sdohchart("Financial Resources")
+```
+
+###
+
+```{r}
+sdohchart("Caregiver Health")
+```
+
+### 
+
+```{r}
+sdohchart("Transportation")
+```
+###
+
+```{r}
+sdohchart("Firearms")
+```
+
+Column
+----------------------------------
+
+### Referrals
 
 ```{r}
 #| echo: false
@@ -647,8 +945,6 @@ ref_all <- ref |>
     ReferMonth = ymd(ReferMonth)
   ) |>
   pivot_longer(cols = c(Referrals, CL:LCL))
-
-
 
 ref_sdn <- filter(ref, SDN) |>
   group_by(Program, ReferMonth) |>
@@ -669,14 +965,15 @@ ref_sdn <- filter(ref, SDN) |>
 
 refer_chart(
   ref_all,
-  "CLEAR",
-  "Collaboration to Lessen Environmental Asthma Risks"
+  "HELP",
+  "Child Health Law Partnership"
   )
+
 
 ```
 
 
-### Structurally Deprived Neighborhoods
+### 
 
 ```{r}
 #| echo: false
@@ -690,20 +987,6 @@ refer_chart(
 ```
 
 
-Row
-----------------------------------
-### All referrals
-```{r}
-#| echo: false
-refer_chart(ref_all, "HELP", "Child Health Law Partnership")
-```
-### Structurally Disadvantaged Neighborhoods
-
-```{r}
-#| echo: false
-
-refer_chart(ref_sdn, "HELP", "Child Health Law Partnership")
-```
 
 Engagement
 ==================================
@@ -765,7 +1048,7 @@ reg_visit <- ggplot(reg_tot, aes(x = Date, y = VisitRate)) +
     axis.text.x = element_text(angle = 90)
   ) +
   geom_point(aes(x = Date, y = VisitRate), size = 3, color = cchmc_dark_blue) +
-  annotate("text", x = as.Date("2023-06-01"), y =.5, size = 40, label = "FAKE DATA")
+  annotate("text", x = as.Date("2023-06-01"), y = 50, size = 40, label = "FAKE DATA")
 ggplotly(reg_visit)
 
 ```
